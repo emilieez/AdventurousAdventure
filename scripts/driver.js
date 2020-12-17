@@ -6,6 +6,7 @@ canvas.appendChild(forest2)
 $(document).ready(function () {
     $("#startBtn").click(function () {
         $("#sky-1").fadeIn(1000);
+        $("#sky1sarah").slideDown(6000);
         setTimeout(function () {
             sky1continue.style.display = "block";
         }, 3500);

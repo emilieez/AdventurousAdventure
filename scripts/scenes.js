@@ -3,7 +3,7 @@
 var sky1 = document.createElement("div")
 sky1.setAttribute('id', "sky-1")
 sky1.style.display = "none"
-sky1.style.backgroundImage = "url('images/sky_1.jpg')"
+sky1.style.backgroundImage = "url('images/sky_1.png')"
 sky1.style.zIndex = 1;
 sky1.className = "scene"
 
@@ -14,6 +14,12 @@ sky1texts.style.fontFamily = "news-gothic-std"
 sky1texts.style.display = "flex";
 sky1texts.style.flexDirection = "column"
 sky1texts.style.alignItems = "center"
+
+var sky1sarah = document.createElement("div")
+sky1sarah.setAttribute("id", 'sky1sarah')
+sky1sarah.style.backgroundImage = "url('images/sky_1_sarah.png')"
+sky1sarah.style.width = "100%"
+sky1sarah.style.display = "none"
 
 var sky1story = document.createElement("p")
 sky1story.setAttribute("id", "sky-1-story");
@@ -29,6 +35,7 @@ sky1continue.style.display = "none"
 
 sky1texts.appendChild(sky1story);
 sky1texts.appendChild(sky1continue)
+sky1.appendChild(sky1sarah)
 sky1.appendChild(sky1texts)
 
 
