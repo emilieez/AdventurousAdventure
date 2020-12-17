@@ -13,8 +13,4 @@ function transitionScene(newBgImage, oldChild, newChild) {
         sceneOverlay.style.zIndex = "-1"
         sceneOverlay.style.opacity = "0"
     }, 2000)
-
-    setTimeout(function () {
-        forest1continue.style.display = "block";
-    }, 4000);
 }
