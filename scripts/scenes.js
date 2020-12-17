@@ -2,6 +2,10 @@
 
 var sky1 = document.createElement("div")
 sky1.setAttribute('id', "sky-1")
+sky1.style.display = "none"
+sky1.style.backgroundImage = "url('images/sky_1.jpg')"
+sky1.style.zIndex = 1;
+sky1.className = "scene"
 
 var sky1texts = document.createElement("div")
 sky1texts.className = "text-block bottom-centered"
@@ -14,7 +18,7 @@ sky1texts.style.alignItems = "center"
 var sky1story = document.createElement("p")
 sky1story.setAttribute("id", "sky-1-story");
 sky1story.innerHTML = "Sarah walks around and continues to look for her cat. She decides to search on another island."
-sky1story.className = "story"
+sky1story.className = "story w3-animate-opacity"
 
 var sky1continue = document.createElement("button")
 sky1continue.setAttribute("id", "sky1continue")
@@ -22,7 +26,6 @@ sky1continue.className = "btn option"
 sky1continue.style.fontFamily = "news-gothic-std"
 sky1continue.innerHTML = "&#x02281; Continue"
 sky1continue.style.display = "none"
-sky1continue.style.width = "100px"
 
 sky1texts.appendChild(sky1story);
 sky1texts.appendChild(sky1continue)
@@ -32,6 +35,10 @@ sky1.appendChild(sky1texts)
 // ============= FOREST SCENE 1 ================
 var forest1 = document.createElement("div")
 forest1.setAttribute('id', "forest-1")
+forest1.style.display = "none"
+forest1.style.backgroundImage = "url('images/forest_1.jpg')"
+forest1.style.zIndex = 2;
+forest1.className = "scene"
 
 var forest1texts = document.createElement("div")
 forest1texts.className = "text-block bottom-centered"
@@ -49,7 +56,6 @@ forest1continue.className = "btn option"
 forest1continue.style.fontFamily = "NorthwoodHigh"
 forest1continue.innerHTML = "&#x02281; Continue"
 forest1continue.style.display = "none"
-forest1continue.style.width = "100px"
 
 var centerForest1Texts = document.createElement("center")
 centerForest1Texts.appendChild(forest1story);
@@ -62,6 +68,10 @@ forest1.appendChild(forest1texts)
 // ============= FOREST SCENE 2 ================
 var forest2 = document.createElement("div")
 forest2.setAttribute('id', "forest-2")
+forest2.style.display = "none"
+forest2.style.backgroundImage = "url('images/forest_2.jpg')"
+forest2.style.zIndex = 3;
+forest2.className = "scene"
 
 var forest2texts = document.createElement("div")
 forest2texts.className = "text-block bottom-centered"
@@ -80,7 +90,6 @@ forest2mushrooms.className = "btn option"
 forest2mushrooms.style.fontFamily = "NorthwoodHigh"
 forest2mushrooms.innerHTML = "&#x02281; Inspect Mushrooms"
 forest2mushrooms.style.display = "none"
-forest2mushrooms.style.width = "120px"
 forest2mushrooms.style.padding = "0px"
 forest2mushrooms.style.margin = "0px"
 
@@ -90,7 +99,6 @@ forest2tree.className = "btn option"
 forest2tree.style.fontFamily = "NorthwoodHigh"
 forest2tree.innerHTML = "&#x02281; Inspect Tree"
 forest2tree.style.display = "none"
-forest2tree.style.width = "100px"
 forest2tree.style.margin = "0px"
 forest2tree.style.padding = "0px"
 
