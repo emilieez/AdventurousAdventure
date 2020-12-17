@@ -8,10 +8,11 @@ sky1.style.zIndex = 1;
 sky1.className = "scene"
 
 var sky1texts = document.createElement("div")
+sky1texts.setAttribute('id', 'sky1texts')
 sky1texts.className = "text-block bottom-centered"
 sky1texts.style.fontSize = "1.5vw";
 sky1texts.style.fontFamily = "news-gothic-std"
-sky1texts.style.display = "flex";
+sky1texts.style.opacity = "0";
 sky1texts.style.flexDirection = "column"
 sky1texts.style.alignItems = "center"
 
@@ -19,7 +20,8 @@ var sky1sarah = document.createElement("div")
 sky1sarah.setAttribute("id", 'sky1sarah')
 sky1sarah.style.backgroundImage = "url('images/sky_1_sarah.png')"
 sky1sarah.style.width = "100%"
-sky1sarah.style.display = "none"
+sky1sarah.style.position = "relative"
+sky1sarah.style.left = "-800px"
 
 var sky1story = document.createElement("p")
 sky1story.setAttribute("id", "sky-1-story");

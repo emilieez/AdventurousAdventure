@@ -6,9 +6,13 @@ canvas.appendChild(forest2)
 $(document).ready(function () {
     $("#startBtn").click(function () {
         $("#sky-1").fadeIn(1000);
-        $("#sky1sarah").slideDown(6000);
+        $("#sky1sarah").animate({
+            left: "0"
+        }, 5000)
+
         setTimeout(function () {
-            sky1continue.style.display = "block";
+            $("#sky1texts").css("opacity", 1);
+            $("#sky1continue").fadeIn(6000);
         }, 3500);
     });
 

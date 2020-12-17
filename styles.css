@@ -60,6 +60,9 @@ html {
     background-color: rgba(20, 20, 20, 0.6);
     color: white;
     padding: 5px 20px;
+    animation: fade 3.5s;
+    animation-delay: 2s;
+    display: flex;
 }
 
 .bottom-left {
@@ -115,9 +118,15 @@ html {
     white-space: nowrap; 
     margin: 0 auto; 
     animation: typing 3.5s steps(40, end);
+    animation-delay: 2s;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+  to { opacity: 1; }
 }
