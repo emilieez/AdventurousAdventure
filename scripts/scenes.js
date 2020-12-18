@@ -66,6 +66,14 @@ forest1sarah_1.style.width = "100%"
 forest1sarah_1.style.position = "relative"
 forest1sarah_1.style.bottom = "150px"
 
+var forest1sarah_2 = document.createElement("div")
+forest1sarah_2.setAttribute("id", 'forest1sarah-2')
+forest1sarah_2.style.backgroundImage = "url('images/forest_1_sarah-2.png')"
+forest1sarah_2.style.width = "100%"
+forest1sarah_2.style.position = "relative"
+forest1sarah_2.style.bottom = "200px"
+forest1sarah_2.style.display = "none"
+
 var forest1story = document.createElement("p")
 forest1story.setAttribute("id", "forest-1-story");
 forest1story.innerHTML = "The boat takes Sarah to a dark forest"
@@ -84,6 +92,7 @@ centerForest1Texts.appendChild(forest1continue);
 
 forest1texts.appendChild(centerForest1Texts)
 forest1.appendChild(forest1sarah_1)
+forest1.appendChild(forest1sarah_2)
 forest1.appendChild(forest1texts)
 
 
