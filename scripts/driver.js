@@ -1,5 +1,6 @@
 canvas = document.getElementById("canvas")
 canvas.appendChild(bedroomMorning)
+canvas.appendChild(coffeeScene)
 canvas.appendChild(sky1)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
@@ -34,6 +35,10 @@ $(document).ready(function () {
         //     $("#sky1texts").css("opacity", 1);
         //     $("#sky1continue").fadeIn(6000);
         // }, 3500);
+    });
+
+    $("#bedroomMorningContinue").click(function () {
+        $("#coffee-scene").fadeIn(900);
     });
 
     $("#sky1continue").click(function () {

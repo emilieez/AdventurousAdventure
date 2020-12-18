@@ -1,9 +1,9 @@
-function createScene(sceneID, sceneBg) {
+function createScene(sceneID, sceneBg, zIndex) {
     var scene = document.createElement("div")
     scene.setAttribute('id', sceneID)
     scene.style.display = "none"
     scene.style.backgroundImage = sceneBg
-    scene.style.zIndex = 1;
+    scene.style.zIndex = zIndex;
     scene.className = "scene"
     return scene
 }
