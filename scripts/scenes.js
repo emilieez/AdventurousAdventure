@@ -108,6 +108,7 @@ var forest2texts = document.createElement("div")
 forest2texts.className = "text-block bottom-centered"
 forest2texts.style.fontSize = "1.9vw";
 forest2texts.style.fontFamily = "NorthwoodHigh"
+forest2texts.style.opacity = "0"
 
 var forest2story = document.createElement("p")
 forest2story.setAttribute("id", "forest-2-story");

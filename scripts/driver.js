@@ -39,8 +39,6 @@ $(document).ready(function () {
         $("#forest1sarah-2").css("display: block");
         setTimeout(function () {
             $("#forest-2").fadeIn(1000);
-            forest2mushrooms.style.display = "block";
-            forest2tree.style.display = "block";
         }, 2000);
     });
 });
