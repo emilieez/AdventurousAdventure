@@ -52,7 +52,8 @@ $(document).ready(function () {
     });
 
 
-    // ================= COFFEE ================
+
+    // ====================== COFFEE ================
     $("#coffeeSceneContinue").click(function () {
         $("#bedroom-morning-2").fadeIn(900);
         $("#bedroomMorningSarah-2").animate({
@@ -66,6 +67,7 @@ $(document).ready(function () {
             $("#bedroomMorning2Texts").css("opacity", 1);
         }, 5500);
     });
+
 
 
     // ============= BEDROOM MORNING 2 ================
@@ -88,17 +90,50 @@ $(document).ready(function () {
         }, 4000);
     });
 
-    // ================= OUTSIDE ================
+
+
+    // ===================== OUTSIDE ================
     $("#bedroomMorning3Continue").click(function () {
         $("#outside-scene").fadeIn(900);
-
+        $("#bedroomMorningSarah-3").css({
+            "animation": "none"
+        })
         $("#outside-scene-options").animate({
             top: "0"
-        }, 7000)
+        }, 5000)
+
+        $("#outside-scene-options-0").click(function () {
+            document.getElementById("outside-scene-options-modal-result").innerHTML = OUTSIDE_SCENE["option1-result"]
+            document.getElementById("outside-scene-options-modal-action").innerHTML = "K Cool"
+
+            $('#outside-scene-options-modal').modal('show');
+            $("#outsideHowlSarah").css("display", "block")
+            $("#outsideHowlSarah").animate({
+                bottom: "0"
+            }, 900);
+
+            $("#outside-scene-options-modal-action").click(function () {
+                $('#outside-scene-options-modal').modal('hide');
+                $("#outsideHowlSarah").animate({
+                    bottom: "-1000px"
+                }, 1000);
+            })
+        })
+
+        $("#outside-scene-options-2").click(function () {
+            document.getElementById("outside-scene-options-modal-result").innerHTML = OUTSIDE_SCENE["option3-result"]
+            document.getElementById("outside-scene-options-modal-action").innerHTML = "K Cool"
+            document.getElementById("outside-scene-options-modal-action").setAttribute("data-dismiss", "modal")
+
+            $('#outside-scene-options-modal').modal('show');
+            $("#outsideNofaceSarah").animate({
+                bottom: "0"
+            }, 800);
+        })
 
         setTimeout(function () {
             $("#outsideSceneTexts").css("opacity", 1);
-        }, 5500);
+        }, 5000);
     });
 
 

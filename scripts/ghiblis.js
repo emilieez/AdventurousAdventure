@@ -95,7 +95,18 @@ var outsideSceneOptions = createOptions(
     "1.8vw"
 )
 outsideSceneOptions.style.top = "-1000px"
+createModal("outside-scene-options-modal", "", "news-goth-std", "")
+
+var outsideHowlSarah = createSarah("outsideHowlSarah", "url('images/outside_howl_sarah.png')")
+outsideHowlSarah.style.bottom = "-1000px";
+outsideHowlSarah.style.display = "none";
+
+var outsideNofaceSarah = createSarah("outsideNofaceSarah", "url('images/outside_noface_sarah.png')")
+outsideNofaceSarah.style.bottom = "-1000px";
+outsideNofaceSarah.style.display = "none";
 
 outsideSceneTexts.appendChild(outsideSceneStory)
 outsideScene.appendChild(outsideSceneTexts)
 outsideScene.appendChild(outsideSceneOptions)
+outsideScene.appendChild(outsideHowlSarah)
+outsideScene.appendChild(outsideNofaceSarah)

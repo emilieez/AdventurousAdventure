@@ -93,6 +93,8 @@ function createModal(modalID, body, fontFamily, footerButtonText) {
     modalBody.style.color = "#ffffff"
     modalBody.style.backgroundColor = "rgba(0,0,0,0.8)"
     modalBody.style.fontFamily = fontFamily
+    modalBody.style.fontSize = "1.7vw"
+    modalBody.style.padding = "20px"
 
     var modalBodyCenter = document.createElement("center")
     modalBodyCenter.appendChild(modalBody)
@@ -105,6 +107,7 @@ function createModal(modalID, body, fontFamily, footerButtonText) {
     footerButton.setAttribute("id", modalID + "-action")
     footerButton.innerHTML = footerButtonText
     footerButton.style.fontFamily = fontFamily;
+    footerButton.style.fontSize = "2vw"
     modalFooter.appendChild(footerButton)
 
     modalContent.appendChild(modalBodyCenter)
