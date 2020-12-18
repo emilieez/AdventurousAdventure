@@ -24,6 +24,21 @@ coffeeTexts.appendChild(coffeeStory)
 coffeeTexts.appendChild(coffeeSceneContinue)
 coffeeScene.appendChild(coffeeTexts)
 
+// ============= BEDROOM MORNING 2 ================
+var bedroomMorning2 = createScene("bedroom-morning-2", "url('images/bedroom_morning.png')", 1)
+var bedroomMorning2Texts = createTextBlock("bedroomMorning2Texts", "bottom-centered", "1.9vw", "news-gothic-std")
+var bedroomMorning2Story = createStory("bedroom-morning-2-story", "One beautiful, warm morning, Sarah He wakes up in her cozy home right next to . . .HOWL’S MOVING CASTLE??")
+var bedroomMorning2Continue = createContinueBtn("bedroomMorning2Continue", "news-gothic-std")
+bedroomMorning2Continue.style.zIndex = 1;
+
+var bedroomMorning2Sarah = createSarah("bedroomMorningSarah_2", "url('images/bedroom_morning_sarah-2.png')")
+
+bedroomMorning2Texts.appendChild(bedroomMorning2Story)
+bedroomMorning2Texts.appendChild(bedroomMorning2Continue)
+bedroomMorning2.appendChild(bedroomMorning2Texts)
+bedroomMorning2.appendChild(bedroomMorning2Sarah)
+
+
 // ============= SKY SCENE 1 ================
 
 var sky1 = createScene("sky-1", "url('images/sky_1.png')", 2)
