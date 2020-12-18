@@ -115,3 +115,21 @@ outsideScene.appendChild(outsideSceneOptions)
 outsideScene.appendChild(outsideHowlSarah)
 outsideScene.appendChild(outsideNofaceSarah)
 outsideScene.appendChild(outsideCatbusSarah)
+
+
+
+// ========================  ALLEY =================================
+var alleyScene = createScene("alley-scene", "url('images/alley.png')", 1)
+var alleySceneTexts = createTextBlock("alleySceneTexts", "bottom-centered", "1.9vw", "news-gothic-std")
+var alleySceneStory = createStory("alley-scene-story", ALLEY_SCENE["story"])
+
+var alleySceneContinue = createContinueBtn("alleySceneContinue", "news-gothic-std")
+alleySceneContinue.style.zIndex = 1;
+
+var alleySceneSarah = createSarah("alleySceneSarah", "url('images/alley_sarah.png')")
+alleySceneSarah.style.right = "-1000px"
+
+alleySceneTexts.appendChild(alleySceneStory)
+alleySceneTexts.appendChild(alleySceneContinue)
+alleyScene.appendChild(alleySceneSarah)
+alleyScene.appendChild(alleySceneTexts)

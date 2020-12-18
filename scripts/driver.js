@@ -4,6 +4,7 @@ canvas.appendChild(coffeeScene)
 canvas.appendChild(bedroomMorning2)
 canvas.appendChild(bedroomMorning3)
 canvas.appendChild(outsideScene)
+canvas.appendChild(alleyScene)
 canvas.appendChild(sky1)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
@@ -177,6 +178,18 @@ $(document).ready(function () {
 
             $("#optionsModal-button").click(function () {
                 $('#optionsModal').modal('hide');
+
+
+                // =============================== ALLEY =================================
+                $("#alley-scene").fadeIn(900)
+                $("#alleySceneSarah").animate({
+                    right: "0px"
+                }, 1000);
+
+                setTimeout(function () {
+                    $("#alleySceneTexts").css("opacity", 1);
+                    $("#alleySceneContinue").fadeIn(6000);
+                }, 3000);
             })
         })
 

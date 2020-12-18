@@ -25,3 +25,7 @@ OUTSIDE_SCENE = {
     "option4": "In the random, dark alleyway that has no relation whatsoever to the ghibli-verse",
     "option4-result": "You decide to venture into the alleyway."
 }
+
+ALLEY_SCENE = {
+    "story": "Inside the alleyway, Sarah sees a faint grey blur behind one of the boxes. She decides to take a closer look."
+}
