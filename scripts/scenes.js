@@ -24,6 +24,7 @@ coffeeTexts.appendChild(coffeeStory)
 coffeeTexts.appendChild(coffeeSceneContinue)
 coffeeScene.appendChild(coffeeTexts)
 
+
 // ============= BEDROOM MORNING 2 ================
 var bedroomMorning2 = createScene("bedroom-morning-2", "url('images/bedroom_morning.png')", 1)
 var bedroomMorning2Texts = createTextBlock("bedroomMorning2Texts", "bottom-centered", "1.9vw", "news-gothic-std")
@@ -35,11 +36,19 @@ bedroomMorning2Continue.style.zIndex = 1;
 var bedroomMorning2Sarah = createSarah("bedroomMorningSarah-2", "url('images/bedroom_morning_sarah-2.png')")
 bedroomMorning2Sarah.style.right = "-1000px"
 
+var bedroomMorning2Options = createOptions(
+    "bedroom-morning-2-options",
+    ["Shirt, leggings and a cardigan. The usual.", "A cute frilly dress, perfect for frolicking in meadows.", "A bikini. (you gotta seduce Howl somehow)", "Completely, irrevocably naked."],
+    "news-goth-std",
+    "1.8vw"
+)
+bedroomMorning2Options.style.top = "35%"
+
 bedroomMorning2Texts.appendChild(bedroomMorning2Story)
 bedroomMorning2Texts.appendChild(bedroomMorning2Continue)
 bedroomMorning2.appendChild(bedroomMorning2Sarah)
 bedroomMorning2.appendChild(bedroomMorning2Texts)
-
+bedroomMorning2.appendChild(bedroomMorning2Options)
 
 
 // ============= SKY SCENE 1 ================

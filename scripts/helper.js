@@ -47,3 +47,22 @@ function createContinueBtn(continueID, fontFamily) {
     continueBtn.style.display = "none"
     return continueBtn
 }
+
+function createOptions(optionID, options, fontFamily, fontSize) {
+    var optionsDiv = document.createElement("div");
+    optionsDiv.className = "text-block";
+    optionsDiv.setAttribute('id', optionID);
+    optionsDiv.style.display = "flex";
+    optionsDiv.style.flexDirection = "column"
+    optionsDiv.style.alignItems = "flex-start"
+    optionsDiv.style.fontFamily = fontFamily;
+    optionsDiv.style.fontSize = fontSize
+
+    for (var i = 0; i < options.length; i++) {
+        option = document.createElement("button")
+        option.className = "option";
+        option.innerHTML = "&#x02281; " + options[i]
+        optionsDiv.appendChild(option)
+    }
+    return optionsDiv
+}
