@@ -12,3 +12,11 @@ BEDROOM_MORNING_3 = {
     "story1": "As Sarah finishes choosing her outfit, she notices something amiss… Her cat seems to be gone!",
     "story2": "Panicking, she searches around the house, but can not even find a single trace of her cat."
 }
+
+OUTSIDE_SCENE = {
+    "story": "Realizing that her cat isn’t anywhere inside, Sarah leaves her house and decides to search…",
+    "option1": "In Howl’s Moving Castle",
+    "option2": "In the Cat Bus",
+    "option3": "Behind the No-Face",
+    "option4": "In the random, dark alleyway that has no relation whatsoever to the ghibli-verse"
+}

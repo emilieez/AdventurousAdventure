@@ -81,3 +81,21 @@ bedroomMorning3Texts.appendChild(bedroomMorning3Continue)
 bedroomMorning3.appendChild(bedroomMorning3Sarah)
 bedroomMorning3.appendChild(bedroomMorning3Texts)
 
+
+
+// ============= OUTSIDE SCENE ================
+var outsideScene = createScene("outside-scene", "url('images/outside.png')", 1)
+var outsideSceneTexts = createTextBlock("outsideSceneTexts", "bottom-centered", "1.9vw", "news-gothic-std")
+
+var outsideSceneStory = createStory("outside-scene-story", OUTSIDE_SCENE["story"])
+var outsideSceneOptions = createOptions(
+    "outside-scene-options",
+    [OUTSIDE_SCENE["option1"], OUTSIDE_SCENE["option2"], OUTSIDE_SCENE["option3"], OUTSIDE_SCENE["option4"]],
+    "news-goth-std",
+    "1.8vw"
+)
+outsideSceneOptions.style.top = "-1000px"
+
+outsideSceneTexts.appendChild(outsideSceneStory)
+outsideScene.appendChild(outsideSceneTexts)
+outsideScene.appendChild(outsideSceneOptions)

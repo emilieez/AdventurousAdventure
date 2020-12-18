@@ -3,6 +3,7 @@ canvas.appendChild(bedroomMorning)
 canvas.appendChild(coffeeScene)
 canvas.appendChild(bedroomMorning2)
 canvas.appendChild(bedroomMorning3)
+canvas.appendChild(outsideScene)
 canvas.appendChild(sky1)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
@@ -86,6 +87,20 @@ $(document).ready(function () {
             $("#bedroomMorning3Continue").fadeIn(6000);
         }, 4000);
     });
+
+    // ================= OUTSIDE ================
+    $("#bedroomMorning3Continue").click(function () {
+        $("#outside-scene").fadeIn(900);
+
+        $("#outside-scene-options").animate({
+            top: "0"
+        }, 7000)
+
+        setTimeout(function () {
+            $("#outsideSceneTexts").css("opacity", 1);
+        }, 5500);
+    });
+
 
     // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {
