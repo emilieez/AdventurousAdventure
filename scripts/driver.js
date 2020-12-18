@@ -87,41 +87,67 @@ $(document).ready(function () {
         $("#bedroomMorningSarah-2").animate({
             right: "0"
         }, 3000)
-        $("#bedroom-morning-2-options").animate({
-            left: "0"
-        }, 7000)
 
         setTimeout(function () {
             $("#bedroomMorning2Texts").css("opacity", 1);
-        }, 5500);
+            $("#bedroom-morning-2-options").animate({
+                left: "0"
+            }, 3000)
+        }, 3000);
     });
 
 
-    // ===================== OUTSIDE ================
+
+    // ========================================= OUTSIDE =============================================
     $("#bedroomMorning3Continue").click(function () {
         $("#outside-scene").fadeIn(900);
         $("#bedroomMorningSarah-3").css({
             "animation": "none"
         })
-        $("#outside-scene-options").animate({
-            top: "0"
-        }, 5000)
+
+        setTimeout(function () {
+            $("#outside-scene-options").animate({
+                top: "0"
+            }, 5000)
+        }, 2000);
 
         $("#outside-scene-options-0").click(function () {
             document.getElementById("optionsModal-body").innerHTML = OUTSIDE_SCENE["option1-result"]
             document.getElementById("optionsModal-button").innerHTML = "K Cool"
 
-            $('#optionsModal').modal('show');
             $("#outsideHowlSarah").css("display", "block")
             $("#outsideHowlSarah").animate({
                 bottom: "0"
-            }, 900);
+            }, 500);
 
             $("#optionsModal-button").click(function () {
                 $('#optionsModal').modal('hide');
                 $("#outsideHowlSarah").animate({
                     bottom: "-1000px"
                 }, 1000);
+                setTimeout(function () {
+                    $("#outsideHowlSarah").css("display", "none")
+                }, 1000)
+            })
+        })
+
+        $("#outside-scene-options-1").click(function () {
+            document.getElementById("optionsModal-body").innerHTML = OUTSIDE_SCENE["option2-result"]
+            document.getElementById("optionsModal-button").innerHTML = "K Cool"
+
+            $("#outsideCatbusSarah").css("display", "block")
+            $("#outsideCatbusSarah").animate({
+                bottom: "0"
+            }, 500);
+
+            $("#optionsModal-button").click(function () {
+                $('#optionsModal').modal('hide');
+                $("#outsideCatbusSarah").animate({
+                    bottom: "-1000px"
+                }, 1000);
+                setTimeout(function () {
+                    $("#outsideCatbusSarah").css("display", "none")
+                }, 1000)
             })
         })
 
@@ -129,16 +155,28 @@ $(document).ready(function () {
             document.getElementById("optionsModal-body").innerHTML = OUTSIDE_SCENE["option3-result"]
             document.getElementById("optionsModal-button").innerHTML = "K Cool"
 
-            $('#outside-scene-options-modal').modal('show');
+            $("#outsideNofaceSarah").css("display", "block")
             $("#outsideNofaceSarah").animate({
                 bottom: "0"
-            }, 900);
+            }, 500);
 
             $("#optionsModal-button").click(function () {
                 $('#optionsModal').modal('hide');
                 $("#outsideNofaceSarah").animate({
                     bottom: "-1000px"
                 }, 1000);
+                setTimeout(function () {
+                    $("#outsideNofaceSarah").css("display", "none")
+                }, 1000)
+            })
+        })
+
+        $("#outside-scene-options-3").click(function () {
+            document.getElementById("optionsModal-body").innerHTML = OUTSIDE_SCENE["option4-result"]
+            document.getElementById("optionsModal-button").innerHTML = "Lets YEET"
+
+            $("#optionsModal-button").click(function () {
+                $('#optionsModal').modal('hide');
             })
         })
 
@@ -146,6 +184,7 @@ $(document).ready(function () {
             $("#outsideSceneTexts").css("opacity", 1);
         }, 5000);
     });
+
 
 
     // ============= SKY SCENE 1 ================

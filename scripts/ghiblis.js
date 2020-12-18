@@ -45,13 +45,13 @@ var bedroomMorning2Options = createOptions(
     "1.8vw"
 )
 bedroomMorning2Options.style.top = "35%"
-bedroomMorning2Options.style.left = "-1000px"
+bedroomMorning2Options.style.left = "-2000px"
 
 document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultFail"]
 document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
 document.getElementById("optionsModal-button").setAttribute("data-dismiss", "modal")
 document.getElementById("optionsModal-button").innerHTML = "K Cool"
-document.getElementById("optionsModal-button").fontFamily = "news-goth-std"
+document.getElementById("optionsModal-button").style.fontFamily = "news-goth-std"
 
 // createModal("bedroom-morning-2-options-3-modal", BEDROOM_MORNING_2["resultPass"], "news-goth-std", "Lets YEET")
 
@@ -96,7 +96,6 @@ var outsideSceneOptions = createOptions(
     "1.8vw"
 )
 outsideSceneOptions.style.top = "-1000px"
-// createModal("outside-scene-options-modal", "", "news-goth-std", "")
 
 var outsideHowlSarah = createSarah("outsideHowlSarah", "url('images/outside_howl_sarah.png')")
 outsideHowlSarah.style.bottom = "-1000px";
@@ -106,8 +105,13 @@ var outsideNofaceSarah = createSarah("outsideNofaceSarah", "url('images/outside_
 outsideNofaceSarah.style.bottom = "-1000px";
 outsideNofaceSarah.style.display = "none";
 
+var outsideCatbusSarah = createSarah("outsideCatbusSarah", "url('images/outside_catbus_sarah.png')")
+outsideCatbusSarah.style.bottom = "-1000px";
+outsideCatbusSarah.style.display = "none";
+
 outsideSceneTexts.appendChild(outsideSceneStory)
 outsideScene.appendChild(outsideSceneTexts)
 outsideScene.appendChild(outsideSceneOptions)
 outsideScene.appendChild(outsideHowlSarah)
 outsideScene.appendChild(outsideNofaceSarah)
+outsideScene.appendChild(outsideCatbusSarah)

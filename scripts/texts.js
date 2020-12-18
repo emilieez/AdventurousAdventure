@@ -19,6 +19,9 @@ OUTSIDE_SCENE = {
     "option1": "In Howl’s Moving Castle",
     "option1-result": "You can’t seem to enter the vicinity. The magic has warded you off. The cat has probably not entered here either.",
     "option2": "In the Cat Bus",
+    "option2-result": "The Cat Bus lets you search the seats for your cat but you do not find anything.",
     "option3": "Behind the No-Face",
-    "option4": "In the random, dark alleyway that has no relation whatsoever to the ghibli-verse"
+    "option3-result": "You find a few dustballs behind him, but no cat. The dustballs are quite cute though.",
+    "option4": "In the random, dark alleyway that has no relation whatsoever to the ghibli-verse",
+    "option4-result": "You decide to venture into the alleyway."
 }
