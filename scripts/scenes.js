@@ -16,17 +16,13 @@ bedroomMorning.appendChild(bedroomMorningSarah1)
 
 // ============= COFFEE ================
 var coffeeScene = createScene("coffee-scene", "url('images/coffee.png')", 1)
-// var bedroomTexts = createTextBlock("bedroomMorningTexts", "bottom-centered", "1.9vw", "news-gothic-std")
-// var bedroomMorningStory = createStory("bedroom-morning-story", "One beautiful, warm morning, Sarah He wakes up in her cozy home right next to . . .HOWL’S MOVING CASTLE??")
-// var bedroomMorningContinue = createContinueBtn("bedroomMorningContinue", "news-gothic-std")
+var coffeeTexts = createTextBlock("coffeeTexts", "bottom-centered", "1.9vw", "news-gothic-std")
+var coffeeStory = createStory("coffee-scene-story", "As with any other beautiful, fine morning such as this, Sarah first goes and grabs her magic bean juice.")
+var coffeeSceneContinue = createContinueBtn("coffeeSceneContinue", "news-gothic-std")
 
-// var bedroomMorningSarah1 = createSarah("bedroomMorningSarah_1", "url('images/bedroom_morning_sarah-1.png')")
-// bedroomMorningSarah1.style.transform = "rotate(290deg)"
-
-// bedroomTexts.appendChild(bedroomMorningStory)
-// bedroomTexts.appendChild(bedroomMorningContinue)
-// bedroomMorning.appendChild(bedroomTexts)
-// bedroomMorning.appendChild(bedroomMorningSarah1)
+coffeeTexts.appendChild(coffeeStory)
+coffeeTexts.appendChild(coffeeSceneContinue)
+coffeeScene.appendChild(coffeeTexts)
 
 // ============= SKY SCENE 1 ================
 

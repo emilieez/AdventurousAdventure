@@ -39,6 +39,10 @@ $(document).ready(function () {
 
     $("#bedroomMorningContinue").click(function () {
         $("#coffee-scene").fadeIn(900);
+        setTimeout(function () {
+            $("#coffeeTexts").css("opacity", 1);
+            $("#coffeeSceneContinue").fadeIn(6000);
+        }, 3000);
     });
 
     $("#sky1continue").click(function () {
