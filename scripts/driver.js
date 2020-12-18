@@ -1,6 +1,7 @@
 canvas = document.getElementById("canvas")
 canvas.appendChild(bedroomMorning)
 canvas.appendChild(coffeeScene)
+canvas.appendChild(bedroomMorning2)
 canvas.appendChild(sky1)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
@@ -43,6 +44,17 @@ $(document).ready(function () {
             $("#coffeeTexts").css("opacity", 1);
             $("#coffeeSceneContinue").fadeIn(6000);
         }, 3000);
+    });
+
+    $("#coffeeSceneContinue").click(function () {
+        $("#bedroom-morning-2").fadeIn(900);
+        $("#bedroomMorningSarah-2").animate({
+            right: "0"
+        }, 5000)
+
+        setTimeout(function () {
+            $("#bedroomMorning2Texts").css("opacity", 1);
+        }, 5500);
     });
 
     $("#sky1continue").click(function () {
