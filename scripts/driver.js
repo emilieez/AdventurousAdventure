@@ -19,10 +19,12 @@ $(document).ready(function () {
     $("#sky1continue").click(function () {
         $("#forest-1").fadeIn(900);
 
-        for (var i = 0; i < 3; i++) {
-            $("#forest1sarah-1").animate({ bottom: '+=' + '30px' }, 300);
-            $("#forest1sarah-1").animate({ bottom: '-=' + '30px' }, 300);
-        }
+        setTimeout(function () {
+            for (var i = 0; i < 3; i++) {
+                $("#forest1sarah-1").animate({ bottom: '+=' + '30px' }, 300);
+                $("#forest1sarah-1").animate({ bottom: '-=' + '30px' }, 300);
+            }
+        }, 1000)
 
         setTimeout(function () {
             $("#forest1texts").css("opacity", 1);
@@ -31,7 +33,8 @@ $(document).ready(function () {
     });
 
     $("#forest1continue").click(function () {
-        $("#forest1sarah-1").slideUp(800);
+        $("#forest1texts").fadeOut();
+        $("#forest1sarah-1").slideUp(1200);
         $("#forest1sarah-2").slideDown(1600);
         $("#forest1sarah-2").css("display: block");
         setTimeout(function () {
