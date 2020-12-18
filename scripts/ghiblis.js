@@ -67,14 +67,17 @@ var bedroomMorning3 = createScene("bedroom-morning-3", "url('images/bedroom_morn
 var bedroomMorning3Texts = createTextBlock("bedroomMorning3Texts", "bottom-centered", "1.9vw", "news-gothic-std")
 
 var bedroomMorning3Story1 = createStory("bedroom-morning-3-story-1", BEDROOM_MORNING_3["story1"])
-var bedroomMorning3Continue1 = createContinueBtn("bedroomMorning2Continue1", "news-gothic-std")
-bedroomMorning3Continue1.style.zIndex = 1;
+var bedroomMorning3Story2 = createStory("bedroom-morning-3-story-2", BEDROOM_MORNING_3["story2"])
+
+var bedroomMorning3Continue = createContinueBtn("bedroomMorning3Continue", "news-gothic-std")
+bedroomMorning3Continue.style.zIndex = 1;
 
 var bedroomMorning3Sarah = createSarah("bedroomMorningSarah-3", "url('images/bedroom_morning_sarah-3.png')")
 bedroomMorning3Sarah.style.right = "-1000px"
 
 bedroomMorning3Texts.appendChild(bedroomMorning3Story1)
-bedroomMorning3Texts.appendChild(bedroomMorning3Continue1)
+bedroomMorning3Texts.appendChild(bedroomMorning3Story2)
+bedroomMorning3Texts.appendChild(bedroomMorning3Continue)
 bedroomMorning3.appendChild(bedroomMorning3Sarah)
 bedroomMorning3.appendChild(bedroomMorning3Texts)
 

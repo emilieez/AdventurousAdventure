@@ -81,6 +81,7 @@ function createModal(modalID, body, fontFamily, footerButtonText) {
 
     var modalDialog = document.createElement("div")
     modalDialog.className = "modal-dialog modal-lg"
+    modalDialog.style.top = "30%"
 
     var modalContent = document.createElement("div")
     modalContent.className = "modal-content"

@@ -83,7 +83,8 @@ $(document).ready(function () {
 
         setTimeout(function () {
             $("#bedroomMorning3Texts").css("opacity", 1);
-        }, 8000);
+            $("#bedroomMorning3Continue").fadeIn(6000);
+        }, 4000);
     });
 
     // ============= SKY SCENE 1 ================
