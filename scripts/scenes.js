@@ -1,32 +1,28 @@
+// ============= BEDROOM MORNING ================
+var bedroomMorning = createScene("bedroom-morning", "url('images/bedroom_morning.png')")
+var bedroomTexts = createTextBlock("bedroomMorningTexts", "bottom-centered", "1.9vw", "news-gothic-std")
+var bedroomMorningStory = createStory("bedroom-morning-story", "One beautiful, warm morning, Sarah He wakes up in her cozy home right next to . . .HOWL’S MOVING CASTLE??")
+var bedroomMorningContinue = createContinueBtn("bedroomMorningContinue", "news-gothic-std")
+
+var bedroomMorningSarah1 = createSarah("bedroomMorningSarah_1", "url('images/bedroom_morning_sarah-1.png')")
+bedroomMorningSarah1.style.transform = "rotate(290deg)"
+
+bedroomTexts.appendChild(bedroomMorningStory)
+bedroomTexts.appendChild(bedroomMorningContinue)
+bedroomMorning.appendChild(bedroomTexts)
+bedroomMorning.appendChild(bedroomMorningSarah1)
+
 // ============= SKY SCENE 1 ================
 
-var sky1 = document.createElement("div")
-sky1.setAttribute('id', "sky-1")
-sky1.style.display = "none"
-sky1.style.backgroundImage = "url('images/sky_1.png')"
-sky1.style.zIndex = 1;
-sky1.className = "scene"
+var sky1 = createScene("sky-1", "url('images/sky_1.png')")
+var sky1texts = createTextBlock("sky1texts", "bottom-centered", "1.5vw", "news-gothic-std")
 
-var sky1texts = document.createElement("div")
-sky1texts.setAttribute('id', 'sky1texts')
-sky1texts.className = "text-block bottom-centered"
-sky1texts.style.fontSize = "1.5vw";
-sky1texts.style.fontFamily = "news-gothic-std"
-sky1texts.style.opacity = "0";
-sky1texts.style.flexDirection = "column"
-sky1texts.style.alignItems = "center"
-
-var sky1sarah = document.createElement("div")
-sky1sarah.setAttribute("id", 'sky1sarah')
-sky1sarah.style.backgroundImage = "url('images/sky_1_sarah.png')"
-sky1sarah.style.backgroundRepeat = "no-repeat"
-sky1sarah.style.width = "100%"
-sky1sarah.style.position = "relative"
+var sky1sarah = createSarah("sky1sarah", "url('images/sky_1_sarah.png')")
 sky1sarah.style.left = "-800px"
 
 var sky1story = document.createElement("p")
 sky1story.setAttribute("id", "sky-1-story");
-sky1story.innerHTML = "Sarah walks around and continues to look for her cat. She decides to search on another island."
+sky1story.innerHTML = "Still on the mission to find her cat, Sarah searches one island and finds nothing. She decides to explore the islands in hopes of finding her cat."
 sky1story.className = "story w3-animate-opacity"
 
 var sky1continue = document.createElement("button")
@@ -43,21 +39,8 @@ sky1.appendChild(sky1texts)
 
 
 // ============= FOREST SCENE 1 ================
-var forest1 = document.createElement("div")
-forest1.setAttribute('id', "forest-1")
-forest1.style.display = "none"
-forest1.style.backgroundImage = "url('images/forest_1.jpg')"
-forest1.style.zIndex = 2;
-forest1.className = "scene"
-
-var forest1texts = document.createElement("div")
-forest1texts.setAttribute('id', 'forest1texts')
-forest1texts.className = "text-block bottom-centered"
-forest1texts.style.fontSize = "1.9vw";
-forest1texts.style.fontFamily = "NorthwoodHigh"
-forest1texts.style.opacity = "0";
-forest1texts.style.flexDirection = "column"
-forest1texts.style.alignItems = "center"
+var forest1 = createScene("forest-1", "url('images/forest_1.jpg')")
+var forest1texts = createTextBlock("forest1texts", "bottom-centered", "1.9vw", "NorthwoodHigh")
 
 var forest1sarah_1 = document.createElement("div")
 forest1sarah_1.setAttribute("id", 'forest1sarah-1')
@@ -97,18 +80,9 @@ forest1.appendChild(forest1texts)
 
 
 // ============= FOREST SCENE 2 ================
-var forest2 = document.createElement("div")
-forest2.setAttribute('id', "forest-2")
-forest2.style.display = "none"
-forest2.style.backgroundImage = "url('images/forest_2.jpg')"
-forest2.style.zIndex = 3;
-forest2.className = "scene"
+var forest2 = createScene("forest-2", "url('images/forest_2.jpg')")
 
-var forest2texts = document.createElement("div")
-forest2texts.className = "text-block bottom-centered"
-forest2texts.style.fontSize = "1.9vw";
-forest2texts.style.fontFamily = "NorthwoodHigh"
-forest2texts.style.opacity = "0"
+var forest2texts = createTextBlock("forest2text", "bottom-centered", "1.0vw", "NorthwoodHigh")
 
 var forest2story = document.createElement("p")
 forest2story.setAttribute("id", "forest-2-story");
