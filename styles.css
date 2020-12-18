@@ -16,6 +16,8 @@ html {
     color: #f2f2f2;
     font-family: "news-gothic-std";
     font-size: 2vw;
+    background-color: rgba(0,0,0,0);
+    border: none;
 }
 
 #startBtn:hover {
@@ -109,6 +111,11 @@ html {
     margin: 10px 20px;
 }
 
+.continue:hover {
+    background-color: #f2f2f2;
+    color: black;
+}
+
 .option:hover {
     background-color: #f2f2f2;
     color: black;
@@ -133,5 +140,5 @@ html {
 }
 
 @keyframes resetRotate{
-    100% {transform: rotate(360deg);
+    100% {transform: rotate(360deg)};
 }

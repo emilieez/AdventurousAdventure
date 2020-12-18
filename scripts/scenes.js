@@ -29,7 +29,7 @@ coffeeScene.appendChild(coffeeTexts)
 var bedroomMorning2 = createScene("bedroom-morning-2", "url('images/bedroom_morning.png')", 1)
 var bedroomMorning2Texts = createTextBlock("bedroomMorning2Texts", "bottom-centered", "1.9vw", "news-gothic-std")
 
-var bedroomMorning2Story = createStory("bedroom-morning-2-story", "Energized by the bean, she contemplates her outfit of the day. What should she wear today?")
+var bedroomMorning2Story = createStory("bedroom-morning-2-story", BEDROOM_MORNING_2["story"])
 var bedroomMorning2Continue = createContinueBtn("bedroomMorning2Continue", "news-gothic-std")
 bedroomMorning2Continue.style.zIndex = 1;
 
@@ -38,11 +38,18 @@ bedroomMorning2Sarah.style.right = "-1000px"
 
 var bedroomMorning2Options = createOptions(
     "bedroom-morning-2-options",
-    ["Shirt, leggings and a cardigan. The usual.", "A cute frilly dress, perfect for frolicking in meadows.", "A bikini. (you gotta seduce Howl somehow)", "Completely, irrevocably naked."],
+    [BEDROOM_MORNING_2["option1"], BEDROOM_MORNING_2["option2"], BEDROOM_MORNING_2["option3"], BEDROOM_MORNING_2["option4"]],
     "news-goth-std",
     "1.8vw"
 )
 bedroomMorning2Options.style.top = "35%"
+bedroomMorning2Options.style.left = "-1000px"
+
+for (var i = 0; i <= 2; i++) {
+    modalID = "bedroom-morning-2-options-" + i + "-modal"
+    createModal(modalID, BEDROOM_MORNING_2["resultFail"], "news-goth-std", "K Cool")
+    document.getElementById(modalID + "-action").setAttribute("data-dismiss", "modal")
+}
 
 bedroomMorning2Texts.appendChild(bedroomMorning2Story)
 bedroomMorning2Texts.appendChild(bedroomMorning2Continue)

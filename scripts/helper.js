@@ -41,17 +41,19 @@ function createStory(storyID, storyText) {
 function createContinueBtn(continueID, fontFamily) {
     var continueBtn = document.createElement("button")
     continueBtn.setAttribute("id", continueID)
-    continueBtn.className = "btn option"
+    continueBtn.className = "btn"
     continueBtn.style.fontFamily = fontFamily
     continueBtn.innerHTML = "&#x02281; Continue"
     continueBtn.style.display = "none"
+    continueBtn.style.color = "white"
+    continueBtn.style.fontSize = "2vw"
     return continueBtn
 }
 
-function createOptions(optionID, options, fontFamily, fontSize) {
+function createOptions(optionsBlockID, options, fontFamily, fontSize) {
     var optionsDiv = document.createElement("div");
     optionsDiv.className = "text-block";
-    optionsDiv.setAttribute('id', optionID);
+    optionsDiv.setAttribute('id', optionsBlockID);
     optionsDiv.style.display = "flex";
     optionsDiv.style.flexDirection = "column"
     optionsDiv.style.alignItems = "flex-start"
@@ -60,9 +62,52 @@ function createOptions(optionID, options, fontFamily, fontSize) {
 
     for (var i = 0; i < options.length; i++) {
         option = document.createElement("button")
+        optionID = optionsBlockID + "-" + i
+        option.setAttribute("id", optionID)
+        option.setAttribute("data-toggle", "modal")
+        option.setAttribute("data-target", "#" + optionID + "-modal")
         option.className = "option";
         option.innerHTML = "&#x02281; " + options[i]
         optionsDiv.appendChild(option)
     }
     return optionsDiv
+}
+
+function createModal(modalID, body, fontFamily, footerButtonText) {
+    var modal = document.createElement("div")
+    modal.className = "modal fade"
+    modal.setAttribute("id", modalID)
+
+    var modalDialog = document.createElement("div")
+    modalDialog.className = "modal-dialog modal-lg"
+
+    var modalContent = document.createElement("div")
+    modalContent.className = "modal-content"
+
+    var modalBody = document.createElement("div")
+    modalBody.className = "modal-body"
+    modalBody.setAttribute("id", modalID + "-result")
+    modalBody.innerHTML = body
+    modalBody.style.color = "#ffffff"
+    modalBody.style.backgroundColor = "rgba(0,0,0,0.8)"
+    modalBody.style.fontFamily = fontFamily
+
+    var modalBodyCenter = document.createElement("center")
+    modalBodyCenter.appendChild(modalBody)
+
+    var modalFooter = document.createElement("div")
+    modalFooter.className = "modal-footer"
+
+    var footerButton = document.createElement("button")
+    footerButton.className = "btn btn-dark"
+    footerButton.setAttribute("id", modalID + "-action")
+    footerButton.innerHTML = footerButtonText
+    footerButton.style.fontFamily = fontFamily;
+    modalFooter.appendChild(footerButton)
+
+    modalContent.appendChild(modalBodyCenter)
+    modalContent.appendChild(modalFooter)
+    modalDialog.appendChild(modalContent)
+    modal.appendChild(modalDialog)
+    document.body.appendChild(modal)
 }

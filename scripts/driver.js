@@ -7,6 +7,9 @@ canvas.appendChild(forest1)
 canvas.appendChild(forest2)
 
 $(document).ready(function () {
+
+
+    // ============= BEDROOM MORNING ================
     $("#startBtn").click(function () {
 
         $("#bedroom-morning").fadeIn(1000);
@@ -46,17 +49,26 @@ $(document).ready(function () {
         }, 3000);
     });
 
+
+    // ================= COFFEE ================
     $("#coffeeSceneContinue").click(function () {
         $("#bedroom-morning-2").fadeIn(900);
         $("#bedroomMorningSarah-2").animate({
             right: "0"
-        }, 5000)
+        }, 3000)
+        $("#bedroom-morning-2-options").animate({
+            left: "0"
+        }, 7000)
 
         setTimeout(function () {
             $("#bedroomMorning2Texts").css("opacity", 1);
         }, 5500);
     });
 
+
+    // ============= BEDROOM MORNING 2 ================
+
+    // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {
         $("#forest-1").fadeIn(900);
 
