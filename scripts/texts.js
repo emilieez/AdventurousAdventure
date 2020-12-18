@@ -5,7 +5,8 @@ BEDROOM_MORNING_2 = {
     "option3": "A bikini. (you gotta seduce Howl somehow).",
     "option4": "Completely, irrevocably naked.",
     "resultFail": "You try to wear the clothes, but they slip off of your stick-thin body onto the floor.",
-    "resultPass": "You are a stick (wo)man. You do not need clothes. Perfect."
+    "resultPass": "You are a stick (wo)man. You do not need clothes. Perfect.",
+    "resultPass-button": "Lets YEET"
 }
 
 BEDROOM_MORNING_3 = {

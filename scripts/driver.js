@@ -56,6 +56,34 @@ $(document).ready(function () {
     // ====================== COFFEE ================
     $("#coffeeSceneContinue").click(function () {
         $("#bedroom-morning-2").fadeIn(900);
+
+        $("#bedroom-morning-2-options-3").click(function () {
+            document.getElementById("optionsModal-button").innerHTML = BEDROOM_MORNING_2["resultPass-button"]
+            document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultPass"]
+            $("#optionsModal").modal("show")
+
+            // ============= BEDROOM MORNING 2 ================
+            $("#optionsModal-button").click(function () {
+                $('#bedroom-morning-2-options-3-modal').modal('hide');
+                $("#bedroom-morning-3").fadeIn(900);
+                $("#bedroomMorningSarah-3").animate({
+                    right: "0"
+                }, 3000)
+
+                $("#bedroomMorningSarah-3").css({
+                    "animation": "shake 0.5s",
+                    "animation-delay": "5s",
+                    "animation-iteration-count": "infinite"
+                })
+
+                setTimeout(function () {
+                    $("#bedroomMorning3Texts").css("opacity", 1);
+                    $("#bedroomMorning3Continue").fadeIn(6000);
+                }, 4000);
+            });
+
+        });
+
         $("#bedroomMorningSarah-2").animate({
             right: "0"
         }, 3000)
@@ -69,29 +97,6 @@ $(document).ready(function () {
     });
 
 
-
-    // ============= BEDROOM MORNING 2 ================
-    $("#bedroom-morning-2-options-3-modal-action").click(function () {
-        $('#bedroom-morning-2-options-3-modal').modal('hide');
-        $("#bedroom-morning-3").fadeIn(900);
-        $("#bedroomMorningSarah-3").animate({
-            right: "0"
-        }, 3000)
-
-        $("#bedroomMorningSarah-3").css({
-            "animation": "shake 0.5s",
-            "animation-delay": "5s",
-            "animation-iteration-count": "infinite"
-        })
-
-        setTimeout(function () {
-            $("#bedroomMorning3Texts").css("opacity", 1);
-            $("#bedroomMorning3Continue").fadeIn(6000);
-        }, 4000);
-    });
-
-
-
     // ===================== OUTSIDE ================
     $("#bedroomMorning3Continue").click(function () {
         $("#outside-scene").fadeIn(900);
@@ -103,17 +108,17 @@ $(document).ready(function () {
         }, 5000)
 
         $("#outside-scene-options-0").click(function () {
-            document.getElementById("outside-scene-options-modal-result").innerHTML = OUTSIDE_SCENE["option1-result"]
-            document.getElementById("outside-scene-options-modal-action").innerHTML = "K Cool"
+            document.getElementById("optionsModal-body").innerHTML = OUTSIDE_SCENE["option1-result"]
+            document.getElementById("optionsModal-button").innerHTML = "K Cool"
 
-            $('#outside-scene-options-modal').modal('show');
+            $('#optionsModal').modal('show');
             $("#outsideHowlSarah").css("display", "block")
             $("#outsideHowlSarah").animate({
                 bottom: "0"
             }, 900);
 
-            $("#outside-scene-options-modal-action").click(function () {
-                $('#outside-scene-options-modal').modal('hide');
+            $("#optionsModal-button").click(function () {
+                $('#optionsModal').modal('hide');
                 $("#outsideHowlSarah").animate({
                     bottom: "-1000px"
                 }, 1000);
@@ -121,14 +126,20 @@ $(document).ready(function () {
         })
 
         $("#outside-scene-options-2").click(function () {
-            document.getElementById("outside-scene-options-modal-result").innerHTML = OUTSIDE_SCENE["option3-result"]
-            document.getElementById("outside-scene-options-modal-action").innerHTML = "K Cool"
-            document.getElementById("outside-scene-options-modal-action").setAttribute("data-dismiss", "modal")
+            document.getElementById("optionsModal-body").innerHTML = OUTSIDE_SCENE["option3-result"]
+            document.getElementById("optionsModal-button").innerHTML = "K Cool"
 
             $('#outside-scene-options-modal').modal('show');
             $("#outsideNofaceSarah").animate({
                 bottom: "0"
-            }, 800);
+            }, 900);
+
+            $("#optionsModal-button").click(function () {
+                $('#optionsModal').modal('hide');
+                $("#outsideNofaceSarah").animate({
+                    bottom: "-1000px"
+                }, 1000);
+            })
         })
 
         setTimeout(function () {

@@ -47,12 +47,13 @@ var bedroomMorning2Options = createOptions(
 bedroomMorning2Options.style.top = "35%"
 bedroomMorning2Options.style.left = "-1000px"
 
-for (var i = 0; i <= 2; i++) {
-    modalID = "bedroom-morning-2-options-" + i + "-modal"
-    createModal(modalID, BEDROOM_MORNING_2["resultFail"], "news-goth-std", "K Cool")
-    document.getElementById(modalID + "-action").setAttribute("data-dismiss", "modal")
-}
-createModal("bedroom-morning-2-options-3-modal", BEDROOM_MORNING_2["resultPass"], "news-goth-std", "Lets YEET")
+document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultFail"]
+document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
+document.getElementById("optionsModal-button").setAttribute("data-dismiss", "modal")
+document.getElementById("optionsModal-button").innerHTML = "K Cool"
+document.getElementById("optionsModal-button").fontFamily = "news-goth-std"
+
+// createModal("bedroom-morning-2-options-3-modal", BEDROOM_MORNING_2["resultPass"], "news-goth-std", "Lets YEET")
 
 bedroomMorning2Texts.appendChild(bedroomMorning2Story)
 bedroomMorning2Texts.appendChild(bedroomMorning2Continue)
@@ -95,7 +96,7 @@ var outsideSceneOptions = createOptions(
     "1.8vw"
 )
 outsideSceneOptions.style.top = "-1000px"
-createModal("outside-scene-options-modal", "", "news-goth-std", "")
+// createModal("outside-scene-options-modal", "", "news-goth-std", "")
 
 var outsideHowlSarah = createSarah("outsideHowlSarah", "url('images/outside_howl_sarah.png')")
 outsideHowlSarah.style.bottom = "-1000px";

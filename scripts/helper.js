@@ -66,7 +66,7 @@ function createOptions(optionsBlockID, options, fontFamily, fontSize) {
         optionID = optionsBlockID + "-" + i
         option.setAttribute("id", optionID)
         option.setAttribute("data-toggle", "modal")
-        option.setAttribute("data-target", "#" + optionID + "-modal")
+        option.setAttribute("data-target", "#optionsModal")
         option.className = "option";
         option.innerHTML = "&#x02281; " + options[i]
         optionsDiv.appendChild(option)
