@@ -2,6 +2,7 @@ canvas = document.getElementById("canvas")
 canvas.appendChild(bedroomMorning)
 canvas.appendChild(coffeeScene)
 canvas.appendChild(bedroomMorning2)
+canvas.appendChild(bedroomMorning3)
 canvas.appendChild(sky1)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
@@ -67,6 +68,23 @@ $(document).ready(function () {
 
 
     // ============= BEDROOM MORNING 2 ================
+    $("#bedroom-morning-2-options-3-modal-action").click(function () {
+        $('#bedroom-morning-2-options-3-modal').modal('hide');
+        $("#bedroom-morning-3").fadeIn(900);
+        $("#bedroomMorningSarah-3").animate({
+            right: "0"
+        }, 3000)
+
+        $("#bedroomMorningSarah-3").css({
+            "animation": "shake 0.5s",
+            "animation-delay": "5s",
+            "animation-iteration-count": "infinite"
+        })
+
+        setTimeout(function () {
+            $("#bedroomMorning3Texts").css("opacity", 1);
+        }, 8000);
+    });
 
     // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {

@@ -4,5 +4,11 @@ BEDROOM_MORNING_2 = {
     "option2": "A cute frilly dress, perfect for frolicking in meadows.",
     "option3": "A bikini. (you gotta seduce Howl somehow).",
     "option4": "Completely, irrevocably naked.",
-    "resultFail": "You try to wear the clothes, but they slip off of your stick-thin body onto the floor."
+    "resultFail": "You try to wear the clothes, but they slip off of your stick-thin body onto the floor.",
+    "resultPass": "You are a stick (wo)man. You do not need clothes. Perfect."
+}
+
+BEDROOM_MORNING_3 = {
+    "story1": "As Sarah finishes choosing her outfit, she notices something amiss… Her cat seems to be gone!",
+    "story2": "Panicking, she searches around the house, but can not even find a single trace of her cat."
 }
