@@ -19,6 +19,7 @@ sky1texts.style.alignItems = "center"
 var sky1sarah = document.createElement("div")
 sky1sarah.setAttribute("id", 'sky1sarah')
 sky1sarah.style.backgroundImage = "url('images/sky_1_sarah.png')"
+sky1sarah.style.backgroundRepeat = "no-repeat"
 sky1sarah.style.width = "100%"
 sky1sarah.style.position = "relative"
 sky1sarah.style.left = "-800px"
@@ -50,14 +51,25 @@ forest1.style.zIndex = 2;
 forest1.className = "scene"
 
 var forest1texts = document.createElement("div")
+forest1texts.setAttribute('id', 'forest1texts')
 forest1texts.className = "text-block bottom-centered"
 forest1texts.style.fontSize = "1.9vw";
 forest1texts.style.fontFamily = "NorthwoodHigh"
+forest1texts.style.opacity = "0";
+forest1texts.style.flexDirection = "column"
+forest1texts.style.alignItems = "center"
+
+var forest1sarah_1 = document.createElement("div")
+forest1sarah_1.setAttribute("id", 'forest1sarah-1')
+forest1sarah_1.style.backgroundImage = "url('images/forest_1_sarah-1.png')"
+forest1sarah_1.style.width = "100%"
+forest1sarah_1.style.position = "relative"
+forest1sarah_1.style.bottom = "150px"
 
 var forest1story = document.createElement("p")
 forest1story.setAttribute("id", "forest-1-story");
 forest1story.innerHTML = "The boat takes Sarah to a dark forest"
-forest1story.className = "story"
+forest1story.className = "story w3-animate-opacity"
 
 var forest1continue = document.createElement("button")
 forest1continue.setAttribute("id", "forest1continue")
@@ -71,6 +83,7 @@ centerForest1Texts.appendChild(forest1story);
 centerForest1Texts.appendChild(forest1continue);
 
 forest1texts.appendChild(centerForest1Texts)
+forest1.appendChild(forest1sarah_1)
 forest1.appendChild(forest1texts)
 
 

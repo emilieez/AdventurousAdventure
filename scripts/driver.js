@@ -18,9 +18,16 @@ $(document).ready(function () {
 
     $("#sky1continue").click(function () {
         $("#forest-1").fadeIn(1000);
+
+        for (var i = 0; i < 3; i++) {
+            $("#forest1sarah-1").animate({ bottom: '+=' + '30px' }, 300);
+            $("#forest1sarah-1").animate({ bottom: '-=' + '30px' }, 300);
+        }
+
         setTimeout(function () {
-            forest1continue.style.display = "block";
-        }, 2000);
+            $("#forest1texts").css("opacity", 1);
+            $("#forest1continue").fadeIn(6000);
+        }, 2100);
     });
 
     $("#forest1continue").click(function () {
