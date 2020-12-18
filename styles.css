@@ -104,7 +104,10 @@ html {
 
 .option {
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.7vw;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    margin: 10px 20px;
 }
 
 .option:hover {
