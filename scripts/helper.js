@@ -25,7 +25,7 @@ function createSarah(sarahID, sarahImg) {
     sarah.setAttribute("id", sarahID)
     sarah.style.backgroundImage = sarahImg
     sarah.style.backgroundRepeat = "no-repeat"
-    sarah.style.width = "100%"
+    sarah.style.width = "inherit"
     sarah.style.position = "relative"
     return sarah
 }
