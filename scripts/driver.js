@@ -16,6 +16,7 @@ $(document).ready(function () {
 
     // ============= BEDROOM MORNING ================
     $("#startBtn").click(function () {
+        $("#startBtn").hide();
 
         $("#bedroom-morning").fadeIn(1000);
 
@@ -37,6 +38,7 @@ $(document).ready(function () {
     });
 
     $("#bedroomMorningContinue").click(function () {
+        $("#bedroom-morning").hide();
         $("#coffee-scene").fadeIn(900);
         setTimeout(function () {
             $("#coffeeTexts").css("opacity", 1);
@@ -48,6 +50,7 @@ $(document).ready(function () {
 
     // ====================== COFFEE ================
     $("#coffeeSceneContinue").click(function () {
+        $("#coffee-scene").hide();
         $("#bedroom-morning-2").fadeIn(900);
 
         $("#bedroom-morning-2-options-3").click(function () {
@@ -62,6 +65,7 @@ $(document).ready(function () {
             $("#optionsModal-button").click(function () {
                 $('#bedroom-morning-2-options-3-modal').modal('hide');
                 document.getElementById("modal-cancel-button").style.display = "none"
+                $("#bedroom-morning").hide();
                 $("#bedroom-morning-3").fadeIn(900);
                 $("#bedroomMorningSarah-3").animate({
                     right: "0"

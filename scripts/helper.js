@@ -47,7 +47,7 @@ function createContinueBtn(continueID, fontFamily) {
     continueBtn.innerHTML = "&#x02281; Continue"
     continueBtn.style.display = "none"
     continueBtn.style.color = "white"
-    continueBtn.style.fontSize = "2vw"
+    continueBtn.style.fontSize = "1.5vw"
     return continueBtn
 }
 
