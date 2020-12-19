@@ -33,6 +33,10 @@ $(document).ready(function () {
 
         setTimeout(function () {
             $("#bedroomMorningTexts").css("opacity", 1);
+            $("#whatCastle").animate({
+                "transform": "scale(1.5)",
+                "opacity": "1"
+            }, 800)
             $("#bedroomMorningContinue").fadeIn(3000);
         }, 3500);
     });

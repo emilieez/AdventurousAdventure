@@ -8,10 +8,15 @@ bedroomMorningContinue.style.zIndex = 1;
 var bedroomMorningSarah1 = createSarah("bedroomMorningSarah_1", "url('images/bedroom_morning_sarah-1.png')")
 bedroomMorningSarah1.style.transform = "rotate(300deg)"
 
+
+var whatCastle = createSarah("whatCastle", "url('images/boom.png')")
+whatCastle.style.opacity = "0"
+
 bedroomMorningTexts.appendChild(bedroomMorningStory)
 bedroomMorningTexts.appendChild(bedroomMorningContinue)
 bedroomMorning.appendChild(bedroomMorningTexts)
 bedroomMorning.appendChild(bedroomMorningSarah1)
+bedroomMorning.appendChild(whatCastle)
 
 
 
