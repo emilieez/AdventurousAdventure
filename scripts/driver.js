@@ -64,8 +64,10 @@ $(document).ready(function () {
             // ============= BEDROOM MORNING 2 ================
             $("#optionsModal-button").click(function () {
                 $('#bedroom-morning-2-options-3-modal').modal('hide');
+                $("#bedroom-morning-2").hide();
                 document.getElementById("modal-cancel-button").style.display = "none"
                 $("#bedroom-morning").hide();
+
                 $("#bedroom-morning-3").fadeIn(900);
                 $("#bedroomMorningSarah-3").animate({
                     right: "0"
@@ -101,6 +103,7 @@ $(document).ready(function () {
 
     // ========================================= OUTSIDE =============================================
     $("#bedroomMorning3Continue").click(function () {
+        $("#bedroom-morning-3").hide()
         $("#outside-scene").fadeIn(900);
         $("#bedroomMorningSarah-3").css({
             "animation": "none"
@@ -182,6 +185,7 @@ $(document).ready(function () {
             $("#optionsModal-button").click(function () {
                 $('#optionsModal').modal('hide');
                 document.getElementById("modal-cancel-button").style.display = "none"
+                $("#outside-scene").hide();
 
                 // =============================== ALLEY =================================
                 $("#alley-scene").fadeIn(900)
@@ -202,6 +206,7 @@ $(document).ready(function () {
     });
 
     $("#alleySceneContinue").click(function () {
+        $("#alley-scene").hide();
         $("#sky-1").fadeIn(1000);
         $("#sky1sarah").animate({
             left: "0"
@@ -216,6 +221,7 @@ $(document).ready(function () {
 
     // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {
+        $("#sky-1"), hide();
         $("#liftoff").fadeIn(900)
         $("#liftoffSarah").css({
             "animation": "swinging 4s",
@@ -247,6 +253,7 @@ $(document).ready(function () {
 
     // ============= SKY SCENE CAT MOUNTAIN ================
     $("#liftoffContinue").click(function () {
+        $("#liftoff").hide()
         $("#catMountain").fadeIn(900)
         $("#catMountainSarah").css({
             "animation": "swinging 4s",

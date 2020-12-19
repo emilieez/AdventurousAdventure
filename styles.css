@@ -14,7 +14,8 @@ p {
     align-items: center;
     justify-content: center;
     max-width: 2560px;
-    height: inherit;
+    min-height: 900px;
+    max-height: 1600px;
     position: fixed;
     min-width: 1400px;
 }
@@ -44,9 +45,9 @@ p {
 .scene {
     display: flex;
     height: 100%;
-    position: relative;
+    position: absolute;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
 }
 
 .btn {
