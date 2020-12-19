@@ -23,6 +23,7 @@ var liftoff = createScene("liftoff", "url('images/liftoff.png')", 2)
 var liftoffTexts = createTextBlock("liftoffTexts", "bottom-centered", "1.5vw", "news-gothic-std")
 
 var liftoffSarah = createSarah("liftoffSarah", "url('images/liftoff_sarah.png')")
+var whatCatMountain = createSarah("whatCatMountain", "url('images/show.png')")
 
 var liftoffStory = createStory("liftoff-story", LIFTOFF["story"])
 
@@ -32,6 +33,7 @@ liftoffContinue.style.zIndex = 2;
 liftoffTexts.appendChild(liftoffStory);
 liftoffTexts.appendChild(liftoffContinue)
 liftoff.appendChild(liftoffSarah)
+liftoff.appendChild(whatCatMountain)
 liftoff.appendChild(liftoffTexts)
 
 

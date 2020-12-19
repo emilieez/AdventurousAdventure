@@ -240,6 +240,11 @@ $(document).ready(function () {
             "animation-delay": "1s",
             "animation-iteration-count": "infinite"
         });
+        $("#whatCatMountain").css({
+            "animation": "blink 3s",
+            "animation-delay": "1s",
+            "animation-iteration-count": "infinite"
+        });
 
         setTimeout(function () {
             $("#liftoffTexts").css("opacity", 1);
