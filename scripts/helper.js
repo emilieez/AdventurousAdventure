@@ -2,6 +2,8 @@ function createScene(sceneID, sceneBg, zIndex) {
     var scene = document.createElement("div")
     scene.setAttribute('id', sceneID)
     scene.style.display = "none"
+    scene.style.backgroundRepeat = "no-repeat"
+    scene.style.backgroundSize = "contain"
     scene.style.backgroundImage = sceneBg
     scene.style.zIndex = zIndex;
     scene.className = "scene"

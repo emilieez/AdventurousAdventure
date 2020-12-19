@@ -97,6 +97,9 @@ html {
     right: 0;
     left: 0;
     bottom: 5%;
+    margin: auto;
+    bottom: 5%;
+}
 }
 
 .centered {
@@ -125,10 +128,9 @@ html {
 
 .story {
     overflow: hidden; 
-    white-space: nowrap; 
+    white-space: pre-wrap; 
     margin: 0 auto; 
-    animation: typing 3.5s steps(40, end);
-    animation-delay: 1.5s;
+    animation: fade 2.5s;
 }
 
 @keyframes typing {
