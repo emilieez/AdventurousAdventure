@@ -44,10 +44,13 @@ p {
 
 .scene {
     display: flex;
-    height: 100%;
     position: absolute;
     width: 100%;
     background-size: contain;
+    max-width: 2560px;
+    background-size: contain;
+    min-width: 1400px;
+    min-height: 900px;
 }
 
 .btn {

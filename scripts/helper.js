@@ -28,8 +28,11 @@ function createSarah(sarahID, sarahImg) {
     sarah.style.backgroundImage = sarahImg
     sarah.style.backgroundRepeat = "no-repeat"
     sarah.style.backgroundSize = "contain"
-    sarah.style.width = "inherit"
-    sarah.style.position = "relative"
+    sarah.style.maxWidth = "2560px"
+    sarah.style.maxHeight = "1600px"
+    sarah.style.minWidth = "1400px"
+    sarah.style.minHeight = "900px"
+    sarah.style.position = "absolute"
     return sarah
 }
 
