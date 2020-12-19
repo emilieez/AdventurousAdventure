@@ -36,7 +36,8 @@ var bedroomMorning2Continue = createContinueBtn("bedroomMorning2Continue", "news
 bedroomMorning2Continue.style.zIndex = 1;
 
 var bedroomMorning2Sarah = createSarah("bedroomMorningSarah-2", "url('images/bedroom_morning_sarah-2.png')")
-bedroomMorning2Sarah.style.right = "-1000px"
+bedroomMorning2Sarah.style.right = "-300px"
+bedroomMorning2Sarah.style.opacity = 0
 
 var bedroomMorning2Options = createOptions(
     "bedroom-morning-2-options",
@@ -44,8 +45,9 @@ var bedroomMorning2Options = createOptions(
     "news-goth-std",
     "1.5vw"
 )
-bedroomMorning2Options.style.top = "35%"
-bedroomMorning2Options.style.left = "-2000px"
+bedroomMorning2Options.style.top = "25%"
+bedroomMorning2Options.style.left = "-50px"
+bedroomMorning2Options.style.opacity = "0"
 
 document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultFail"]
 document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
@@ -74,7 +76,8 @@ var bedroomMorning3Continue = createContinueBtn("bedroomMorning3Continue", "news
 bedroomMorning3Continue.style.zIndex = 1;
 
 var bedroomMorning3Sarah = createSarah("bedroomMorningSarah-3", "url('images/bedroom_morning_sarah-3.png')")
-bedroomMorning3Sarah.style.right = "-400px"
+bedroomMorning3Sarah.style.right = "-3000px"
+bedroomMorning3Sarah.style.opacity = 0
 
 bedroomMorning3Texts.appendChild(bedroomMorning3Story1)
 bedroomMorning3Texts.appendChild(bedroomMorning3Story2)
@@ -95,7 +98,8 @@ var outsideSceneOptions = createOptions(
     "news-goth-std",
     "1.5vw"
 )
-outsideSceneOptions.style.top = "-1000px"
+outsideSceneOptions.style.top = "-100px"
+outsideSceneOptions.style.opacity = 0
 
 var outsideHowlSarah = createSarah("outsideHowlSarah", "url('images/outside_howl_sarah.png')")
 outsideHowlSarah.style.bottom = "-1000px";
