@@ -41,3 +41,7 @@ SKY_SCENE_1 = {
 CAT_MOUNTAIN = {
     "story": "Arriving near the cat mountain, she looks around for a decent place to land"
 }
+
+FOREST_1 = {
+    "story": "The boat takes sarah to a dark forest"
+}

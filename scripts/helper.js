@@ -75,3 +75,10 @@ function createOptions(optionsBlockID, options, fontFamily, fontSize) {
     }
     return optionsDiv
 }
+
+function updown(elmnt) {
+    for (var i = 0; i < 3; i++) {
+        $(`#${elmnt}`).animate({ bottom: '+=' + '30px' }, 300);
+        $(`#${elmnt}`).animate({ bottom: '-=' + '30px' }, 300);
+    }
+}

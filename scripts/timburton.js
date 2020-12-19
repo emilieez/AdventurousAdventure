@@ -2,32 +2,13 @@
 var forest1 = createScene("forest-1", "url('images/forest_1.jpg')", 3)
 var forest1texts = createTextBlock("forest1texts", "bottom-centered", "1.5vw", "NorthwoodHigh")
 
-var forest1sarah_1 = document.createElement("div")
-forest1sarah_1.setAttribute("id", 'forest1sarah-1')
-forest1sarah_1.style.backgroundImage = "url('images/forest_1_sarah-1.png')"
-forest1sarah_1.style.width = "100%"
-forest1sarah_1.style.position = "relative"
-forest1sarah_1.style.bottom = "150px"
-
-var forest1sarah_2 = document.createElement("div")
-forest1sarah_2.setAttribute("id", 'forest1sarah-2')
-forest1sarah_2.style.backgroundImage = "url('images/forest_1_sarah-2.png')"
-forest1sarah_2.style.width = "100%"
-forest1sarah_2.style.position = "relative"
-forest1sarah_2.style.bottom = "200px"
+var forest1sarah_1 = createSarah("forest1sarah-1", "url('images/forest_1_sarah-1.png')")
+var forest1sarah_2 = createSarah("forest1sarah-2", "url('images/forest_1_sarah-2.png')")
 forest1sarah_2.style.display = "none"
 
-var forest1story = document.createElement("p")
-forest1story.setAttribute("id", "forest-1-story");
-forest1story.innerHTML = "The boat takes Sarah to a dark forest"
-forest1story.className = "story w3-animate-opacity"
+var forest1story = createStory("forest-1-story", FOREST_1["story"])
 
-var forest1continue = document.createElement("button")
-forest1continue.setAttribute("id", "forest1continue")
-forest1continue.className = "btn option"
-forest1continue.style.fontFamily = "NorthwoodHigh"
-forest1continue.innerHTML = "&#x02281; Continue"
-forest1continue.style.display = "none"
+var forest1continue = createContinueBtn("forest1continue")
 
 var centerForest1Texts = document.createElement("center")
 centerForest1Texts.appendChild(forest1story);

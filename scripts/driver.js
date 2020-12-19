@@ -235,20 +235,6 @@ $(document).ready(function () {
             $("#liftoffTexts").css("opacity", 1);
             $("#liftoffContinue").fadeIn(6000);
         }, 3000);
-
-        // $("#forest-1").fadeIn(900);
-
-        // setTimeout(function () {
-        //     for (var i = 0; i < 3; i++) {
-        //         $("#forest1sarah-1").animate({ bottom: '+=' + '30px' }, 300);
-        //         $("#forest1sarah-1").animate({ bottom: '-=' + '30px' }, 300);
-        //     }
-        // }, 1000)
-
-        // setTimeout(function () {
-        //     $("#forest1texts").css("opacity", 1);
-        //     $("#forest1continue").fadeIn(6000);
-        // }, 2100);
     });
 
 
@@ -269,7 +255,19 @@ $(document).ready(function () {
         }, 3000);
     });
 
+    $("#catMountainContinue").click(function () {
+        $("#catMountain").fadeOut(1000);
+        $("#forest-1").fadeIn(900);
 
+        setTimeout(function () {
+            updown("forest1sarah-1")
+        }, 1000)
+
+        setTimeout(function () {
+            $("#forest1texts").css("opacity", 1);
+            $("#forest1continue").fadeIn(6000);
+        }, 2100);
+    });
 
 
     $("#forest1continue").click(function () {

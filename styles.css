@@ -28,7 +28,7 @@ p {
     border: none;
 }
 
-#startBtn:hover {
+#startBtn:hover, .btn:hover {
     color: black;
 }
 

@@ -9,7 +9,7 @@ sky1sarah.style.left = "-800px"
 var sky1story = createStory("sky-1-story", SKY_SCENE_1["story"])
 
 var sky1continue = createContinueBtn("sky1continue", "news-gothic-std")
-sky1continue.style.zIndex = 1;
+sky1continue.style.zIndex = 2;
 
 sky1texts.appendChild(sky1story);
 sky1texts.appendChild(sky1continue)
@@ -26,7 +26,7 @@ var liftoffSarah = createSarah("liftoffSarah", "url('images/liftoff_sarah.png')"
 var liftoffStory = createStory("liftoff-story", LIFTOFF["story"])
 
 var liftoffContinue = createContinueBtn("liftoffContinue", "news-gothic-std")
-liftoffContinue.style.zIndex = 1;
+liftoffContinue.style.zIndex = 2;
 
 liftoffTexts.appendChild(liftoffStory);
 liftoffTexts.appendChild(liftoffContinue)
@@ -44,7 +44,7 @@ var catMountainSarah = createSarah("catMountainSarah", "url('images/cat_mountain
 var catMountainStory = createStory("catMountain-story", CAT_MOUNTAIN["story"])
 
 var catMountainContinue = createContinueBtn("catMountainContinue", "news-gothic-std")
-catMountainContinue.style.zIndex = 1;
+catMountainContinue.style.zIndex = 2;
 
 catMountainTexts.appendChild(catMountainStory);
 catMountainTexts.appendChild(catMountainContinue)
