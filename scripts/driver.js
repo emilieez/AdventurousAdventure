@@ -125,17 +125,17 @@ $(document).ready(function () {
 
             $("#outsideHowlSarah").css("display", "block")
             $("#outsideHowlSarah").animate({
-                bottom: "0"
+                bottom: "0", opacity: 1
             }, 500);
 
             $("#optionsModal-button").click(function () {
                 $('#optionsModal').modal('hide');
                 $("#outsideHowlSarah").animate({
-                    bottom: "-1000px"
-                }, 1000);
+                    bottom: "-100px", opacity: "0"
+                }, 500);
                 setTimeout(function () {
                     $("#outsideHowlSarah").css("display", "none")
-                }, 1000)
+                }, 500)
             })
         })
 
@@ -145,17 +145,18 @@ $(document).ready(function () {
 
             $("#outsideCatbusSarah").css("display", "block")
             $("#outsideCatbusSarah").animate({
-                bottom: "0"
+                bottom: "0", opacity: 1
             }, 500);
 
             $("#optionsModal-button").click(function () {
                 $('#optionsModal').modal('hide');
                 $("#outsideCatbusSarah").animate({
-                    bottom: "-1000px"
-                }, 1000);
+                    bottom: "-100px",
+                    opacity: 0
+                }, 500);
                 setTimeout(function () {
                     $("#outsideCatbusSarah").css("display", "none")
-                }, 1000)
+                }, 500)
             })
         })
 
@@ -165,17 +166,17 @@ $(document).ready(function () {
 
             $("#outsideNofaceSarah").css("display", "block")
             $("#outsideNofaceSarah").animate({
-                bottom: "0"
+                bottom: "0", opacity: 1
             }, 500);
 
             $("#optionsModal-button").click(function () {
                 $('#optionsModal').modal('hide');
                 $("#outsideNofaceSarah").animate({
-                    bottom: "-1000px"
-                }, 1000);
+                    bottom: "-100px", opacity: 0
+                }, 500);
                 setTimeout(function () {
                     $("#outsideNofaceSarah").css("display", "none")
-                }, 1000)
+                }, 500)
             })
         })
 

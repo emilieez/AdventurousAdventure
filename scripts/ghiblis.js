@@ -102,16 +102,19 @@ outsideSceneOptions.style.top = "-100px"
 outsideSceneOptions.style.opacity = 0
 
 var outsideHowlSarah = createSarah("outsideHowlSarah", "url('images/outside_howl_sarah.png')")
-outsideHowlSarah.style.bottom = "-1000px";
+outsideHowlSarah.style.bottom = "-100px";
 outsideHowlSarah.style.display = "none";
+outsideHowlSarah.style.opacity = 0;
 
 var outsideNofaceSarah = createSarah("outsideNofaceSarah", "url('images/outside_noface_sarah.png')")
-outsideNofaceSarah.style.bottom = "-1000px";
+outsideNofaceSarah.style.bottom = "-100px";
 outsideNofaceSarah.style.display = "none";
+outsideNofaceSarah.style.opacity = 0;
 
 var outsideCatbusSarah = createSarah("outsideCatbusSarah", "url('images/outside_catbus_sarah.png')")
-outsideCatbusSarah.style.bottom = "-1000px";
+outsideCatbusSarah.style.bottom = "-100px";
 outsideCatbusSarah.style.display = "none";
+outsideCatbusSarah.style.opacity = 0;
 
 outsideSceneTexts.appendChild(outsideSceneStory)
 outsideScene.appendChild(outsideSceneTexts)
