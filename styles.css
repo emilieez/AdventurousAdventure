@@ -4,14 +4,19 @@ html {
     margin: 0;
 }
 
+p {
+    text-align: center;
+}
+
 #canvas {
     background-color: #333333;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 2560px;
     height: inherit;
     position: fixed;
+    min-width: 1400px;
 }
 
 #startBtn {
@@ -39,7 +44,7 @@ html {
 .scene {
     display: flex;
     height: 100%;
-    position: absolute;
+    position: relative;
     width: 100%;
     background-size: cover;
 }
@@ -127,10 +132,11 @@ html {
 }
 
 .story {
-    overflow: hidden; 
+    /* overflow: hidden;  */
     white-space: pre-wrap; 
     margin: 0 auto; 
     animation: fade 2.5s;
+    word-wrap: break-word;
 }
 
 @keyframes typing {
