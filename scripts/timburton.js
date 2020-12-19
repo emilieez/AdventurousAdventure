@@ -1,6 +1,6 @@
 // ============= FOREST SCENE 1 ================
 var forest1 = createScene("forest-1", "url('images/forest_1.jpg')", 3)
-var forest1texts = createTextBlock("forest1texts", "bottom-centered", "1.1vw", "NorthwoodHigh")
+var forest1texts = createTextBlock("forest1texts", "bottom-centered", "1.5vw", "NorthwoodHigh")
 
 var forest1sarah_1 = document.createElement("div")
 forest1sarah_1.setAttribute("id", 'forest1sarah-1')
