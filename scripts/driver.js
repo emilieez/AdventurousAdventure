@@ -33,16 +33,6 @@ $(document).ready(function () {
             $("#bedroomMorningTexts").css("opacity", 1);
             $("#bedroomMorningContinue").fadeIn(6000);
         }, 3500);
-
-        // $("#sky-1").fadeIn(1000);
-        // $("#sky1sarah").animate({
-        //     left: "0"
-        // }, 5000)
-
-        // setTimeout(function () {
-        //     $("#sky1texts").css("opacity", 1);
-        //     $("#sky1continue").fadeIn(6000);
-        // }, 3500);
     });
 
     $("#bedroomMorningContinue").click(function () {
@@ -206,19 +196,32 @@ $(document).ready(function () {
         }, 5000);
     });
 
+    $("#alleySceneContinue").click(function () {
+        $("#sky-1").fadeIn(1000);
+        $("#sky1sarah").animate({
+            left: "0"
+        }, 5000)
+
+        setTimeout(function () {
+            $("#sky1texts").css("opacity", 1);
+            $("#sky1continue").fadeIn(6000);
+        }, 3500);
+    })
 
 
     // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {
         $("#liftoff").fadeIn(900)
         $("#liftoffSarah").css({
-            "animation": "swinging 3.5s ease-in-out forwards infinite;"
+            "animation": "swinging 4s",
+            "animation-delay": "1s",
+            "animation-iteration-count": "infinite"
         });
 
         setTimeout(function () {
             $("#liftoffTexts").css("opacity", 1);
             $("#liftoffContinue").fadeIn(6000);
-        }, 5000);
+        }, 3000);
 
         // $("#forest-1").fadeIn(900);
 

@@ -11,12 +11,8 @@ sky1story.setAttribute("id", "sky-1-story");
 sky1story.innerHTML = "Still on the mission to find her cat, Sarah searches one island and finds nothing. She decides to explore the islands in hopes of finding her cat."
 sky1story.className = "story w3-animate-opacity"
 
-var sky1continue = document.createElement("button")
-sky1continue.setAttribute("id", "sky1continue")
-sky1continue.className = "btn option"
-sky1continue.style.fontFamily = "news-gothic-std"
-sky1continue.innerHTML = "&#x02281; Continue"
-sky1continue.style.display = "none"
+var sky1continue = createContinueBtn("sky1continue", "news-gothic-std")
+sky1continue.style.zIndex = 1;
 
 sky1texts.appendChild(sky1story);
 sky1texts.appendChild(sky1continue)
@@ -35,12 +31,8 @@ liftoffStory.setAttribute("id", "sky-1-story");
 liftoffStory.innerHTML = LIFTOFF["story"]
 liftoffStory.className = "story w3-animate-opacity"
 
-var liftoffContinue = document.createElement("button")
-liftoffContinue.setAttribute("id", "sky1continue")
-liftoffContinue.className = "btn option"
-liftoffContinue.style.fontFamily = "news-gothic-std"
-liftoffContinue.innerHTML = "&#x02281; Continue"
-liftoffContinue.style.display = "none"
+var liftoffContinue = createContinueBtn("liftoffContinue", "news-gothic-std")
+liftoffContinue.style.zIndex = 1;
 
 liftoffTexts.appendChild(liftoffStory);
 liftoffTexts.appendChild(liftoffContinue)
