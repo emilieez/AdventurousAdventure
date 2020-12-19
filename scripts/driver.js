@@ -183,6 +183,8 @@ $(document).ready(function () {
             document.getElementById("optionsModal-button").innerHTML = "Lets YEET"
 
             $("#optionsModal-button").click(function () {
+                $("#bedroom-morning-3").hide()
+
                 $('#optionsModal').modal('hide');
                 document.getElementById("modal-cancel-button").style.display = "none"
                 $("#outside-scene").hide();
@@ -221,7 +223,7 @@ $(document).ready(function () {
 
     // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {
-        $("#sky-1"), hide();
+        $("#sky-1").hide();
         $("#liftoff").fadeIn(900)
         $("#liftoffSarah").css({
             "animation": "swinging 4s",
