@@ -6,10 +6,7 @@ var sky1texts = createTextBlock("sky1texts", "bottom-centered", "1.5vw", "news-g
 var sky1sarah = createSarah("sky1sarah", "url('images/sky_1_sarah.png')")
 sky1sarah.style.left = "-800px"
 
-var sky1story = document.createElement("p")
-sky1story.setAttribute("id", "sky-1-story");
-sky1story.innerHTML = "Still on the mission to find her cat, Sarah searches one island and finds nothing. She decides to explore the islands in hopes of finding her cat."
-sky1story.className = "story w3-animate-opacity"
+var sky1story = createStory("sky-1-story", SKY_SCENE_1["story"])
 
 var sky1continue = createContinueBtn("sky1continue", "news-gothic-std")
 sky1continue.style.zIndex = 1;
@@ -26,10 +23,7 @@ var liftoffTexts = createTextBlock("liftoffTexts", "bottom-centered", "1.5vw", "
 
 var liftoffSarah = createSarah("liftoffSarah", "url('images/liftoff_sarah.png')")
 
-var liftoffStory = document.createElement("p")
-liftoffStory.setAttribute("id", "sky-1-story");
-liftoffStory.innerHTML = LIFTOFF["story"]
-liftoffStory.className = "story w3-animate-opacity"
+var liftoffStory = createStory("liftoff-story", LIFTOFF["story"])
 
 var liftoffContinue = createContinueBtn("liftoffContinue", "news-gothic-std")
 liftoffContinue.style.zIndex = 1;
@@ -38,3 +32,21 @@ liftoffTexts.appendChild(liftoffStory);
 liftoffTexts.appendChild(liftoffContinue)
 liftoff.appendChild(liftoffSarah)
 liftoff.appendChild(liftoffTexts)
+
+
+
+// ============= SKY SCENE CAT MOUNTAIN ================
+var catMountain = createScene("catMountain", "url('images/cat_mountain.png')", 2)
+var catMountainTexts = createTextBlock("catMountainTexts", "bottom-centered", "1.5vw", "news-gothic-std")
+
+var catMountainSarah = createSarah("catMountainSarah", "url('images/cat_mountain_sarah.png')")
+
+var catMountainStory = createStory("catMountain-story", CAT_MOUNTAIN["story"])
+
+var catMountainContinue = createContinueBtn("catMountainContinue", "news-gothic-std")
+catMountainContinue.style.zIndex = 1;
+
+catMountainTexts.appendChild(catMountainStory);
+catMountainTexts.appendChild(catMountainContinue)
+catMountain.appendChild(catMountainSarah)
+catMountain.appendChild(catMountainTexts)

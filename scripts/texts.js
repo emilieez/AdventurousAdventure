@@ -33,3 +33,11 @@ ALLEY_SCENE = {
 LIFTOFF = {
     "story": "Lifting off she activates her cape and soars through the sky passing by islands and landing her eye on the island which reminds her of a cat "
 }
+
+SKY_SCENE_1 = {
+    "story": "Still on the mission to find her cat, Sarah searches one island and finds nothing. She decides to explore the islands in hopes of finding her cat."
+}
+
+CAT_MOUNTAIN = {
+    "story": "Arriving near the cat mountain, she looks around for a decent place to land"
+}

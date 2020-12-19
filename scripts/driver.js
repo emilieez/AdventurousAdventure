@@ -7,6 +7,7 @@ canvas.appendChild(outsideScene)
 canvas.appendChild(alleyScene)
 canvas.appendChild(sky1)
 canvas.appendChild(liftoff)
+canvas.appendChild(catMountain)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
 
@@ -237,6 +238,26 @@ $(document).ready(function () {
         //     $("#forest1continue").fadeIn(6000);
         // }, 2100);
     });
+
+
+
+    // ============= SKY SCENE CAT MOUNTAIN ================
+    $("#liftoffContinue").click(function () {
+        $("#catMountain").fadeIn(900)
+        $("#catMountainSarah").css({
+            "animation": "swinging 4s",
+            "animation-delay": "1s",
+            "animation-iteration-count": "infinite"
+        });
+
+        setTimeout(function () {
+            $("#catMountainTexts").css("opacity", 1);
+            $("#catMountainContinue").fadeIn(6000);
+        }, 3000);
+    });
+
+
+
 
     $("#forest1continue").click(function () {
         $("#forest1texts").fadeOut();
