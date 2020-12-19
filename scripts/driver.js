@@ -197,13 +197,13 @@ $(document).ready(function () {
                 // =============================== ALLEY =================================
                 $("#alley-scene").fadeIn(900)
                 $("#alleySceneSarah").animate({
-                    right: "0px"
-                }, 1000);
+                    right: "0px", opacity: 1
+                }, 500);
 
                 setTimeout(function () {
                     $("#alleySceneTexts").css("opacity", 1);
-                    $("#alleySceneContinue").fadeIn(6000);
-                }, 3000);
+                    $("#alleySceneContinue").fadeIn(3000);
+                }, 1000);
             })
         })
 
@@ -216,8 +216,9 @@ $(document).ready(function () {
         $("#alley-scene").fadeOut(1000);
         $("#sky-1").fadeIn(1000);
         $("#sky1sarah").animate({
-            left: "0"
-        }, 5000)
+            left: "0",
+            opacity: 1
+        }, 2000)
 
         setTimeout(function () {
             $("#sky1texts").css("opacity", 1);

@@ -134,7 +134,8 @@ var alleySceneContinue = createContinueBtn("alleySceneContinue", "news-gothic-st
 alleySceneContinue.style.zIndex = 1;
 
 var alleySceneSarah = createSarah("alleySceneSarah", "url('images/alley_sarah.png')")
-alleySceneSarah.style.right = "-1000px"
+alleySceneSarah.style.right = "-100px"
+alleySceneSarah.style.opacity = 0
 
 alleySceneTexts.appendChild(alleySceneStory)
 alleySceneTexts.appendChild(alleySceneContinue)

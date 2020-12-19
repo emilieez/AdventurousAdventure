@@ -4,7 +4,8 @@ var sky1 = createScene("sky-1", "url('images/sky_1.png')", 2)
 var sky1texts = createTextBlock("sky1texts", "bottom-centered", "1.5vw", "news-gothic-std")
 
 var sky1sarah = createSarah("sky1sarah", "url('images/sky_1_sarah.png')")
-sky1sarah.style.left = "-800px"
+sky1sarah.style.left = "-200px"
+sky1sarah.style.opacity = "0"
 
 var sky1story = createStory("sky-1-story", SKY_SCENE_1["story"])
 
