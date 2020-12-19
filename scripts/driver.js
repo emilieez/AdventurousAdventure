@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 
     $("#bedroomMorningContinue").click(function () {
-        $("#bedroom-morning").hide();
+        $("#bedroom-morning").fadeOut(1000);
         $("#coffee-scene").fadeIn(900);
         setTimeout(function () {
             $("#coffeeTexts").css("opacity", 1);
@@ -50,7 +50,7 @@ $(document).ready(function () {
 
     // ====================== COFFEE ================
     $("#coffeeSceneContinue").click(function () {
-        $("#coffee-scene").hide();
+        $("#coffee-scene").fadeOut(1000)
         $("#bedroom-morning-2").fadeIn(900);
 
         $("#bedroom-morning-2-options-3").click(function () {
@@ -64,7 +64,7 @@ $(document).ready(function () {
             // ============= BEDROOM MORNING 2 ================
             $("#optionsModal-button").click(function () {
                 $('#bedroom-morning-2-options-3-modal').modal('hide');
-                $("#bedroom-morning-2").hide();
+                $("#bedroom-morning-2").fadeOut(1000)
                 document.getElementById("modal-cancel-button").style.display = "none"
                 $("#bedroom-morning").hide();
 
@@ -103,7 +103,7 @@ $(document).ready(function () {
 
     // ========================================= OUTSIDE =============================================
     $("#bedroomMorning3Continue").click(function () {
-        $("#bedroom-morning-3").hide()
+        $("#bedroom-morning-3").fadeOut(1000)
         $("#outside-scene").fadeIn(900);
         $("#bedroomMorningSarah-3").css({
             "animation": "none"
@@ -208,7 +208,7 @@ $(document).ready(function () {
     });
 
     $("#alleySceneContinue").click(function () {
-        $("#alley-scene").hide();
+        $("#alley-scene").fadeOut(1000);
         $("#sky-1").fadeIn(1000);
         $("#sky1sarah").animate({
             left: "0"
@@ -223,7 +223,7 @@ $(document).ready(function () {
 
     // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {
-        $("#sky-1").hide();
+        $("#sky-1").fadeOut(1000)
         $("#liftoff").fadeIn(900)
         $("#liftoffSarah").css({
             "animation": "swinging 4s",
@@ -255,7 +255,7 @@ $(document).ready(function () {
 
     // ============= SKY SCENE CAT MOUNTAIN ================
     $("#liftoffContinue").click(function () {
-        $("#liftoff").hide()
+        $("#liftoff").fadeOut(1000)
         $("#catMountain").fadeIn(900)
         $("#catMountainSarah").css({
             "animation": "swinging 4s",
