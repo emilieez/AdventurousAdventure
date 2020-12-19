@@ -6,6 +6,7 @@ canvas.appendChild(bedroomMorning3)
 canvas.appendChild(outsideScene)
 canvas.appendChild(alleyScene)
 canvas.appendChild(sky1)
+canvas.appendChild(liftoff)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
 
@@ -59,6 +60,9 @@ $(document).ready(function () {
         $("#bedroom-morning-2").fadeIn(900);
 
         $("#bedroom-morning-2-options-3").click(function () {
+            document.getElementById("modal-cancel-button").style.display = "block"
+            document.getElementById("modal-cancel-button").style.fontFamily = "news-gothic-std"
+            document.getElementById("modal-cancel-button").innerHTML = "fu i want clothes"
             document.getElementById("optionsModal-button").innerHTML = BEDROOM_MORNING_2["resultPass-button"]
             document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultPass"]
             $("#optionsModal").modal("show")
@@ -66,6 +70,7 @@ $(document).ready(function () {
             // ============= BEDROOM MORNING 2 ================
             $("#optionsModal-button").click(function () {
                 $('#bedroom-morning-2-options-3-modal').modal('hide');
+                document.getElementById("modal-cancel-button").style.display = "none"
                 $("#bedroom-morning-3").fadeIn(900);
                 $("#bedroomMorningSarah-3").animate({
                     right: "0"
@@ -173,12 +178,15 @@ $(document).ready(function () {
         })
 
         $("#outside-scene-options-3").click(function () {
+            document.getElementById("modal-cancel-button").style.display = "block"
+            document.getElementById("modal-cancel-button").style.fontFamily = "news-gothic-std"
+            document.getElementById("modal-cancel-button").innerHTML = "i don wanna"
             document.getElementById("optionsModal-body").innerHTML = OUTSIDE_SCENE["option4-result"]
             document.getElementById("optionsModal-button").innerHTML = "Lets YEET"
 
             $("#optionsModal-button").click(function () {
                 $('#optionsModal').modal('hide');
-
+                document.getElementById("modal-cancel-button").style.display = "none"
 
                 // =============================== ALLEY =================================
                 $("#alley-scene").fadeIn(900)
@@ -202,19 +210,29 @@ $(document).ready(function () {
 
     // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {
-        $("#forest-1").fadeIn(900);
+        $("#liftoff").fadeIn(900)
+        $("#liftoffSarah").css({
+            "animation": "swinging 3.5s ease-in-out forwards infinite;"
+        });
 
         setTimeout(function () {
-            for (var i = 0; i < 3; i++) {
-                $("#forest1sarah-1").animate({ bottom: '+=' + '30px' }, 300);
-                $("#forest1sarah-1").animate({ bottom: '-=' + '30px' }, 300);
-            }
-        }, 1000)
+            $("#liftoffTexts").css("opacity", 1);
+            $("#liftoffContinue").fadeIn(6000);
+        }, 5000);
 
-        setTimeout(function () {
-            $("#forest1texts").css("opacity", 1);
-            $("#forest1continue").fadeIn(6000);
-        }, 2100);
+        // $("#forest-1").fadeIn(900);
+
+        // setTimeout(function () {
+        //     for (var i = 0; i < 3; i++) {
+        //         $("#forest1sarah-1").animate({ bottom: '+=' + '30px' }, 300);
+        //         $("#forest1sarah-1").animate({ bottom: '-=' + '30px' }, 300);
+        //     }
+        // }, 1000)
+
+        // setTimeout(function () {
+        //     $("#forest1texts").css("opacity", 1);
+        //     $("#forest1continue").fadeIn(6000);
+        // }, 2100);
     });
 
     $("#forest1continue").click(function () {

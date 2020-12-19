@@ -29,3 +29,7 @@ OUTSIDE_SCENE = {
 ALLEY_SCENE = {
     "story": "Inside the alleyway, Sarah sees a faint grey blur behind one of the boxes. She decides to take a closer look."
 }
+
+LIFTOFF = {
+    "story": "Lifting off she activates her cape and soars through the sky passing by islands and landing her eye on the island which reminds her of a cat "
+}
