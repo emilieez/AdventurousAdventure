@@ -27,7 +27,7 @@ forest1.appendChild(forest1texts)
 
 
 // ============= FOREST SCENE 2 ================
-var forest2 = createScene("forest-2", "url('images/forest_2.jpg')", 4)
+var forest2 = createScene("forest-2", "url('images/forest_2.png')", 4)
 
 var forest2texts = createTextBlock("forest2texts", "bottom-centered", STANDARD_FONT_SIZE, "NorthwoodHigh")
 var forest2story1 = createStory("forest-2-story", FOREST_2["story1"])
@@ -60,6 +60,13 @@ forest2featherGlow.style.opacity = 0
 var forest2mushroomGlow = createOverlay("forest2mushroomGlow", "url('images/forest_2_mushroom_glow.png')")
 forest2mushroomGlow.style.opacity = 0
 
+forest2options = createOptions("forest2options", [
+    FOREST_2["feather"], FOREST_2["mushrooms"], FOREST_2["beetle"], FOREST_2["nani"]
+], "NorthwoodHigh", STANDARD_FONT_SIZE)
+forest2options.style.top = "-100px"
+forest2options.style.opacity = 0
+forest2options.style.animation = "none"
+
 forest2texts.appendChild(forest2story1)
 forest2texts.appendChild(forest2story1continue)
 forest2texts.appendChild(forest2story2continue)
@@ -73,3 +80,4 @@ forest2.appendChild(forest2braGlow)
 forest2.appendChild(forest2featherGlow)
 forest2.appendChild(forest2mushroomGlow)
 forest2.appendChild(forest2texts)
+forest2.appendChild(forest2options)

@@ -95,7 +95,7 @@ FOREST_2 = {
     "feather": "the pretty blue feather",
     "feather-result": "Looks like it may be from a Wockingbird (not to be confused with the Mockingbird). Maybe it dropped the feather while frantically fleeing from a certain furry predator...with claws...",
     "mushrooms": "the fat \'n juicy red mushrooms",
-    "mushrroms-result": "They look absolutely delicious and completely untouched—though probably for a good reason.",
+    "mushrooms-result": "They look absolutely delicious and completely untouched—though probably for a good reason.",
     "beetle": "the possibly radioactive rare golden beetle",
     "beetle-result": "Upon closer inspection, it looks like it's just...covered in paint.",
     "nani": "what...even is that?",

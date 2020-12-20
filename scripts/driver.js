@@ -488,7 +488,6 @@ $(document).ready(function () {
         // ============= FOREST SCENE 2 =============================
         $("#forest-2").fadeIn(1000);
 
-
         $('#forest2sarah1').animate({
             "opacity": 1,
             "top": "0px"
@@ -499,4 +498,26 @@ $(document).ready(function () {
             $('#forest2story1continue').fadeIn(6000)
         }, 2000);
     });
+
+
+    // ============= FOREST SCENE 2 =============================
+    $('#forest2story1continue').click(function () {
+        $("#forest-2-story").fadeOut(1000);
+
+        setTimeout(function () {
+            $("#forest2story1continue").hide();
+            document.getElementById('forest-2-story').innerHTML = FOREST_2["story2"];
+            $("#forest-2-story").fadeIn(2000);
+
+            setTimeout(function () {
+                $("#forest2options").animate({
+                    top: 0,
+                    opacity: 1
+                })
+            }, 2000)
+
+            var beetleClicked, braClicked, featherClicked, mushroomClicked = false;
+            // $("#forest2story2continue").fadeIn(6000);
+        }, 1000)
+    })
 });
