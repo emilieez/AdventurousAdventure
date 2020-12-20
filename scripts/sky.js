@@ -70,3 +70,53 @@ catMountainLandingTexts.appendChild(catMountainLandingStory);
 catMountainLandingTexts.appendChild(catMountainLandingContinue)
 catMountainLanding.appendChild(catMountainLandingSarah)
 catMountainLanding.appendChild(catMountainLandingTexts)
+
+
+// ============= SKY SCENE CAVE WATER  ================
+var skyCaveWater = createScene("skyCaveWater", "url('images/water.png')", 2)
+var skyCaveWaterTexts = createTextBlock("skyCaveWaterTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
+
+var skyCaveWaterSarahLeft = createOverlay("skyCaveWaterSarahLeft", "url('images/water_sarah_left.png')")
+skyCaveWaterSarahLeft.style.left = "400px";
+skyCaveWaterSarahLeft.style.opacity = 0;
+
+var skyCaveWaterSarahRight = createOverlay("skyCaveWaterSarahRight", "url('images/water_sarah_right.png')")
+skyCaveWaterSarahRight.style.right = "400px";
+skyCaveWaterSarahRight.style.opacity = 0;
+
+var skyCaveWaterSarahRightCrash = createOverlay("skyCaveWaterSarahRightCrash", "url('images/water_sarah_rightcrash.png')")
+skyCaveWaterSarahRightCrash.style.opacity = 0;
+skyCaveWaterSarahRightCrash.style.right = "100px";
+
+var skyCaveWaterSarahUp = createOverlay("skyCaveWaterSarahUp", "url('images/water_sarah_up.png')")
+skyCaveWaterSarahUp.style.top = "100px";
+skyCaveWaterSarahUp.style.opacity = 0;
+
+var skyCaveWaterCrashEffect = createOverlay("skyCaveWaterCrashEffect", "url('images/crash.png')")
+skyCaveWaterCrashEffect.style.display = "none";
+
+var skyCaveWaterShadow = createOverlay("skyCaveWaterShadow", "url('images/water_shadow.png')")
+
+skyCaveWaterOptions_fontSize = STANDARD_FONT_SIZE.replace('px', '') * 0.85 + "px"
+var skyCaveWaterOptions = createOptionsBlock("skyCaveWaterOptions", "news-gothic-std", skyCaveWaterOptions_fontSize)
+var skyCaveWaterSwimLeft = createSimpleOption("sky-cave-water-left", CAVE_WATER["swimLeft-option"])
+var skyCaveWaterSwimRight = createSimpleOption("sky-cave-water-right", CAVE_WATER["swimRight-option"])
+var skyCaveWaterSwimUp = createSimpleOption("sky-cave-water-up", CAVE_WATER["swimUp-option"])
+skyCaveWaterOptions.appendChild(skyCaveWaterSwimLeft);
+skyCaveWaterOptions.appendChild(skyCaveWaterSwimRight);
+skyCaveWaterOptions.appendChild(skyCaveWaterSwimUp);
+skyCaveWaterOptions.style.top = "-500px";
+
+var skyCaveWaterStory = createStory("skyCaveWaterStory", CAVE_WATER["story"])
+var skyCaveWaterContinue = createContinueBtn("skyCaveWaterContinue", "news-gothic-std")
+
+skyCaveWaterTexts.appendChild(skyCaveWaterStory);
+skyCaveWaterTexts.appendChild(skyCaveWaterContinue);
+skyCaveWater.appendChild(skyCaveWaterSarahLeft)
+skyCaveWater.appendChild(skyCaveWaterSarahRight)
+skyCaveWater.appendChild(skyCaveWaterSarahRightCrash)
+skyCaveWater.appendChild(skyCaveWaterCrashEffect)
+skyCaveWater.appendChild(skyCaveWaterSarahUp)
+skyCaveWater.appendChild(skyCaveWaterShadow)
+skyCaveWater.appendChild(skyCaveWaterTexts)
+skyCaveWater.appendChild(skyCaveWaterOptions)

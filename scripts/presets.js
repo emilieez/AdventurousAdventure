@@ -82,6 +82,16 @@ CAT_MOUNTAIN_LANDING = {
     "story": "After spotting the cave hidden in the mountains, she makes her way there and lands."
 }
 
+CAVE_WATER = {
+    "story": "Thinking that her cat probably fell into the water, Sarah frantically doggy paddles in all directions looking for anything that resembles a cat.",
+    "swimRight-option": "Press &#8594; to <b><em>keep going further into the cave.</em></b>",
+    "swimRight-result": "Crash, you have crashed into the cave wall, please turn around.",
+    "swimLeft-option": "Press &#8592; to <b><em>leave the cave area and enter open waters.</em> </b>",
+    "swimLeft-result": "There seem to be no sign of Cat here.",
+    "swimUp-option": "Press &#8593; to the surface to <b><em>inspect the mysterious shadow</em></b>",
+    "swimUp-result": "The fuzzy shadow looks a bit like Catto. You swim up to the surface and walk further into the dark cave."
+}
+
 FOREST_1 = {
     "story1": "Sarah finds herself in the midst of a foreign land shrouded in silver fog. An eerie violet glow looms behind the grove of trees full of spikes and needles.",
     "story2": "She steps towards the oddly shaped archway, only to be welcomed with a series of unearthly whispers and a spine-chilling breeze.",

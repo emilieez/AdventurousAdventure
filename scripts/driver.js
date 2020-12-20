@@ -12,6 +12,7 @@ canvas.appendChild(sky1)
 canvas.appendChild(liftoff)
 canvas.appendChild(catMountain)
 canvas.appendChild(catMountainLanding)
+canvas.appendChild(skyCaveWater)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
 canvas.appendChild(forest3)
@@ -424,6 +425,92 @@ $(document).ready(function () {
     // ============= SKY SCENE CAT MOUNTAIN LANDING =============
     $("#catMountainLandingContinue").click(function () {
         $("#catMountainLandingContinue").fadeOut(900)
+
+        // ============= SKY SCENE CAVE WATER =============
+        $("#skyCaveWater").fadeIn(900)
+        $("#skyCaveWaterShadow").css({
+            "animation": "floating 5s",
+            "animation-iteration-count": "infinite"
+        })
+
+        setTimeout(function () {
+            $("#skyCaveWaterTexts").css("opacity", 1);
+            $("#skyCaveWaterOptions").animate({ top: "25%" }, 2000)
+        }, 2000);
+
+        var left = 0,
+            right = 0,
+            up = 0
+        $(document).on("keydown", function () {
+            switch (window.event.keyCode) {
+                case 37:
+                    document.getElementById("skyCaveWaterStory").innerHTML = ""
+                    $("#skyCaveWaterCrashEffect").hide()
+                    $("#skyCaveWaterSarahUp").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahRight").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahRightCrash").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahLeft").animate({
+                        opacity: 1, left: '-=' + '200px'
+                    }, 500)
+
+                    if (left < 1) { left += 1; } else {
+                        showSwimResult("left")
+                    }
+                    break;
+                case 38:
+                    document.getElementById("skyCaveWaterStory").innerHTML = ""
+                    $("#skyCaveWaterCrashEffect").hide()
+                    $("#skyCaveWaterSarahLeft").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahRight").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahRightCrash").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahUp").animate({
+                        opacity: 1, top: '-=' + '100px'
+                    })
+                    if (up < 3) { up += 1; } else {
+                        showSwimResult("up")
+                    }
+                    break;
+                case 39:
+                    document.getElementById("skyCaveWaterStory").innerHTML = ""
+                    $("#skyCaveWaterCrashEffect").hide()
+                    $("#skyCaveWaterSarahLeft").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahUp").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahRightCrash").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahRight").animate({
+                        opacity: 1, right: '-=' + '200px'
+                    })
+                    if (right < 1) { right += 1; } else {
+                        showSwimResult("right")
+                    }
+                    break;
+            }
+        })
+
+        function showSwimResult(direction) {
+            switch (direction) {
+                case "left":
+                    document.getElementById("skyCaveWaterStory").innerHTML = CAVE_WATER["swimLeft-result"]
+                    $("#skyCaveWaterSarahLeft").animate({ opacity: 0 }, 500)
+                    break;
+                case "right":
+                    document.getElementById("skyCaveWaterStory").innerHTML = CAVE_WATER["swimRight-result"]
+                    $("#skyCaveWaterSarahRight").animate({ opacity: 0 }, 100)
+                    $('#skyCaveWaterSarahRightCrash').animate({ opacity: 1, right: 0 }, 100)
+                    $("#skyCaveWaterCrashEffect").show()
+                    break;
+                case "up":
+                    document.getElementById("skyCaveWaterStory").innerHTML = CAVE_WATER["swimUp-result"]
+                    $("#skyCaveWaterSarahUp").animate({ opacity: 0 }, 1500)
+                    $('#skyCaveWaterContinue').fadeIn(3000)
+                    break;
+            }
+        }
+    })
+
+
+
+    // ============= SKY CAVE SCENE =============
+    $('#skyCaveWaterContinue').click(function () {
         $("#forest-1").fadeIn(900);
         setTimeout(function () {
             $("#forest1texts").css("opacity", 1);
