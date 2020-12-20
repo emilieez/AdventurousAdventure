@@ -57,6 +57,10 @@ ALLEY_CLOSEUP = {
     "story3": "Disappointed, Sarah decides to search elsewhere, but where should she go?"
 }
 
+ALLEY_SCENE_2 = [
+    "story": "ust when all seemed lost, a blur of green and white flew past above her and landed behind her."
+]
+
 LIFTOFF = {
     "story": "Lifting off she activates her cape and soars through the sky passing by islands and landing her eye on the island which reminds her of a cat "
 }
