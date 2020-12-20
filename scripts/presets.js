@@ -91,7 +91,7 @@ FOREST_1 = {
 
 FOREST_2 = {
     "story1": "The path leads Sarah into an enchanted clearing full of twinkling fireflies and strange, shimmering plants",
-    "story2": "Perhaps there could be clues hidden around as to where Cat might’ve gone? Sarah decides to examine…",
+    "story2": "Perhaps there could be clues hidden around as to where Cat might’ve gone? Sarah decides to examine...",
     "feather": "the pretty blue feather",
     "feather-result": "Looks like it may be from a Wockingbird (not to be confused with the Mockingbird). Maybe it dropped the feather while frantically fleeing from a certain furry predator...with claws...",
     "mushrooms": "the fat \'n juicy red mushrooms",

@@ -27,13 +27,14 @@ forest1.appendChild(forest1texts)
 
 
 // ============= FOREST SCENE 2 ================
-var forest2 = createScene("forest-2", "url('images/forest_2.png')", 4)
+var forest2 = createScene("forest-2", "url('images/forest_2.png')", 3)
 
 var forest2texts = createTextBlock("forest2texts", "bottom-centered", STANDARD_FONT_SIZE, "NorthwoodHigh")
 var forest2story1 = createStory("forest-2-story", FOREST_2["story1"])
 var forest2story1continue = createContinueBtn("forest2story1continue", "NorthwoodHigh")
 var forest2story2continue = createContinueBtn("forest2story2continue", "NorthwoodHigh")
-var forest2Continue = createContinueBtn("forest1story2continue", "NorthwoodHigh")
+var forest2story3Continue = createContinueBtn("forest2story3continue", "NorthwoodHigh")
+var forest2Continue = createContinueBtn("forest2continue", "NorthwoodHigh")
 
 var forest2sarah1 = createOverlay("forest2sarah1", "url('images/forest_2_sarah-1.png')")
 forest2sarah1.style.opacity = 0
@@ -70,6 +71,7 @@ forest2options.style.animation = "none"
 forest2texts.appendChild(forest2story1)
 forest2texts.appendChild(forest2story1continue)
 forest2texts.appendChild(forest2story2continue)
+forest2texts.appendChild(forest2story3Continue)
 forest2texts.appendChild(forest2Continue)
 forest2.appendChild(forest2sarah1)
 forest2.appendChild(forest2sarah2)
