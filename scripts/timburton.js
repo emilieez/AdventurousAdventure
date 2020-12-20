@@ -1,6 +1,8 @@
+FOREST_FONT_SIZE = STANDARD_FONT_SIZE.replace('px', '') * 1.09 + "px"
+
 // ============= FOREST SCENE 1 ================
 var forest1 = createScene("forest-1", "url('images/forest_1.jpg')", 3)
-var forest1texts = createTextBlock("forest1texts", "bottom-centered", STANDARD_FONT_SIZE, "NorthwoodHigh")
+var forest1texts = createTextBlock("forest1texts", "bottom-centered", FOREST_FONT_SIZE, "NorthwoodHigh")
 
 var forest1sarah_1 = createOverlay("forest1sarah-1", "url('images/forest_1_sarah-1.png')")
 forest1sarah_1.style.opacity = "0"
@@ -29,7 +31,7 @@ forest1.appendChild(forest1texts)
 // ============= FOREST SCENE 2 ================
 var forest2 = createScene("forest-2", "url('images/forest_2.png')", 3)
 
-var forest2texts = createTextBlock("forest2texts", "bottom-centered", STANDARD_FONT_SIZE, "NorthwoodHigh")
+var forest2texts = createTextBlock("forest2texts", "bottom-centered", FOREST_FONT_SIZE, "NorthwoodHigh")
 var forest2story1 = createStory("forest-2-story", FOREST_2["story1"])
 var forest2story1continue = createContinueBtn("forest2story1continue", "NorthwoodHigh")
 var forest2story2continue = createContinueBtn("forest2story2continue", "NorthwoodHigh")
@@ -40,13 +42,13 @@ var forest2sarah1 = createOverlay("forest2sarah1", "url('images/forest_2_sarah-1
 forest2sarah1.style.opacity = 0
 forest2sarah1.style.top = "100px"
 
-var forest2sarah2 = createOverlay("forest2sarah1", "url('images/forest_2_sarah-2.png')")
+var forest2sarah2 = createOverlay("forest2sarah2", "url('images/forest_2_sarah-2.png')")
 forest2sarah2.style.opacity = 0
 
-var forest2sarah3 = createOverlay("forest2sarah1", "url('images/forest_2_sarah-3.png')")
+var forest2sarah3 = createOverlay("forest2sarah3", "url('images/forest_2_sarah-3.png')")
 forest2sarah3.style.opacity = 0
 
-var forest2sarah4 = createOverlay("forest2sarah1", "url('images/forest_2_sarah-4.png')")
+var forest2sarah4 = createOverlay("forest2sarah4", "url('images/forest_2_sarah-4.png')")
 forest2sarah4.style.opacity = 0
 
 var forest2beetleGlow = createOverlay("forest2beetleGlow", "url('images/forest_2_beetle_glow.png')")
@@ -63,7 +65,7 @@ forest2mushroomGlow.style.opacity = 0
 
 forest2options = createOptions("forest2options", [
     FOREST_2["feather"], FOREST_2["mushrooms"], FOREST_2["beetle"], FOREST_2["nani"]
-], "NorthwoodHigh", STANDARD_FONT_SIZE)
+], "NorthwoodHigh", FOREST_FONT_SIZE)
 forest2options.style.top = "-100px"
 forest2options.style.opacity = 0
 forest2options.style.animation = "none"
@@ -83,3 +85,23 @@ forest2.appendChild(forest2featherGlow)
 forest2.appendChild(forest2mushroomGlow)
 forest2.appendChild(forest2texts)
 forest2.appendChild(forest2options)
+
+
+
+// ============= FOREST RAIN SCENE ================
+var forest3 = createScene("forest-3", "url('images/forest_3.png')", 3)
+var forest3texts = createTextBlock("forest3texts", "bottom-centered", FOREST_FONT_SIZE, "NorthwoodHigh")
+
+var forest3story = createStory("forest-3-story", FOREST_3["story1"])
+var forest3story1continue = createContinueBtn("forest3story1continue", "NorthwoodHigh")
+
+var forest3rain = createOverlay("forest3rain", "url('images/forest_3_rain.png')")
+forest3rain.style.opacity = 0;
+
+var forest3continue = createContinueBtn("forest3continue", "NorthwoodHigh")
+
+forest3texts.appendChild(forest3story)
+forest3texts.appendChild(forest3continue)
+forest3texts.appendChild(forest3story1continue)
+forest3.appendChild(forest3rain)
+forest3.appendChild(forest3texts)

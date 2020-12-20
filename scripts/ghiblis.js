@@ -1,7 +1,7 @@
 // ============= BEDROOM MORNING ================
 var bedroomMorning = createScene("bedroom-morning", "url('images/bedroom_morning.png')", 1)
 var bedroomMorningTexts = createTextBlock("bedroomMorningTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
-var bedroomMorningStory = createStory("bedroom-morning-story", "One beautiful, warm morning, Sarah He wakes up in her cozy home right next to . . .HOWL’S MOVING CASTLE??")
+var bedroomMorningStory = createStory("bedroom-morning-story", "One beautiful, warm morning, Sarah He wakes up in her cozy home right next to . . .<b><em>HOWL’S MOVING CASTLE??</em></b>")
 var bedroomMorningContinue = createContinueBtn("bedroomMorningContinue", "news-gothic-std")
 bedroomMorningContinue.style.zIndex = 1;
 
@@ -23,7 +23,7 @@ bedroomMorning.appendChild(whatCastle)
 // ============= COFFEE ================
 var coffeeScene = createScene("coffee-scene", "url('images/coffee.png')", 1)
 var coffeeTexts = createTextBlock("coffeeTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
-var coffeeStory = createStory("coffee-scene-story", "As with any other beautiful, fine morning such as this, Sarah first goes and grabs her magic bean juice.")
+var coffeeStory = createStory("coffee-scene-story", "As with any other beautiful, fine morning such as this, Sarah first goes and grabs her <b><em>magic bean juice</em><b>.")
 var coffeeSceneContinue = createContinueBtn("coffeeSceneContinue", "news-gothic-std")
 
 coffeeTexts.appendChild(coffeeStory)

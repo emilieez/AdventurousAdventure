@@ -67,7 +67,7 @@ HAKU_SCENE = {
 }
 
 LIFTOFF = {
-    "story": "Lifting off she activates her cape and soars through the sky passing by islands and landing her eye on the island which reminds her of a cat "
+    "story": "Lifting off she activates her cape and soars through the sky passing by islands and landing her eye on <b><em>the island which reminds her of a cat</em></b> "
 }
 
 SKY_SCENE_1 = {
@@ -95,10 +95,15 @@ FOREST_2 = {
     "feather": "the pretty blue feather",
     "feather-result": "Looks like it may be from a Wockingbird (not to be confused with the Mockingbird). Maybe it dropped the feather while frantically fleeing from a certain furry predator...with claws...",
     "mushrooms": "the fat \'n juicy red mushrooms",
-    "mushrooms-result": "They look absolutely delicious and completely untouched—though probably for a good reason.",
+    "mushrooms-result": "They look absolutely delicious and completely untouched - though probably for a good reason.",
     "beetle": "the possibly radioactive rare golden beetle",
     "beetle-result": "Upon closer inspection, it looks like it's just...covered in paint.",
     "nani": "what...even is that?",
     "nani-result": "K then.",
     "story3": "Well, there are definitely traces left by Cat here. But the question is where did it go next...?"
+}
+
+FOREST_3 = {
+    "story1": "Wondering just how far Cat could've ventured, Sarah glances up at the cerulean night sky, veiled under a flawless sheet of ivory clouds.",
+    "story2": "Suddenly, a blinding burst of lightning flashes across the sky, and heavy chains of raindrops come plummeting down."
 }
