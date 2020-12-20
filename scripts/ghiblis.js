@@ -169,3 +169,20 @@ alleyCloseupTexts.appendChild(alleyCloseupContinue)
 alleyCloseup.appendChild(alleySceneCat)
 alleyCloseup.appendChild(alleySceneCatDark)
 alleyCloseup.appendChild(alleyCloseupTexts)
+
+
+
+// ========================  ALLEY SCENE 2 =================================
+var alleyScene2 = createScene("alley-scene-2", "url('images/alley.png')", 1)
+var alleyScene2Texts = createTextBlock("alleyScene2Texts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
+var alleyScene2Story = createStory("alley-scene-story-2", ALLEY_SCENE["story"])
+
+var alleyScene2Continue = createContinueBtn("alleyScene2Continue", "news-gothic-std")
+alleyScene2Continue.style.zIndex = 1;
+
+var alleyScene2Sarah = createOverlay("alleyScene2Sarah", "url('images/alley_2_sarah.png')")
+
+alleyScene2Texts.appendChild(alleyScene2Story)
+alleyScene2Texts.appendChild(alleyScene2Continue)
+alleyScene2.appendChild(alleyScene2Sarah)
+alleyScene2.appendChild(alleyScene2Texts)

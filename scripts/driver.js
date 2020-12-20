@@ -6,6 +6,7 @@ canvas.appendChild(bedroomMorning3)
 canvas.appendChild(outsideScene)
 canvas.appendChild(alleyScene)
 canvas.appendChild(alleyCloseup)
+canvas.appendChild(alleyScene2)
 canvas.appendChild(sky1)
 canvas.appendChild(liftoff)
 canvas.appendChild(catMountain)
@@ -238,6 +239,10 @@ $(document).ready(function () {
         }, 5000);
     });
 
+
+
+
+    // =============================== ALLEY CLOSE UP =================================
     $("#alleySceneContinue").click(function () {
         $("#alley-scene").fadeOut(1000);
         $("#alleyCloseup").fadeIn(1000);
@@ -259,7 +264,7 @@ $(document).ready(function () {
             document.getElementById('alleyCloseupStory').innerHTML = ALLEY_CLOSEUP["story2"];
             $("#alleyCloseupStory").fadeIn(2000);
             $("#alleySceneCatDark").css({
-                "animation": "breathing 1s",
+                "animation": "glitching 1s",
                 "animation-delay": "0.5s",
                 "animation-iteration-count": "infinite"
             });
@@ -281,6 +286,26 @@ $(document).ready(function () {
             $("#alleyCloseupContinue").fadeIn(6000);
         }, 1000)
     })
+
+
+
+
+    // =============================== ALLEY SCENE 2 =================================
+    $("#alleyCloseupContinue").click(function () {
+        $("#alleyCloseup").fadeOut(1000)
+        $("#alley-scene-2").fadeIn(900)
+        $("#alleyScene2Sarah").css({
+            "animation": "breathing 2s",
+            "animation-delay": "1s",
+            "animation-iteration-count": "infinite"
+        });
+
+        setTimeout(function () {
+            $("#alleyScene2Texts").css("opacity", 1);
+            $("#alleyScene2Continue").fadeIn(6000);
+        }, 3000);
+    });
+
 
 
     // ============= SKY SCENE 1 ================

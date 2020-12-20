@@ -195,7 +195,7 @@ p {
    background-color: transparent;
 }
 
-@keyframes breathing {
+@keyframes glitching {
     0% { opacity: 0.3; }
     10% { opacity: 0.6; }
     20% { opacity: 0.3; }
@@ -207,4 +207,24 @@ p {
     80% { opacity: 0.3; }
     90% { opacity: 0.3; }
     100% { opacity: 0.3; }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
