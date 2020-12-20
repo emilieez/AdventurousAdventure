@@ -1,6 +1,18 @@
 
-GLOBAL_WIDTH = window.innerWidth;
-GLOBAL_HEIGHT = window.innerWidth * 0.625
+
+
+windowWidth = window.innerWidth;
+windowHeight = window.innerHeight;
+
+if (windowHeight / windowWidth < 0.625) {
+    GLOBAL_WIDTH = window.innerHeight * 1.6;
+    GLOBAL_HEIGHT = window.innerHeight
+    STANDARD_FONT_SIZE = window.innerHeight * 0.04 + 'px'
+} else {
+    GLOBAL_WIDTH = window.innerWidth;
+    GLOBAL_HEIGHT = window.innerWidth * 0.625
+    STANDARD_FONT_SIZE = window.innerWidth * 0.04 + 'px'
+}
 
 BEDROOM_MORNING_2 = {
     "story": "Energized by the bean, she contemplates her outfit of the day. What should she wear today?",

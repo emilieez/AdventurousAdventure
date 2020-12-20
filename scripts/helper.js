@@ -29,10 +29,6 @@ function createSarah(sarahID, sarahImg) {
     sarah.style.backgroundImage = sarahImg
     sarah.style.backgroundRepeat = "no-repeat"
     sarah.style.backgroundSize = "contain"
-    sarah.style.maxWidth = "2560px"
-    sarah.style.maxHeight = "1600px"
-    sarah.style.minWidth = "720px"
-    sarah.style.minHeight = "450px"
     sarah.style.position = "absolute"
     return sarah
 }
@@ -53,7 +49,7 @@ function createContinueBtn(continueID, fontFamily) {
     continueBtn.innerHTML = "&#x02281; Continue"
     continueBtn.style.display = "none"
     continueBtn.style.color = "white"
-    continueBtn.style.fontSize = "1.5vw"
+    continueBtn.style.fontSize = STANDARD_FONT_SIZE
     return continueBtn
 }
 
