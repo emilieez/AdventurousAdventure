@@ -10,7 +10,7 @@ if (windowHeight / windowWidth < 0.625) {
 }
 
 fontSize = window.innerHeight * window.innerWidth * 0.00003
-if (fontSize < 13.5) {
+if (fontSize < 14) {
     STANDARD_FONT_SIZE = '14px'
 } else if (fontSize > 48) {
     STANDARD_FONT_SIZE = '48px'
