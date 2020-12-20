@@ -77,8 +77,8 @@ function createOptions(optionsBlockID, options, fontFamily, fontSize) {
 }
 
 function updown(elmnt) {
-    for (var i = 0; i < 3; i++) {
-        $(`#${elmnt}`).animate({ bottom: '+=' + '30px' }, 300);
-        $(`#${elmnt}`).animate({ bottom: '-=' + '30px' }, 300);
+    for (var i = 0; i < 5; i++) {
+        $(`#${elmnt}`).animate({ top: '+=' + '30px' }, 200);
+        $(`#${elmnt}`).animate({ top: '-=' + '30px' }, 200);
     }
 }

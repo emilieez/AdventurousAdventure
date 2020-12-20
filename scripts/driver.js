@@ -126,7 +126,6 @@ $(document).ready(function () {
 
             $("#bedroomMorningSarah-3").css({
                 "animation": "shake 0.5s",
-                // "animation-delay": "5s",
                 "animation-iteration-count": "infinite"
             })
         }, 1000)
@@ -422,38 +421,47 @@ $(document).ready(function () {
 
 
     // ============= SKY SCENE CAT MOUNTAIN LANDING =============
-
+    $("#catMountainLandingContinue").click(function () {
+        $("#forest-1").fadeIn(900);
+        setTimeout(function () {
+            $("#forest1texts").css("opacity", 1);
+            $("#forest1story1continue").fadeIn(6000);
+        }, 3000);
+    })
 
 
     // ========================= FOREST SCENE 1 =============================
-    // ============= FOREST SCENE 1 =============================
-    // $("#forest-1").fadeIn(900);
-    // setTimeout(function () {
-    //     $("#forest1texts").css("opacity", 1);
-    //     $("#forest1story1continue").fadeIn(6000);
-    // }, 3000);
     $("#forest1story1continue").click(function () {
         $("#forest-1-story").fadeOut(1000);
 
         setTimeout(function () {
             $("#forest1story1continue").hide();
             document.getElementById('forest-1-story').innerHTML = FOREST_1["story2"];
+            $('#forest1sarah-1').animate({
+                opacity: 1,
+                top: 0
+            }, 1000)
+
+            setTimeout(function () {
+                updown("forest1sarah-1")
+            }, 1000)
+
             $("#forest-1-story").fadeIn(2000);
             $("#forest1story2continue").fadeIn(6000);
         }, 1000)
     })
 
 
+    $("#forest1story2continue").click(function () {
+        $("#forest-1-story").fadeOut(1000);
 
-    // ============= FOREST SCENE 1 TRANSITION =============================
-    $("#forest1continue").click(function () {
-        $("#forest1texts").fadeOut();
-
-        $("#forest1sarah-1").animate({
-            "top": "-50px", "opacity": "0"
-        }, 500)
         setTimeout(function () {
-            $("#forest1sarah-1").css({ "display": "none" });
+            $("#forest1story2continue").hide();
+            document.getElementById('forest-1-story').innerHTML = FOREST_1["story3"];
+
+            $("#forest1sarah-1").animate({
+                "top": "-50px", "opacity": "0"
+            }, 500)
 
             setTimeout(function () {
                 $("#forest1sarah-2").css({
@@ -463,24 +471,32 @@ $(document).ready(function () {
                 })
                 $("#forest1sarah-2").animate({
                     "bottom": "0px", "opacity": "1"
-                }, 500)
-            }, 100)
+                }, 1000)
+            }, 1000)
 
-            setTimeout(function () {
-                $("#forest-1").fadeOut(1000);
+            $("#forest-1-story").fadeIn(2000);
+            $("#forest1continue").fadeIn(6000);
+        }, 1000)
+    })
 
 
-                // ============= FOREST SCENE 2 =============================
-                $("#forest-2").fadeIn(1000);
-                setTimeout(function () {
-                    $("#forest2texts").css("opacity", 1);
-                }, 2000);
+    // ============= FOREST SCENE 1 TRANSITION =============================
+    $("#forest1continue").click(function () {
+        $("#forest-1").fadeOut(1000);
 
-            }, 1500);
 
-        }, 500)
+        // ============= FOREST SCENE 2 =============================
+        $("#forest-2").fadeIn(1000);
+
+
+        $('#forest2sarah1').animate({
+            "opacity": 1,
+            "top": "0px"
+        }, 2000)
+
+        setTimeout(function () {
+            $("#forest2texts").css("opacity", 1);
+            $('#forest2story1continue').fadeIn(6000)
+        }, 2000);
     });
-
-
-
 });

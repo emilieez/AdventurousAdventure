@@ -189,7 +189,7 @@ alleyScene2.appendChild(alleyScene2Texts)
 
 
 
-//  ========================  ALLEY CLOSE UP =================================
+//  ========================  HAKU SCENE  =================================
 var haku = createScene("haku", "url('images/haku.png')", 1)
 var hakuTexts = createTextBlock("hakuTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
 
