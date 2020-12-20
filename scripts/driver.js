@@ -291,16 +291,16 @@ $(document).ready(function () {
         }, 3000);
     });
 
-    // ============= FOREST SCENE 1 =============================
+    // ========================= FOREST SCENE 1 =============================
     $("#forest1story1continue").click(function () {
-        $("#forest1story1continue").fadeOut(400);
-        $("#forest1texts").fadeOut(400);
-        document.getElementById('forest-1-story').innerHTML = FOREST_1["story2"];
-        $("#forest1texts").fadeIn(400);
+        $("#forest-1-story").fadeOut(1000);
+
         setTimeout(function () {
-            $("#forest1texts").css("opacity", 1);
+            $("#forest1story1continue").hide();
+            document.getElementById('forest-1-story').innerHTML = FOREST_1["story2"];
+            $("#forest-1-story").fadeIn(2000);
             $("#forest1story2continue").fadeIn(6000);
-        }, 2000);
+        }, 1000)
     })
 
 
