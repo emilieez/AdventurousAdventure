@@ -7,6 +7,7 @@ canvas.appendChild(outsideScene)
 canvas.appendChild(alleyScene)
 canvas.appendChild(alleyCloseup)
 canvas.appendChild(alleyScene2)
+canvas.appendChild(haku)
 canvas.appendChild(sky1)
 canvas.appendChild(liftoff)
 canvas.appendChild(catMountain)
@@ -311,6 +312,40 @@ $(document).ready(function () {
 
     // =============================== HAKU SCENE =================================
     $("#alleyScene2Continue").click(function () {
+        $("#haku").fadeIn(1000);
+        $("#hakuSarah1").animate({
+            right: "0",
+            opacity: 1
+        }, 2000)
+
+        setTimeout(function () {
+            $("#hakuTexts").css("opacity", 1);
+            $("#hakuStorycontinue").fadeIn(5000);
+        }, 2500);
+    })
+
+    $("#hakuStorycontinue").click(function () {
+        $("#hakuStory").fadeOut(1000);
+
+        setTimeout(function () {
+            $("#hakuStorycontinue").hide();
+            document.getElementById('hakuStory').innerHTML = HAKU_SCENE["story2"];
+            $("#hakuStory").fadeIn(2000);
+            $("#hakuSarah2").animate({
+                "right": "100px",
+                "opacity": 0
+            }, 1000);
+            $("#hakuSarah2").animate({
+                "bottom": "0px",
+                "opacity": 1
+            }, 2500);
+            $("#hakuContinue").fadeIn(5000);
+        }, 1000)
+    })
+
+    $("#hakuContinue").click(function () {
+        $("#hakuStory").fadeOut(1000);
+
         $("#sky-1").fadeIn(1000);
         $("#sky1sarah").animate({
             left: "0",

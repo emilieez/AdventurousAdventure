@@ -197,7 +197,7 @@ p {
 
 @keyframes glitching {
     0% { opacity: 0.3; }
-    10% { opacity: 0.6; }
+    10% { opacity: 0.8; }
     20% { opacity: 0.3; }
     30% { opacity: 0.3; }
     40% { opacity: 0.3; }

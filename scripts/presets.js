@@ -58,7 +58,12 @@ ALLEY_CLOSEUP = {
 }
 
 ALLEY_SCENE_2 = {
-    "story": "ust when all seemed lost, a blur of green and white flew past above her and landed behind her."
+    "story": "Just when all seemed lost, a blur of green and white flew past above her and landed behind her."
+}
+
+HAKU_SCENE = {
+    "story1": "Haku seems to have heard from the rest about the search for Sarah’s cat and noted that he has seen her cat up in Daylight Prairie.",
+    "story2": "Sarah hopped on Haku’s back and soared into the skies."
 }
 
 LIFTOFF = {

@@ -147,7 +147,7 @@ alleyScene.appendChild(alleySceneTexts)
 
 
 
-//  ========================  ALLEY CKOSE UP =================================
+//  ========================  ALLEY CLOSE UP =================================
 var alleyCloseup = createScene("alleyCloseup", "url('images/alley_closeup.png')", 1)
 var alleyCloseupTexts = createTextBlock("alleyCloseupTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
 
@@ -175,7 +175,7 @@ alleyCloseup.appendChild(alleyCloseupTexts)
 // ========================  ALLEY SCENE 2 =================================
 var alleyScene2 = createScene("alley-scene-2", "url('images/alley.png')", 1)
 var alleyScene2Texts = createTextBlock("alleyScene2Texts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
-var alleyScene2Story = createStory("alley-scene-story-2", ALLEY_SCENE["story"])
+var alleyScene2Story = createStory("alley-scene-story-2", ALLEY_SCENE_2["story"])
 
 var alleyScene2Continue = createContinueBtn("alleyScene2Continue", "news-gothic-std")
 alleyScene2Continue.style.zIndex = 1;
@@ -186,3 +186,29 @@ alleyScene2Texts.appendChild(alleyScene2Story)
 alleyScene2Texts.appendChild(alleyScene2Continue)
 alleyScene2.appendChild(alleyScene2Sarah)
 alleyScene2.appendChild(alleyScene2Texts)
+
+
+
+//  ========================  ALLEY CLOSE UP =================================
+var haku = createScene("haku", "url('images/haku.png')", 1)
+var hakuTexts = createTextBlock("hakuTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
+
+var hakuStory = createStory("hakuStory", HAKU_SCENE["story1"])
+
+var hakuSarah1 = createOverlay("hakuSarah1", "url('images/haku_sarah-1.png')")
+hakuSarah1.style.right = "100px"
+hakuSarah1.style.opacity = 0
+
+var hakuSarah2 = createOverlay("hakuSarah2", "url('images/haku_sarah-2.png')")
+hakuSarah2.style.bottom = "100px"
+hakuSarah2.style.opacity = 0
+
+var hakuStorycontinue = createContinueBtn("hakuStorycontinue", "news-gothic-std")
+var hakuContinue = createContinueBtn("hakuContinue", "news-gothic-std")
+
+hakuTexts.appendChild(hakuStory)
+hakuTexts.appendChild(hakuStorycontinue)
+hakuTexts.appendChild(hakuContinue)
+haku.appendChild(hakuSarah1)
+haku.appendChild(hakuSarah2)
+haku.appendChild(hakuTexts)
