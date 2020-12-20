@@ -1,7 +1,7 @@
 // ============= BEDROOM MORNING ================
 var bedroomMorning = createScene("bedroom-morning", "url('images/bedroom_morning.png')", 1)
 var bedroomMorningTexts = createTextBlock("bedroomMorningTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
-var bedroomMorningStory = createStory("bedroom-morning-story", "One beautiful, warm morning, Sarah He wakes up in her cozy home right next to . . .<b><em>HOWL’S MOVING CASTLE??</em></b>")
+var bedroomMorningStory = createStory("bedroom-morning-story", "One beautiful, warm morning, Sarah He wakes up in her cozy home right next to ...<b><em>HOWL’S MOVING CASTLE??</em></b>")
 var bedroomMorningContinue = createContinueBtn("bedroomMorningContinue", "news-gothic-std")
 bedroomMorningContinue.style.zIndex = 1;
 

@@ -123,3 +123,11 @@ FOREST_BRIDGE = {
     "story2": "A chorus of low-pitched growling echoes through the woods. Drifting along the river is a distinctly...<em>rusty</em> scent.",
     "story3": "Then, Sarah hears an ever-so-dainty meowing noise coming from the other side. Without hesitation, she hurries across the river."
 }
+
+DEMONIC_CIRCLE = {
+    "story1": "Sarah finds herself at a dead end. Lying in the center of the stark, lifeless trees is a luminescent magic circle, and at the end stands what looks like a...<em>cat shrine?</em>",
+    "story2": "An exhausted Sarah carefully approaches the shrine and sighs. She's travelled alone across the entire world searching for her beloved Cat. If only Cat would just magically appear ...",
+    "story3": "Out of nowhere, the circle begins radiating a brilliant shade of gold ...",
+    "story4": "And in the center, a Cat begins to take form!",
+    "story5": "Yay! Now Sarah and Cat can finally go home."
+}

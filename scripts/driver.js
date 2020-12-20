@@ -17,6 +17,7 @@ canvas.appendChild(forest1)
 canvas.appendChild(forest2)
 canvas.appendChild(forest3)
 canvas.appendChild(forestBridge)
+canvas.appendChild(demonicCircle)
 
 
 $(".scene").css({ width: GLOBAL_WIDTH + 'px' })
@@ -732,4 +733,39 @@ $(document).ready(function () {
             $("#forestBridgeSarah3").animate({ opacity: 1, right: 0 }, 1000)
         }, 1000)
     })
+
+
+
+    // ================================ DEMONIC CIRCLE ====================================
+    $("#forestBridgeContinue").click(function () {
+        $("#forestBridge").fadeOut(1000);
+        $("#demonicCircle").fadeIn(1000);
+
+        setTimeout(function () {
+            $("#demonicCircleTexts").css("opacity", 1);
+            $("#demonicCircleStory1Continue").fadeIn(5000);
+        }, 2000)
+    })
+
+    $("#demonicCircleStory1Continue").click(function () {
+        transitionStory("demonicCircleStory1Continue", "demonic-circle-story", DEMONIC_CIRCLE["story2"], "demonicCircleStory2Continue")
+        $("#demonicCircleSarah1").animate({ opacity: 1, right: 0 }, 2000);
+    });
+
+    $("#demonicCircleStory2Continue").click(function () {
+        transitionStory("demonicCircleStory2Continue", "demonic-circle-story", DEMONIC_CIRCLE["story3"], "demonicCircleStory3Continue")
+        $("#demonicCircleGlowing").show();
+    });
+
+    $("#demonicCircleStory3Continue").click(function () {
+        transitionStory("demonicCircleStory3Continue", "demonic-circle-story", DEMONIC_CIRCLE["story4"], "demonicCircleStory4Continue")
+        $("#demonicCircleCat").animate({ opacity: 1 }, 4000)
+    });
+
+    $("#demonicCircleStory4Continue").click(function () {
+        transitionStory("demonicCircleStory4Continue", "demonic-circle-story", DEMONIC_CIRCLE["story5"], "demonicCircleContinue")
+        $("#demonicCircleSarah1").animate({ opacity: 0, bottom: "100px" }, 1000);
+        $("#demonicCircleSarah2").animate({ opacity: 1, bottom: 0 }, 1000)
+        updown("demonicCircleSarah2")
+    });
 });

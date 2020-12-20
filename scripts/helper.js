@@ -100,5 +100,7 @@ function transitionStory(oldStoryContinueID, storyID, newStoryText, newStoryCont
     $(`#${storyID}`).hide();
     document.getElementById(storyID).innerHTML = newStoryText;
     $(`#${storyID}`).fadeIn(3000);
-    $(`#${newStoryContinueID}`).fadeIn(5000);
+    setTimeout(function () {
+        $(`#${newStoryContinueID}`).fadeIn(5000);
+    }, 2000)
 }

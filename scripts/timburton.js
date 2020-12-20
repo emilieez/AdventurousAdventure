@@ -1,4 +1,4 @@
-FOREST_FONT_SIZE = STANDARD_FONT_SIZE.replace('px', '') * 1.1 + "px"
+FOREST_FONT_SIZE = STANDARD_FONT_SIZE.replace('px', '') * 1.3 + "px"
 
 // ============= FOREST SCENE 1 ================
 var forest1 = createScene("forest-1", "url('images/forest_1.jpg')", 3)
@@ -137,3 +137,44 @@ forestBridge.appendChild(forestBridgeSarah1)
 forestBridge.appendChild(forestBridgeSarah2)
 forestBridge.appendChild(forestBridgeSarah3)
 forestBridge.appendChild(forestBridgeTexts)
+
+
+
+// ============= DEMONIC CIRCLE SCENE ================
+var demonicCircle = createScene("demonicCircle", "url('images/demonic_circle.png')", 3)
+var demonicCircleTexts = createTextBlock("demonicCircleTexts", "bottom-centered", FOREST_FONT_SIZE, "NorthwoodHigh")
+
+var demonicCircleStory = createStory("demonic-circle-story", DEMONIC_CIRCLE["story1"])
+var demonicCircleStory1Continue = createContinueBtn("demonicCircleStory1Continue", "NorthwoodHigh")
+var demonicCircleStory2Continue = createContinueBtn("demonicCircleStory2Continue", "NorthwoodHigh")
+var demonicCircleStory3Continue = createContinueBtn("demonicCircleStory3Continue", "NorthwoodHigh")
+var demonicCircleStory4Continue = createContinueBtn("demonicCircleStory4Continue", "NorthwoodHigh")
+var demonicCircleContinue = createContinueBtn("demonicCircleContinue", "NorthwoodHigh")
+
+var demonicCircleGlowing = createOverlay("demonicCircleGlowing", "url('images/demonic_circle_glowing.png')")
+demonicCircleGlowing.style.display = "none";
+demonicCircleGlowing.style.animation = "glowing 2s";
+demonicCircleGlowing.style.animationIterationCount = "infinite";
+
+var demonicCircleCat = createOverlay("demonicCircleCat", "url('images/demonic_circle_cat.png')")
+demonicCircleCat.style.opacity = 0;
+
+var demonicCircleSarah1 = createOverlay("demonicCircleSarah1", "url('images/demonic_circle_sarah-1.png')")
+demonicCircleSarah1.style.opacity = 0;
+demonicCircleSarah1.style.right = '100px';
+
+var demonicCircleSarah2 = createOverlay("demonicCircleSarah2", "url('images/demonic_circle_sarah-2.png')")
+demonicCircleSarah2.style.opacity = 0;
+demonicCircleSarah1.style.bottom = '100px';
+
+demonicCircleTexts.appendChild(demonicCircleStory)
+demonicCircleTexts.appendChild(demonicCircleStory1Continue)
+demonicCircleTexts.appendChild(demonicCircleStory2Continue)
+demonicCircleTexts.appendChild(demonicCircleStory3Continue)
+demonicCircleTexts.appendChild(demonicCircleStory4Continue)
+demonicCircleTexts.appendChild(demonicCircleContinue)
+demonicCircle.appendChild(demonicCircleGlowing)
+demonicCircle.appendChild(demonicCircleCat)
+demonicCircle.appendChild(demonicCircleSarah1)
+demonicCircle.appendChild(demonicCircleSarah2)
+demonicCircle.appendChild(demonicCircleTexts)
