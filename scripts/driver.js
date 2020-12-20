@@ -11,6 +11,16 @@ canvas.appendChild(catMountain)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
 
+
+$(".scene").css({ width: GLOBAL_WIDTH + 'px' })
+$(".scene").css({ height: GLOBAL_HEIGHT + 'px' })
+
+$("#canvas").css({ width: GLOBAL_WIDTH + 'px' })
+$("#canvas").css({ height: GLOBAL_HEIGHT + 'px' })
+
+$(".overlay").css({ width: GLOBAL_WIDTH + 'px' })
+$(".overlay").css({ height: GLOBAL_HEIGHT + 'px' })
+
 $(document).ready(function () {
 
 
@@ -272,6 +282,8 @@ $(document).ready(function () {
 
     $("#catMountainContinue").click(function () {
         $("#catMountain").fadeOut(1000);
+
+        // ============= FOREST SCENE 1 =============================
         $("#forest-1").fadeIn(900);
 
         setTimeout(function () {
@@ -288,7 +300,7 @@ $(document).ready(function () {
 
 
 
-    // ============= FOREST SCENE 1 =============================
+    // ============= FOREST SCENE 1 TRANSITION =============================
     $("#forest1continue").click(function () {
         $("#forest1texts").fadeOut();
 
@@ -312,9 +324,12 @@ $(document).ready(function () {
             setTimeout(function () {
                 $("#forest-1").fadeOut(1000);
 
+
                 // ============= FOREST SCENE 2 =============================
                 $("#forest-2").fadeIn(1000);
-
+                setTimeout(function () {
+                    $("#forest2texts").css("opacity", 1);
+                }, 2000);
 
             }, 1500);
 

@@ -1,3 +1,7 @@
+
+GLOBAL_WIDTH = window.innerWidth;
+GLOBAL_HEIGHT = window.innerWidth * 0.625
+
 BEDROOM_MORNING_2 = {
     "story": "Energized by the bean, she contemplates her outfit of the day. What should she wear today?",
     "option1": "Shirt, leggings and a cardigan.The usual.",
@@ -43,5 +47,10 @@ CAT_MOUNTAIN = {
 }
 
 FOREST_1 = {
+    "story": "The boat takes sarah to a dark forest"
+}
+
+
+FOREST_2 = {
     "story": "The boat takes sarah to a dark forest"
 }

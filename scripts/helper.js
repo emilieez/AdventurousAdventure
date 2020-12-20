@@ -25,13 +25,14 @@ function createTextBlock(textblockID, position, fontSize, fontFamily) {
 function createSarah(sarahID, sarahImg) {
     var sarah = document.createElement("div")
     sarah.setAttribute("id", sarahID)
+    sarah.className = "overlay";
     sarah.style.backgroundImage = sarahImg
     sarah.style.backgroundRepeat = "no-repeat"
     sarah.style.backgroundSize = "contain"
     sarah.style.maxWidth = "2560px"
     sarah.style.maxHeight = "1600px"
-    sarah.style.minWidth = "1400px"
-    sarah.style.minHeight = "900px"
+    sarah.style.minWidth = "720px"
+    sarah.style.minHeight = "450px"
     sarah.style.position = "absolute"
     return sarah
 }
