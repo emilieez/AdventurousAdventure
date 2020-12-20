@@ -446,9 +446,9 @@ $(document).ready(function () {
                 case 37:
                     document.getElementById("skyCaveWaterStory").innerHTML = ""
                     $("#skyCaveWaterCrashEffect").hide()
-                    $("#skyCaveWaterSarahUp").animate({ opacity: 0 }, 500)
-                    $("#skyCaveWaterSarahRight").animate({ opacity: 0 }, 500)
-                    $("#skyCaveWaterSarahRightCrash").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahUp").animate({ opacity: 0, top: "100px" }, 300)
+                    $("#skyCaveWaterSarahRight").animate({ opacity: 0, right: "400px" }, 300)
+                    $("#skyCaveWaterSarahRightCrash").animate({ opacity: 0 }, 300)
                     $("#skyCaveWaterSarahLeft").animate({
                         opacity: 1, left: '-=' + '200px'
                     }, 500)
@@ -460,22 +460,22 @@ $(document).ready(function () {
                 case 38:
                     document.getElementById("skyCaveWaterStory").innerHTML = ""
                     $("#skyCaveWaterCrashEffect").hide()
-                    $("#skyCaveWaterSarahLeft").animate({ opacity: 0 }, 500)
-                    $("#skyCaveWaterSarahRight").animate({ opacity: 0 }, 500)
-                    $("#skyCaveWaterSarahRightCrash").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahLeft").animate({ opacity: 0, left: "400px" }, 300)
+                    $("#skyCaveWaterSarahRight").animate({ opacity: 0, right: "400px" }, 300)
+                    $("#skyCaveWaterSarahRightCrash").animate({ opacity: 0 }, 300)
                     $("#skyCaveWaterSarahUp").animate({
                         opacity: 1, top: '-=' + '100px'
                     })
-                    if (up < 3) { up += 1; } else {
+                    if (up < 1) { up += 1; } else {
                         showSwimResult("up")
                     }
                     break;
                 case 39:
                     document.getElementById("skyCaveWaterStory").innerHTML = ""
                     $("#skyCaveWaterCrashEffect").hide()
-                    $("#skyCaveWaterSarahLeft").animate({ opacity: 0 }, 500)
-                    $("#skyCaveWaterSarahUp").animate({ opacity: 0 }, 500)
-                    $("#skyCaveWaterSarahRightCrash").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahLeft").animate({ opacity: 0, left: "400px" }, 300)
+                    $("#skyCaveWaterSarahUp").animate({ opacity: 0, top: "100px" }, 300)
+                    $("#skyCaveWaterSarahRightCrash").animate({ opacity: 0 }, 300)
                     $("#skyCaveWaterSarahRight").animate({
                         opacity: 1, right: '-=' + '200px'
                     })
@@ -490,7 +490,7 @@ $(document).ready(function () {
             switch (direction) {
                 case "left":
                     document.getElementById("skyCaveWaterStory").innerHTML = CAVE_WATER["swimLeft-result"]
-                    $("#skyCaveWaterSarahLeft").animate({ opacity: 0 }, 500)
+                    $("#skyCaveWaterSarahLeft").animate({ opacity: 0 }, 300)
                     break;
                 case "right":
                     document.getElementById("skyCaveWaterStory").innerHTML = CAVE_WATER["swimRight-result"]
