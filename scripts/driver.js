@@ -90,15 +90,9 @@ $(document).ready(function () {
                     opacity: "1"
                 }, 3000)
 
-                $("#bedroomMorningSarah-3").css({
-                    "animation": "shake 0.5s",
-                    "animation-delay": "5s",
-                    "animation-iteration-count": "infinite"
-                })
-
                 setTimeout(function () {
                     $("#bedroomMorning3Texts").css("opacity", 1);
-                    $("#bedroomMorning3Continue").fadeIn(6000);
+                    $("#bedroomMorning3Story1continue").fadeIn(6000);
                 }, 4000);
             });
 
@@ -116,6 +110,23 @@ $(document).ready(function () {
             }, 2000)
         }, 3000);
     });
+
+    $("#bedroomMorning3Story1continue").click(function () {
+        $("#bedroom-morning-3-story-1").fadeOut(1000);
+
+        setTimeout(function () {
+            $("#bedroomMorning3Story1continue").hide();
+            document.getElementById('bedroom-morning-3-story-1').innerHTML = BEDROOM_MORNING_3["story2"];
+            $("#bedroom-morning-3-story-1").fadeIn(2000);
+            $("#bedroomMorning3Continue").fadeIn(6000);
+
+            $("#bedroomMorningSarah-3").css({
+                "animation": "shake 0.5s",
+                // "animation-delay": "5s",
+                "animation-iteration-count": "infinite"
+            })
+        }, 1000)
+    })
 
 
 

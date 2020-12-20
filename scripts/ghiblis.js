@@ -60,8 +60,6 @@ document.getElementById("optionsModal-button").setAttribute("data-dismiss", "mod
 document.getElementById("optionsModal-button").innerHTML = "K Cool"
 document.getElementById("optionsModal-button").style.fontFamily = "news-goth-std"
 
-// createModal("bedroom-morning-2-options-3-modal", BEDROOM_MORNING_2["resultPass"], "news-goth-std", "Lets YEET")
-
 bedroomMorning2Texts.appendChild(bedroomMorning2Story)
 bedroomMorning2Texts.appendChild(bedroomMorning2Continue)
 bedroomMorning2.appendChild(bedroomMorning2Sarah)
@@ -75,8 +73,8 @@ var bedroomMorning3 = createScene("bedroom-morning-3", "url('images/bedroom_morn
 var bedroomMorning3Texts = createTextBlock("bedroomMorning3Texts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
 
 var bedroomMorning3Story1 = createStory("bedroom-morning-3-story-1", BEDROOM_MORNING_3["story1"])
-var bedroomMorning3Story2 = createStory("bedroom-morning-3-story-2", BEDROOM_MORNING_3["story2"])
 
+var bedroomMorning3Story1continue = createContinueBtn("bedroomMorning3Story1continue", "news-gothic-std")
 var bedroomMorning3Continue = createContinueBtn("bedroomMorning3Continue", "news-gothic-std")
 bedroomMorning3Continue.style.zIndex = 1;
 
@@ -85,7 +83,7 @@ bedroomMorning3Sarah.style.right = "-3000px"
 bedroomMorning3Sarah.style.opacity = 0
 
 bedroomMorning3Texts.appendChild(bedroomMorning3Story1)
-bedroomMorning3Texts.appendChild(bedroomMorning3Story2)
+bedroomMorning3Texts.appendChild(bedroomMorning3Story1continue)
 bedroomMorning3Texts.appendChild(bedroomMorning3Continue)
 bedroomMorning3.appendChild(bedroomMorning3Sarah)
 bedroomMorning3.appendChild(bedroomMorning3Texts)
