@@ -53,3 +53,20 @@ catMountainTexts.appendChild(catMountainStory);
 catMountainTexts.appendChild(catMountainContinue)
 catMountain.appendChild(catMountainSarah)
 catMountain.appendChild(catMountainTexts)
+
+
+// ============= SKY SCENE CAT MOUNTAIN LANDING ================
+var catMountainLanding = createScene("catMountainLanding", "url('images/cat_mountain_landing.png')", 2)
+var catMountainLandingTexts = createTextBlock("catMountainLandingTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
+
+var catMountainLandingSarah = createOverlay("catMountainLandingSarah", "url('images/cat_mountain_landing_sarah.png')")
+catMountainLandingSarah.style.top = "-1000px";
+
+var catMountainLandingStory = createStory("catMountain-landing-story", CAT_MOUNTAIN_LANDING["story"])
+
+var catMountainLandingContinue = createContinueBtn("catMountainLandingContinue", "news-gothic-std")
+
+catMountainLandingTexts.appendChild(catMountainLandingStory);
+catMountainLandingTexts.appendChild(catMountainLandingContinue)
+catMountainLanding.appendChild(catMountainLandingSarah)
+catMountainLanding.appendChild(catMountainLandingTexts)

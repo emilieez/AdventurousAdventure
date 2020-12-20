@@ -10,6 +10,7 @@ canvas.appendChild(alleyScene2)
 canvas.appendChild(sky1)
 canvas.appendChild(liftoff)
 canvas.appendChild(catMountain)
+canvas.appendChild(catMountainLanding)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
 
@@ -308,17 +309,24 @@ $(document).ready(function () {
 
 
 
-    // ============= SKY SCENE 1 ================
-    // $("#sky-1").fadeIn(1000);
-    // $("#sky1sarah").animate({
-    //     left: "0",
-    //     opacity: 1
-    // }, 2000)
+    // =============================== HAKU SCENE =================================
+    $("#alleyScene2Continue").click(function () {
+        $("#sky-1").fadeIn(1000);
+        $("#sky1sarah").animate({
+            left: "0",
+            opacity: 1
+        }, 2000)
 
-    // setTimeout(function () {
-    //     $("#sky1texts").css("opacity", 1);
-    //     $("#sky1continue").fadeIn(6000);
-    // }, 3500);
+        setTimeout(function () {
+            $("#sky1texts").css("opacity", 1);
+            $("#sky1continue").fadeIn(6000);
+        }, 3500);
+    })
+
+
+
+
+    // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {
         $("#sky-1").fadeOut(1000)
         $("#liftoff").fadeIn(900)
@@ -329,7 +337,7 @@ $(document).ready(function () {
         });
         $("#whatCatMountain").css({
             "animation": "blink 3s",
-            "animation-delay": "1s",
+            "animation-delay": "3s",
             "animation-iteration-count": "infinite"
         });
 
@@ -357,18 +365,38 @@ $(document).ready(function () {
         }, 3000);
     });
 
+
+
+    // ============= SKY SCENE CAT MOUNTAIN LANDING =============
     $("#catMountainContinue").click(function () {
         $("#catMountain").fadeOut(1000);
+        $("#catMountainLanding").fadeIn(1000)
 
-        // ============= FOREST SCENE 1 =============================
-        $("#forest-1").fadeIn(900);
         setTimeout(function () {
-            $("#forest1texts").css("opacity", 1);
-            $("#forest1story1continue").fadeIn(6000);
-        }, 3000);
+            $("#catMountainLandingSarah").animate({
+                "top": "0px"
+            }, 3000);
+        }, 2000)
+
+        setTimeout(function () {
+            $("#catMountainLandingTexts").css("opacity", 1);
+            $("#catMountainLandingContinue").fadeIn(6000);
+        }, 2000);
     });
 
+
+
+    // ============= SKY SCENE CAT MOUNTAIN LANDING =============
+
+
+
     // ========================= FOREST SCENE 1 =============================
+    // ============= FOREST SCENE 1 =============================
+    // $("#forest-1").fadeIn(900);
+    // setTimeout(function () {
+    //     $("#forest1texts").css("opacity", 1);
+    //     $("#forest1story1continue").fadeIn(6000);
+    // }, 3000);
     $("#forest1story1continue").click(function () {
         $("#forest-1-story").fadeOut(1000);
 

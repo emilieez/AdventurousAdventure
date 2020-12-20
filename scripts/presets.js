@@ -12,8 +12,8 @@ if (windowHeight / windowWidth < 0.625) {
 fontSize = window.innerHeight * window.innerWidth * 0.00003
 if (fontSize < 14) {
     STANDARD_FONT_SIZE = '14px'
-} else if (fontSize > 48) {
-    STANDARD_FONT_SIZE = '48px'
+} else if (fontSize > 50) {
+    STANDARD_FONT_SIZE = '50px'
 } else {
     STANDARD_FONT_SIZE = fontSize + 'px'
 }
@@ -57,9 +57,9 @@ ALLEY_CLOSEUP = {
     "story3": "Disappointed, Sarah decides to search elsewhere, but where should she go?"
 }
 
-ALLEY_SCENE_2 = [
+ALLEY_SCENE_2 = {
     "story": "ust when all seemed lost, a blur of green and white flew past above her and landed behind her."
-]
+}
 
 LIFTOFF = {
     "story": "Lifting off she activates her cape and soars through the sky passing by islands and landing her eye on the island which reminds her of a cat "
@@ -71,6 +71,10 @@ SKY_SCENE_1 = {
 
 CAT_MOUNTAIN = {
     "story": "Arriving near the cat mountain, she looks around for a decent place to land"
+}
+
+CAT_MOUNTAIN_LANDING = {
+    "story": "After spotting the cave hidden in the mountains, she makes her way there and lands."
 }
 
 FOREST_1 = {
