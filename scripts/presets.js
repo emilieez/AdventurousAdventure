@@ -4,18 +4,16 @@ windowHeight = window.innerHeight;
 if (windowHeight / windowWidth < 0.625) {
     GLOBAL_WIDTH = window.innerHeight * 1.6;
     GLOBAL_HEIGHT = window.innerHeight
-    STANDARD_FONT_SIZE = window.innerHeight * window.innerWidth * 0.00002
 } else {
     GLOBAL_WIDTH = window.innerWidth;
     GLOBAL_HEIGHT = window.innerWidth * 0.625
-    STANDARD_FONT_SIZE = window.innerHeight * window.innerWidth * 0.00002
 }
 
-fontSize = window.innerHeight * window.innerWidth * 0.00005
+fontSize = window.innerHeight * window.innerWidth * 0.00003
 if (fontSize < 13.5) {
     STANDARD_FONT_SIZE = '14px'
-} else if (fontSize > 28) {
-    STANDARD_FONT_SIZE = '27px'
+} else if (fontSize > 48) {
+    STANDARD_FONT_SIZE = '48px'
 } else {
     STANDARD_FONT_SIZE = fontSize + 'px'
 }
@@ -66,7 +64,9 @@ CAT_MOUNTAIN = {
 }
 
 FOREST_1 = {
-    "story": "The boat takes sarah to a dark forest"
+    "story1": "Sarah finds herself in the midst of a foreign land shrouded in silver fog. An eerie violet glow looms behind the grove of trees full of spikes and needles.",
+    "story2": "She steps towards the oddly shaped archway, only to be welcomed with a series of unearthly whispers and a spine-chilling breeze.",
+    "story3": "With a deep, deep breath, Sarah cautiously ventures into the Dark Forest."
 }
 
 

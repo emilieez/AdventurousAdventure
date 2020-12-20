@@ -285,18 +285,23 @@ $(document).ready(function () {
 
         // ============= FOREST SCENE 1 =============================
         $("#forest-1").fadeIn(900);
-
-        setTimeout(function () {
-            updown("forest1sarah-1")
-        }, 1000)
-
         setTimeout(function () {
             $("#forest1texts").css("opacity", 1);
-            $("#forest1continue").fadeIn(6000);
-        }, 2100);
+            $("#forest1story1continue").fadeIn(6000);
+        }, 3000);
     });
 
-
+    // ============= FOREST SCENE 1 =============================
+    $("#forest1story1continue").click(function () {
+        $("#forest1story1continue").fadeOut(400);
+        $("#forest1texts").fadeOut(400);
+        document.getElementById('forest-1-story').innerHTML = FOREST_1["story2"];
+        $("#forest1texts").fadeIn(400);
+        setTimeout(function () {
+            $("#forest1texts").css("opacity", 1);
+            $("#forest1story2continue").fadeIn(6000);
+        }, 2000);
+    })
 
 
 

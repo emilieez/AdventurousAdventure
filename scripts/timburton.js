@@ -6,11 +6,18 @@ var forest1sarah_1 = createSarah("forest1sarah-1", "url('images/forest_1_sarah-1
 var forest1sarah_2 = createSarah("forest1sarah-2", "url('images/forest_1_sarah-2.png')")
 forest1sarah_2.style.display = "none"
 
-var forest1story = createStory("forest-1-story", FOREST_1["story"])
+var forest1story = createStory("forest-1-story", FOREST_1["story1"])
+var forest1story1continue = createContinueBtn("forest1story1continue", "NorthwoodHigh")
+var forest1story2continue = createContinueBtn("forest1story2continue", "NorthwoodHigh")
+var forest1story3continue = createContinueBtn("forest1story3continue", "NorthwoodHigh")
+
 var forest1continue = createContinueBtn("forest1continue", "NorthwoodHigh")
 
 forest1texts.appendChild(forest1story)
 forest1texts.appendChild(forest1continue)
+forest1texts.appendChild(forest1story1continue)
+forest1texts.appendChild(forest1story2continue)
+forest1texts.appendChild(forest1story3continue)
 forest1.appendChild(forest1sarah_1)
 forest1.appendChild(forest1sarah_2)
 forest1.appendChild(forest1texts)
