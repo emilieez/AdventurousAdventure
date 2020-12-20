@@ -7,12 +7,22 @@ windowHeight = window.innerHeight;
 if (windowHeight / windowWidth < 0.625) {
     GLOBAL_WIDTH = window.innerHeight * 1.6;
     GLOBAL_HEIGHT = window.innerHeight
-    STANDARD_FONT_SIZE = window.innerHeight * 0.02 + 'px'
+    STANDARD_FONT_SIZE = window.innerHeight * window.innerWidth * 0.00002
 } else {
     GLOBAL_WIDTH = window.innerWidth;
     GLOBAL_HEIGHT = window.innerWidth * 0.625
-    STANDARD_FONT_SIZE = window.innerWidth * 0.02 + 'px'
+    STANDARD_FONT_SIZE = window.innerHeight * window.innerWidth * 0.00002
 }
+
+fontSize = window.innerHeight * window.innerWidth * 0.00005
+if (fontSize < 13.5) {
+    STANDARD_FONT_SIZE = '14px'
+} else if (fontSize > 28) {
+    STANDARD_FONT_SIZE = '27px'
+} else {
+    STANDARD_FONT_SIZE = fontSize + 'px'
+}
+
 
 BEDROOM_MORNING_2 = {
     "story": "Energized by the bean, she contemplates her outfit of the day. What should she wear today?",
