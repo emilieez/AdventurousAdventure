@@ -2,8 +2,8 @@
 var forest1 = createScene("forest-1", "url('images/forest_1.jpg')", 3)
 var forest1texts = createTextBlock("forest1texts", "bottom-centered", STANDARD_FONT_SIZE, "NorthwoodHigh")
 
-var forest1sarah_1 = createSarah("forest1sarah-1", "url('images/forest_1_sarah-1.png')")
-var forest1sarah_2 = createSarah("forest1sarah-2", "url('images/forest_1_sarah-2.png')")
+var forest1sarah_1 = createOverlay("forest1sarah-1", "url('images/forest_1_sarah-1.png')")
+var forest1sarah_2 = createOverlay("forest1sarah-2", "url('images/forest_1_sarah-2.png')")
 forest1sarah_2.style.display = "none"
 
 var forest1story = createStory("forest-1-story", FOREST_1["story1"])

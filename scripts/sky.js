@@ -3,7 +3,7 @@
 var sky1 = createScene("sky-1", "url('images/sky_1.png')", 2)
 var sky1texts = createTextBlock("sky1texts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
 
-var sky1sarah = createSarah("sky1sarah", "url('images/sky_1_sarah.png')")
+var sky1sarah = createOverlay("sky1sarah", "url('images/sky_1_sarah.png')")
 sky1sarah.style.left = "-200px"
 sky1sarah.style.opacity = "0"
 
@@ -22,8 +22,8 @@ sky1.appendChild(sky1texts)
 var liftoff = createScene("liftoff", "url('images/liftoff.png')", 2)
 var liftoffTexts = createTextBlock("liftoffTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
 
-var liftoffSarah = createSarah("liftoffSarah", "url('images/liftoff_sarah.png')")
-var whatCatMountain = createSarah("whatCatMountain", "url('images/show.png')")
+var liftoffSarah = createOverlay("liftoffSarah", "url('images/liftoff_sarah.png')")
+var whatCatMountain = createOverlay("whatCatMountain", "url('images/show.png')")
 
 var liftoffStory = createStory("liftoff-story", LIFTOFF["story"])
 
@@ -42,7 +42,7 @@ liftoff.appendChild(liftoffTexts)
 var catMountain = createScene("catMountain", "url('images/cat_mountain.png')", 2)
 var catMountainTexts = createTextBlock("catMountainTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
 
-var catMountainSarah = createSarah("catMountainSarah", "url('images/cat_mountain_sarah.png')")
+var catMountainSarah = createOverlay("catMountainSarah", "url('images/cat_mountain_sarah.png')")
 
 var catMountainStory = createStory("catMountain-story", CAT_MOUNTAIN["story"])
 

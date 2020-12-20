@@ -5,11 +5,11 @@ var bedroomMorningStory = createStory("bedroom-morning-story", "One beautiful, w
 var bedroomMorningContinue = createContinueBtn("bedroomMorningContinue", "news-gothic-std")
 bedroomMorningContinue.style.zIndex = 1;
 
-var bedroomMorningSarah1 = createSarah("bedroomMorningSarah_1", "url('images/bedroom_morning_sarah-1.png')")
+var bedroomMorningSarah1 = createOverlay("bedroomMorningSarah_1", "url('images/bedroom_morning_sarah-1.png')")
 bedroomMorningSarah1.style.transform = "rotate(300deg)"
 
 
-var whatCastle = createSarah("whatCastle", "url('images/boom.png')")
+var whatCastle = createOverlay("whatCastle", "url('images/boom.png')")
 whatCastle.style.opacity = "0"
 
 bedroomMorningTexts.appendChild(bedroomMorningStory)
@@ -40,7 +40,7 @@ var bedroomMorning2Story = createStory("bedroom-morning-2-story", BEDROOM_MORNIN
 var bedroomMorning2Continue = createContinueBtn("bedroomMorning2Continue", "news-gothic-std")
 bedroomMorning2Continue.style.zIndex = 1;
 
-var bedroomMorning2Sarah = createSarah("bedroomMorningSarah-2", "url('images/bedroom_morning_sarah-2.png')")
+var bedroomMorning2Sarah = createOverlay("bedroomMorningSarah-2", "url('images/bedroom_morning_sarah-2.png')")
 bedroomMorning2Sarah.style.right = "-300px"
 bedroomMorning2Sarah.style.opacity = 0
 
@@ -78,7 +78,7 @@ var bedroomMorning3Story1continue = createContinueBtn("bedroomMorning3Story1cont
 var bedroomMorning3Continue = createContinueBtn("bedroomMorning3Continue", "news-gothic-std")
 bedroomMorning3Continue.style.zIndex = 1;
 
-var bedroomMorning3Sarah = createSarah("bedroomMorningSarah-3", "url('images/bedroom_morning_sarah-3.png')")
+var bedroomMorning3Sarah = createOverlay("bedroomMorningSarah-3", "url('images/bedroom_morning_sarah-3.png')")
 bedroomMorning3Sarah.style.right = "-3000px"
 bedroomMorning3Sarah.style.opacity = 0
 
@@ -104,17 +104,17 @@ var outsideSceneOptions = createOptions(
 outsideSceneOptions.style.top = "-100px"
 outsideSceneOptions.style.opacity = 0
 
-var outsideHowlSarah = createSarah("outsideHowlSarah", "url('images/outside_howl_sarah.png')")
+var outsideHowlSarah = createOverlay("outsideHowlSarah", "url('images/outside_howl_sarah.png')")
 outsideHowlSarah.style.bottom = "-100px";
 outsideHowlSarah.style.display = "none";
 outsideHowlSarah.style.opacity = 0;
 
-var outsideNofaceSarah = createSarah("outsideNofaceSarah", "url('images/outside_noface_sarah.png')")
+var outsideNofaceSarah = createOverlay("outsideNofaceSarah", "url('images/outside_noface_sarah.png')")
 outsideNofaceSarah.style.bottom = "-100px";
 outsideNofaceSarah.style.display = "none";
 outsideNofaceSarah.style.opacity = 0;
 
-var outsideCatbusSarah = createSarah("outsideCatbusSarah", "url('images/outside_catbus_sarah.png')")
+var outsideCatbusSarah = createOverlay("outsideCatbusSarah", "url('images/outside_catbus_sarah.png')")
 outsideCatbusSarah.style.bottom = "-100px";
 outsideCatbusSarah.style.display = "none";
 outsideCatbusSarah.style.opacity = 0;
@@ -136,7 +136,7 @@ var alleySceneStory = createStory("alley-scene-story", ALLEY_SCENE["story"])
 var alleySceneContinue = createContinueBtn("alleySceneContinue", "news-gothic-std")
 alleySceneContinue.style.zIndex = 1;
 
-var alleySceneSarah = createSarah("alleySceneSarah", "url('images/alley_sarah.png')")
+var alleySceneSarah = createOverlay("alleySceneSarah", "url('images/alley_sarah.png')")
 alleySceneSarah.style.right = "-100px"
 alleySceneSarah.style.opacity = 0
 
@@ -144,3 +144,7 @@ alleySceneTexts.appendChild(alleySceneStory)
 alleySceneTexts.appendChild(alleySceneContinue)
 alleyScene.appendChild(alleySceneSarah)
 alleyScene.appendChild(alleySceneTexts)
+
+
+
+//  ========================  ALLEY CKOSE UP =================================

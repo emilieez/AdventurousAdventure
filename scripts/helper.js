@@ -22,7 +22,7 @@ function createTextBlock(textblockID, position, fontSize, fontFamily) {
     return textBlock
 }
 
-function createSarah(sarahID, sarahImg) {
+function createOverlay(sarahID, sarahImg) {
     var sarah = document.createElement("div")
     sarah.setAttribute("id", sarahID)
     sarah.className = "overlay";
