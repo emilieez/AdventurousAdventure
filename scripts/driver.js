@@ -5,6 +5,7 @@ canvas.appendChild(bedroomMorning2)
 canvas.appendChild(bedroomMorning3)
 canvas.appendChild(outsideScene)
 canvas.appendChild(alleyScene)
+canvas.appendChild(alleyCloseup)
 canvas.appendChild(sky1)
 canvas.appendChild(liftoff)
 canvas.appendChild(catMountain)
@@ -239,20 +240,60 @@ $(document).ready(function () {
 
     $("#alleySceneContinue").click(function () {
         $("#alley-scene").fadeOut(1000);
-        $("#sky-1").fadeIn(1000);
-        $("#sky1sarah").animate({
-            left: "0",
+        $("#alleyCloseup").fadeIn(1000);
+        $("#alleySceneCat").animate({
             opacity: 1
-        }, 2000)
+        }, 3000);
 
         setTimeout(function () {
-            $("#sky1texts").css("opacity", 1);
-            $("#sky1continue").fadeIn(6000);
-        }, 3500);
+            $("#alleyCloseupTexts").css("opacity", 1);
+            $("#alleyCloseupStory1continue").fadeIn(3000);
+        }, 2000);
+    })
+
+    $("#alleyCloseupStory1continue").click(function () {
+        $("#alleyCloseupStory").fadeOut(1000);
+
+        setTimeout(function () {
+            $("#alleyCloseupStory1continue").hide();
+            document.getElementById('alleyCloseupStory').innerHTML = ALLEY_CLOSEUP["story2"];
+            $("#alleyCloseupStory").fadeIn(2000);
+            $("#alleySceneCatDark").css({
+                "animation": "breathing 1s",
+                "animation-delay": "0.5s",
+                "animation-iteration-count": "infinite"
+            });
+            $("#alleyCloseupStory2continue").fadeIn(6000);
+        }, 1000)
+    })
+
+    $("#alleyCloseupStory2continue").click(function () {
+        $("#alleyCloseupStory").fadeOut(1000);
+        $("#alleySceneCatDark").css({
+            "animation": "none",
+            "display": "none"
+        });
+
+        setTimeout(function () {
+            $("#alleyCloseupStory2continue").hide();
+            document.getElementById('alleyCloseupStory').innerHTML = ALLEY_CLOSEUP["story3"];
+            $("#alleyCloseupStory").fadeIn(2000);
+            $("#alleyCloseupContinue").fadeIn(6000);
+        }, 1000)
     })
 
 
     // ============= SKY SCENE 1 ================
+    // $("#sky-1").fadeIn(1000);
+    // $("#sky1sarah").animate({
+    //     left: "0",
+    //     opacity: 1
+    // }, 2000)
+
+    // setTimeout(function () {
+    //     $("#sky1texts").css("opacity", 1);
+    //     $("#sky1continue").fadeIn(6000);
+    // }, 3500);
     $("#sky1continue").click(function () {
         $("#sky-1").fadeOut(1000)
         $("#liftoff").fadeIn(900)

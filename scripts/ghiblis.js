@@ -148,3 +148,24 @@ alleyScene.appendChild(alleySceneTexts)
 
 
 //  ========================  ALLEY CKOSE UP =================================
+var alleyCloseup = createScene("alleyCloseup", "url('images/alley_closeup.png')", 1)
+var alleyCloseupTexts = createTextBlock("alleyCloseupTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
+
+var alleyCloseupStory1 = createStory("alleyCloseupStory", ALLEY_CLOSEUP["story1"])
+var alleySceneCat = createOverlay("alleySceneCat", "url('images/totoro_light.png')")
+alleySceneCat.style.opacity = 0
+
+var alleySceneCatDark = createOverlay("alleySceneCatDark", "url('images/totoro_dark.png')")
+alleySceneCatDark.style.opacity = 0
+
+var alleyCloseupStory1continue = createContinueBtn("alleyCloseupStory1continue", "news-gothic-std")
+var alleyCloseupStory2continue = createContinueBtn("alleyCloseupStory2continue", "news-gothic-std")
+var alleyCloseupContinue = createContinueBtn("alleyCloseupContinue", "news-gothic-std")
+
+alleyCloseupTexts.appendChild(alleyCloseupStory1)
+alleyCloseupTexts.appendChild(alleyCloseupStory1continue)
+alleyCloseupTexts.appendChild(alleyCloseupStory2continue)
+alleyCloseupTexts.appendChild(alleyCloseupContinue)
+alleyCloseup.appendChild(alleySceneCat)
+alleyCloseup.appendChild(alleySceneCatDark)
+alleyCloseup.appendChild(alleyCloseupTexts)

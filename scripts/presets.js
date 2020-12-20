@@ -51,6 +51,12 @@ ALLEY_SCENE = {
     "story": "Inside the alleyway, Sarah sees a faint grey blur behind one of the boxes. She decides to take a closer look."
 }
 
+ALLEY_CLOSEUP = {
+    "story1": "Sarah comes closer and finds a grey creature that is not her cat.",
+    "story2": "Cat? Cat? Where are you? … Where am I?",
+    "story3": "Disappointed, Sarah decides to search elsewhere, but where should she go?"
+}
+
 LIFTOFF = {
     "story": "Lifting off she activates her cape and soars through the sky passing by islands and landing her eye on the island which reminds her of a cat "
 }
