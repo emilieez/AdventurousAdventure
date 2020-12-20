@@ -1,6 +1,3 @@
-
-
-
 windowWidth = window.innerWidth;
 windowHeight = window.innerHeight;
 
