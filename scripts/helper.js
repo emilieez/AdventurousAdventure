@@ -94,3 +94,11 @@ function updown(elmnt) {
         $(`#${elmnt}`).animate({ top: '-=' + '30px' }, 200);
     }
 }
+
+function transitionStory(oldStoryContinueID, storyID, newStoryText, newStoryContinueID) {
+    $(`#${oldStoryContinueID}`).hide();
+    $(`#${storyID}`).hide();
+    document.getElementById(storyID).innerHTML = newStoryText;
+    $(`#${storyID}`).fadeIn(3000);
+    $(`#${newStoryContinueID}`).fadeIn(5000);
+}

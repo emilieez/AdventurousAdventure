@@ -9,7 +9,7 @@ if (windowHeight / windowWidth < 0.625) {
     GLOBAL_HEIGHT = window.innerWidth * 0.625
 }
 
-fontSize = window.innerHeight * window.innerWidth * 0.00003
+fontSize = window.innerHeight * window.innerWidth * 0.000025
 if (fontSize < 14) {
     STANDARD_FONT_SIZE = '14px'
 } else if (fontSize > 50) {
@@ -116,4 +116,10 @@ FOREST_2 = {
 FOREST_3 = {
     "story1": "Wondering just how far Cat could've ventured, Sarah glances up at the cerulean night sky, veiled under a flawless sheet of ivory clouds.",
     "story2": "Suddenly, a blinding burst of lightning flashes across the sky, and heavy chains of raindrops come plummeting down."
+}
+
+FOREST_BRIDGE = {
+    "story1": "Having lost her sense of direction, Sarah wanders deeper into the Dark Forest and finds herself at a lone, fragile-looking wooden bridge.",
+    "story2": "A chorus of low-pitched growling echoes through the woods. Drifting along the river is a distinctly...<em>rusty</em> scent.",
+    "story3": "Then, Sarah hears an ever-so-dainty meowing noise coming from the other side. Without hesitation, she hurries across the river."
 }

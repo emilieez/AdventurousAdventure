@@ -16,6 +16,7 @@ canvas.appendChild(skyCaveWater)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
 canvas.appendChild(forest3)
+canvas.appendChild(forestBridge)
 
 
 $(".scene").css({ width: GLOBAL_WIDTH + 'px' })
@@ -697,5 +698,38 @@ $(document).ready(function () {
             $("#forest3rain").animate({ opacity: 1 }, 800)
         }, 1000)
 
+    })
+
+
+
+    // ================================ FOREST BRIDGE ====================================
+    $("#forest3continue").click(function () {
+        $("#forest-3").fadeOut(1000);
+        $("#forestBridge").fadeIn(1000);
+
+        setTimeout(function () {
+            $("#forestBridgeSarah1").animate({
+                opacity: 1, right: 0
+            }, 2000)
+
+            $("#forestBridgeTexts").css("opacity", 1);
+            $("#forestBridgeStory1continue").fadeIn(5000);
+        }, 3000)
+    })
+
+    $("#forestBridgeStory1continue").click(function () {
+        transitionStory("forestBridgeStory1continue", "forest-bridge-story", FOREST_BRIDGE["story2"], "forestBridgeStory2continue")
+        $("#forestBridgeSarah1").animate({ opacity: 0, right: 0 }, 1000)
+        setTimeout(function () {
+            $("#forestBridgeSarah2").animate({ opacity: 1 }, 1000)
+        }, 1000)
+    })
+
+    $("#forestBridgeStory2continue").click(function () {
+        transitionStory("forestBridgeStory2continue", "forest-bridge-story", FOREST_BRIDGE["story3"], "forestBridgeContinue")
+        $("#forestBridgeSarah2").animate({ opacity: 0 }, 1000)
+        setTimeout(function () {
+            $("#forestBridgeSarah3").animate({ opacity: 1, right: 0 }, 1000)
+        }, 1000)
     })
 });

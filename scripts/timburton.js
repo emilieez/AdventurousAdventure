@@ -1,4 +1,4 @@
-FOREST_FONT_SIZE = STANDARD_FONT_SIZE.replace('px', '') * 1.09 + "px"
+FOREST_FONT_SIZE = STANDARD_FONT_SIZE.replace('px', '') * 1.1 + "px"
 
 // ============= FOREST SCENE 1 ================
 var forest1 = createScene("forest-1", "url('images/forest_1.jpg')", 3)
@@ -105,3 +105,35 @@ forest3texts.appendChild(forest3continue)
 forest3texts.appendChild(forest3story1continue)
 forest3.appendChild(forest3rain)
 forest3.appendChild(forest3texts)
+
+
+
+// ============= FOREST BRIDGE SCENE ================
+var forestBridge = createScene("forestBridge", "url('images/bridge.png')", 3)
+var forestBridgeTexts = createTextBlock("forestBridgeTexts", "bottom-centered", FOREST_FONT_SIZE, "NorthwoodHigh")
+
+var forestBridgeStory = createStory("forest-bridge-story", FOREST_BRIDGE["story1"])
+var forestBridgeStory1continue = createContinueBtn("forestBridgeStory1continue", "NorthwoodHigh")
+var forestBridgeStory2continue = createContinueBtn("forestBridgeStory2continue", "NorthwoodHigh")
+var forestBridgeContinue = createContinueBtn("forestBridgeContinue", "NorthwoodHigh")
+
+
+var forestBridgeSarah1 = createOverlay("forestBridgeSarah1", "url('images/bridge_sarah-1.png')")
+forestBridgeSarah1.style.opacity = 0;
+forestBridgeSarah1.style.right = '50px';
+
+var forestBridgeSarah2 = createOverlay("forestBridgeSarah2", "url('images/bridge_sarah-2.png')")
+forestBridgeSarah2.style.opacity = 0;
+
+var forestBridgeSarah3 = createOverlay("forestBridgeSarah3", "url('images/bridge_sarah-3.png')")
+forestBridgeSarah3.style.opacity = 0;
+forestBridgeSarah3.style.right = '50px';
+
+forestBridgeTexts.appendChild(forestBridgeStory)
+forestBridgeTexts.appendChild(forestBridgeStory1continue)
+forestBridgeTexts.appendChild(forestBridgeStory2continue)
+forestBridgeTexts.appendChild(forestBridgeContinue)
+forestBridge.appendChild(forestBridgeSarah1)
+forestBridge.appendChild(forestBridgeSarah2)
+forestBridge.appendChild(forestBridgeSarah3)
+forestBridge.appendChild(forestBridgeTexts)
