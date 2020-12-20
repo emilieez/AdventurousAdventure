@@ -7,11 +7,11 @@ windowHeight = window.innerHeight;
 if (windowHeight / windowWidth < 0.625) {
     GLOBAL_WIDTH = window.innerHeight * 1.6;
     GLOBAL_HEIGHT = window.innerHeight
-    STANDARD_FONT_SIZE = window.innerHeight * 0.04 + 'px'
+    STANDARD_FONT_SIZE = window.innerHeight * 0.02 + 'px'
 } else {
     GLOBAL_WIDTH = window.innerWidth;
     GLOBAL_HEIGHT = window.innerWidth * 0.625
-    STANDARD_FONT_SIZE = window.innerWidth * 0.04 + 'px'
+    STANDARD_FONT_SIZE = window.innerWidth * 0.02 + 'px'
 }
 
 BEDROOM_MORNING_2 = {
