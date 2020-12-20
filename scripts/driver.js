@@ -230,7 +230,7 @@ $(document).ready(function () {
                 setTimeout(function () {
                     $("#alleySceneTexts").css("opacity", 1);
                     $("#alleySceneContinue").fadeIn(3000);
-                }, 1000);
+                }, 2000);
             })
         })
 
