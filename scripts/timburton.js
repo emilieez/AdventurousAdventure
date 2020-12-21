@@ -165,7 +165,7 @@ demonicCircleSarah1.style.right = '100px';
 
 var demonicCircleSarah2 = createOverlay("demonicCircleSarah2", "url('images/demonic_circle_sarah-2.png')")
 demonicCircleSarah2.style.opacity = 0;
-demonicCircleSarah1.style.bottom = '100px';
+demonicCircleSarah2.style.bottom = '100px';
 
 demonicCircleTexts.appendChild(demonicCircleStory)
 demonicCircleTexts.appendChild(demonicCircleStory1Continue)
