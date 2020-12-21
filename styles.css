@@ -100,8 +100,17 @@ p {
     left: 0;
     bottom: 5%;
     margin: auto;
-    bottom: 5%;
 }
+
+
+.top-centered {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 5%;
+}
+
 
 .centered {
     position: absolute;

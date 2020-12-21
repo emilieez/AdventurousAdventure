@@ -124,7 +124,7 @@ skyCaveWater.appendChild(skyCaveWaterOptions)
 
 // ============= SKY SCENE CAVE SURFACE  ================
 var skyCaveSurface = createScene("skyCaveSurface", "url('images/cave_surface.png')", 2)
-var skyCaveSurfaceTexts = createTextBlock("skyCaveSurfaceTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
+var skyCaveSurfaceTexts = createTextBlock("skyCaveSurfaceTexts", "top-centered", STANDARD_FONT_SIZE, "news-gothic-std")
 
 var skyCaveSurfaceSarahOnCat = createOverlay("skyCaveSurfaceSarahOnCat", "url('images/cave_surface_cat_sarah.png')")
 var skyCaveSurfaceCat = createOverlay("skyCaveSurfaceCat", "url('images/cave_surface_cat.png')")
