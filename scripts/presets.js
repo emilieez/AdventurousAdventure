@@ -114,7 +114,7 @@ FOREST_2 = {
 }
 
 FOREST_3 = {
-    "story1": "Wondering just how far Cat could've ventured, Sarah glances up at the cerulean night sky, veiled under a flawless sheet of ivory clouds.",
+    "story1": "Wondering just how far Cat could'\ve ventured, Sarah glances up at the bleak cerulean night sky, veiled under a flawless sheet of ivory clouds.",
     "story2": "Suddenly, a blinding burst of lightning flashes across the sky, and heavy chains of raindrops come plummeting down."
 }
 
