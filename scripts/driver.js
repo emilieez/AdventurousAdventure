@@ -93,15 +93,13 @@ $(document).ready(function () {
 
             // ============= BEDROOM MORNING 2 ================
             $("#modal-cancel-button").click(function () {
-                setTimeout(function () {
-                    document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultFail"]
-                    document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
-                    document.getElementById("optionsModal-button").setAttribute("data-dismiss", "modal")
-                    document.getElementById("optionsModal-button").innerHTML = "K Cool"
-                    document.getElementById("optionsModal-button").style.fontFamily = "news-goth-std"
-                    $("#modal-cancel-button").hide()
-                    $('#optionsModal-button').off('click');
-                }, 800)
+                document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultFail"]
+                document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
+                document.getElementById("optionsModal-button").setAttribute("data-dismiss", "modal")
+                document.getElementById("optionsModal-button").innerHTML = "K Cool"
+                document.getElementById("optionsModal-button").style.fontFamily = "news-goth-std"
+                $("#modal-cancel-button").hide()
+                $('#optionsModal-button').off('click');
             });
             $("#optionsModal-button").click(function () {
 
@@ -169,13 +167,6 @@ $(document).ready(function () {
             $("#bedroom-morning-3").remove();
         }, 1000)
 
-
-        document.getElementById("modal-cancel-button").style.display = "none"
-        $("#bedroom-morning").remove();
-        $("#modal-cancel-button").off("click")
-        document.getElementById("modal-cancel-button").innerHTML = ""
-        $('#optionsModal-button').off('click');
-        document.getElementById("optionsModal-body").innerHTML = ""
 
         $("#outside-scene").fadeIn(900);
         $("#bedroomMorningSarah-3").css({
@@ -257,15 +248,13 @@ $(document).ready(function () {
             document.getElementById("optionsModal-button").innerHTML = "Lets YEET"
 
             $("#modal-cancel-button").click(function () {
-                setTimeout(function () {
-                    document.getElementById("optionsModal-body").innerHTML = "You decide to venture into the alleyway."
-                    document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
-                    document.getElementById("optionsModal-button").setAttribute("data-dismiss", "modal")
-                    document.getElementById("optionsModal-button").innerHTML = "K Cool"
-                    document.getElementById("optionsModal-button").style.fontFamily = "news-goth-std"
-                    $("#modal-cancel-button").hide()
-                    $('#optionsModal-button').off('click');
-                }, 800)
+                document.getElementById("optionsModal-body").innerHTML = ""
+                document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
+                document.getElementById("optionsModal-button").setAttribute("data-dismiss", "modal")
+                document.getElementById("optionsModal-button").innerHTML = "K Cool"
+                document.getElementById("optionsModal-button").style.fontFamily = "news-goth-std"
+                $("#modal-cancel-button").hide()
+                $('#optionsModal-button').off('click');
             });
 
             $("#optionsModal-button").click(function () {
