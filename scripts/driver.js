@@ -574,7 +574,7 @@ $(document).ready(function () {
     })
 
     $('#skyCaveSurfaceStory1Continue').click(function () {
-        transitionStory("skyCaveSurfaceStory1Continue", "skyCaveSurfaceStory", CAVE_SURFACE["story2"], "skyCaveSurfaceContinue")
+        transitionStory("skyCaveSurfaceStory1Continue", "skyCaveSurfaceStory", CAVE_SURFACE["story2"], "skyCaveSurfaceStory2Continue")
 
         $("#skyCaveSurfaceSarahOnCat").css({
             "animation": "none", "display": "none"
@@ -588,6 +588,15 @@ $(document).ready(function () {
             "animation-iteration-count": "infinite"
         });
 
+    })
+
+    $('#skyCaveSurfaceStory2Continue').click(function () {
+        transitionStory("skyCaveSurfaceStory2Continue", "skyCaveSurfaceStory", CAVE_SURFACE["story3"], "skyCaveSurfaceContinue")
+
+        $("#skyCaveSurfaceDark").css({
+            "animation": "none", "display": "none"
+        })
+        $("#skyCaveSurfaceEnd").animate({ opacity: 1 }, 1000);
     })
 
     $('#skyCaveSurfaceContinue').click(function () {

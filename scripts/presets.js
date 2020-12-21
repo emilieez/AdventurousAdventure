@@ -94,7 +94,8 @@ CAVE_WATER = {
 
 CAVE_SURFACE = {
     "story1": "After inspecting the mass, Sarah realizes it\’s just a giant plush cat.",
-    "story2": "Disappointed, she pulls herself out of the water and walks deeper into the dark and empty cave."
+    "story2": "Disappointed, she pulls herself out of the water.",
+    "story3": "Sarah walks deeper into the dark and empty cave."
 }
 
 
@@ -120,7 +121,7 @@ FOREST_2 = {
 }
 
 FOREST_3 = {
-    "story1": "Wondering just how far Cat could'\ve ventured, Sarah glances up at the bleak cerulean night sky, veiled under a flawless sheet of ivory clouds.",
+    "story1": "Wondering just how far Cat could\'ve ventured, Sarah glances up at the bleak cerulean night sky, veiled under a flawless sheet of ivory clouds.",
     "story2": "Suddenly, a blinding burst of lightning flashes across the sky, and heavy chains of raindrops come plummeting down."
 }
 
