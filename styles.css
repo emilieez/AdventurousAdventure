@@ -79,8 +79,8 @@ p {
 
 .top-left {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 30%;
+    left: 5%;
 }
 
 .top-right {

@@ -18,6 +18,7 @@ canvas.appendChild(forest2)
 canvas.appendChild(forest3)
 canvas.appendChild(forestBridge)
 canvas.appendChild(demonicCircle)
+canvas.appendChild(bedroomNight)
 
 
 $(".scene").css({ width: GLOBAL_WIDTH + 'px' })
@@ -34,7 +35,7 @@ $(document).ready(function () {
 
     // ============= BEDROOM MORNING ================
     $("#startBtn").click(function () {
-        $("#startBtn").hide();
+        $("#startBtn").remove();
 
         $("#bedroom-morning").fadeIn(1000);
 
@@ -61,6 +62,9 @@ $(document).ready(function () {
 
     $("#bedroomMorningContinue").click(function () {
         $("#bedroom-morning").fadeOut(1000);
+        setTimeout(function () {
+            $("#bedroom-morning").remove();
+        }, 1000)
         $("#coffee-scene").fadeIn(900);
         setTimeout(function () {
             $("#coffeeTexts").css("opacity", 1);
@@ -73,6 +77,9 @@ $(document).ready(function () {
     // ====================== COFFEE ================
     $("#coffeeSceneContinue").click(function () {
         $("#coffee-scene").fadeOut(1000)
+        setTimeout(function () {
+            $("#coffee-scene").remove();
+        }, 1000)
         $("#bedroom-morning-2").fadeIn(900);
 
         $("#bedroom-morning-2-options-3").click(function () {
@@ -87,8 +94,11 @@ $(document).ready(function () {
             $("#optionsModal-button").click(function () {
                 $('#bedroom-morning-2-options-3-modal').modal('hide');
                 $("#bedroom-morning-2").fadeOut(1000)
+                setTimeout(function () {
+                    $("#bedroom-morning-2").remove();
+                }, 1000)
                 document.getElementById("modal-cancel-button").style.display = "none"
-                $("#bedroom-morning").hide();
+                $("#bedroom-morning").remove();
 
 
                 // ============= BEDROOM MORNING 3 ================
@@ -123,7 +133,7 @@ $(document).ready(function () {
         $("#bedroom-morning-3-story-1").fadeOut(1000);
 
         setTimeout(function () {
-            $("#bedroomMorning3Story1continue").hide();
+            $("#bedroomMorning3Story1continue").remove();
             document.getElementById('bedroom-morning-3-story-1').innerHTML = BEDROOM_MORNING_3["story2"];
             $("#bedroom-morning-3-story-1").fadeIn(2000);
             $("#bedroomMorning3Continue").fadeIn(6000);
@@ -140,6 +150,9 @@ $(document).ready(function () {
     // ========================================= OUTSIDE =============================================
     $("#bedroomMorning3Continue").click(function () {
         $("#bedroom-morning-3").fadeOut(1000)
+        setTimeout(function () {
+            $("#bedroom-morning-3").remove();
+        }, 1000)
         $("#outside-scene").fadeIn(900);
         $("#bedroomMorningSarah-3").css({
             "animation": "none"
@@ -220,11 +233,11 @@ $(document).ready(function () {
             document.getElementById("optionsModal-button").innerHTML = "Lets YEET"
 
             $("#optionsModal-button").click(function () {
-                $("#bedroom-morning-3").hide()
+                $("#bedroom-morning-3").remove()
 
                 $('#optionsModal').modal('hide');
                 document.getElementById("modal-cancel-button").style.display = "none"
-                $("#outside-scene").hide();
+                $("#outside-scene").remove();
 
                 // =============================== ALLEY =================================
                 $("#alley-scene").fadeIn(900)
@@ -250,6 +263,9 @@ $(document).ready(function () {
     // =============================== ALLEY CLOSE UP =================================
     $("#alleySceneContinue").click(function () {
         $("#alley-scene").fadeOut(1000);
+        setTimeout(function () {
+            $("#alley-scene").remove();
+        }, 1000)
         $("#alleyCloseup").fadeIn(1000);
         $("#alleySceneCat").animate({
             opacity: 1
@@ -265,7 +281,7 @@ $(document).ready(function () {
         $("#alleyCloseupStory").fadeOut(1000);
 
         setTimeout(function () {
-            $("#alleyCloseupStory1continue").hide();
+            $("#alleyCloseupStory1continue").remove();
             document.getElementById('alleyCloseupStory').innerHTML = ALLEY_CLOSEUP["story2"];
             $("#alleyCloseupStory").fadeIn(2000);
             $("#alleySceneCatDark").css({
@@ -285,7 +301,7 @@ $(document).ready(function () {
         });
 
         setTimeout(function () {
-            $("#alleyCloseupStory2continue").hide();
+            $("#alleyCloseupStory2continue").remove();
             document.getElementById('alleyCloseupStory').innerHTML = ALLEY_CLOSEUP["story3"];
             $("#alleyCloseupStory").fadeIn(2000);
             $("#alleyCloseupContinue").fadeIn(6000);
@@ -298,6 +314,9 @@ $(document).ready(function () {
     // =============================== ALLEY SCENE 2 =================================
     $("#alleyCloseupContinue").click(function () {
         $("#alleyCloseup").fadeOut(1000)
+        setTimeout(function () {
+            $("#alleyCloseup").remove();
+        }, 1000)
         $("#alley-scene-2").fadeIn(900)
         $("#alleyScene2Sarah").css({
             "animation": "breathing 2s",
@@ -331,7 +350,7 @@ $(document).ready(function () {
         $("#hakuStory").fadeOut(1000);
 
         setTimeout(function () {
-            $("#hakuStorycontinue").hide();
+            $("#hakuStorycontinue").remove();
             document.getElementById('hakuStory').innerHTML = HAKU_SCENE["story2"];
             $("#hakuStory").fadeIn(2000);
             $("#hakuSarah1").animate({
@@ -348,6 +367,9 @@ $(document).ready(function () {
 
     $("#hakuContinue").click(function () {
         $("#haku").fadeOut(1000);
+        setTimeout(function () {
+            $("#haku").remove();
+        }, 1000)
 
         $("#sky-1").fadeIn(1000);
         $("#sky1sarah").animate({
@@ -367,6 +389,9 @@ $(document).ready(function () {
     // ============= SKY SCENE 1 ================
     $("#sky1continue").click(function () {
         $("#sky-1").fadeOut(1000)
+        setTimeout(function () {
+            $("#sky-1").remove();
+        }, 1000)
         $("#liftoff").fadeIn(900)
         $("#liftoffSarah").css({
             "animation": "swinging 4s",
@@ -390,6 +415,9 @@ $(document).ready(function () {
     // ============= SKY SCENE CAT MOUNTAIN ================
     $("#liftoffContinue").click(function () {
         $("#liftoff").fadeOut(1000)
+        setTimeout(function () {
+            $("#liftoff").remove();
+        }, 1000)
         $("#catMountain").fadeIn(900)
         $("#catMountainSarah").css({
             "animation": "swinging 4s",
@@ -408,6 +436,9 @@ $(document).ready(function () {
     // ============= SKY SCENE CAT MOUNTAIN LANDING =============
     $("#catMountainContinue").click(function () {
         $("#catMountain").fadeOut(1000);
+        setTimeout(function () {
+            $("#catMountain").remove();
+        }, 1000)
         $("#catMountainLanding").fadeIn(1000)
 
         setTimeout(function () {
@@ -526,7 +557,7 @@ $(document).ready(function () {
         $("#forest-1-story").fadeOut(1000);
 
         setTimeout(function () {
-            $("#forest1story1continue").hide();
+            $("#forest1story1continue").remove();
             document.getElementById('forest-1-story').innerHTML = FOREST_1["story2"];
             $('#forest1sarah-1').animate({
                 opacity: 1,
@@ -547,7 +578,7 @@ $(document).ready(function () {
         $("#forest-1-story").fadeOut(1000);
 
         setTimeout(function () {
-            $("#forest1story2continue").hide();
+            $("#forest1story2continue").remove();
             document.getElementById('forest-1-story').innerHTML = FOREST_1["story3"];
 
             $("#forest1sarah-1").animate({
@@ -574,6 +605,9 @@ $(document).ready(function () {
     // ============= FOREST SCENE 1 TRANSITION =============================
     $("#forest1continue").click(function () {
         $("#forest-1").fadeOut(1000);
+        setTimeout(function () {
+            $("#forest-1").remove();
+        }, 1000)
 
 
         // ============= FOREST SCENE 2 =============================
@@ -596,7 +630,7 @@ $(document).ready(function () {
         $("#forest-2-story").fadeOut(1000);
 
         setTimeout(function () {
-            $("#forest2story1continue").hide();
+            $("#forest2story1continue").remove();
             document.getElementById('forest-2-story').innerHTML = FOREST_2["story2"];
             $("#forest-2-story").fadeIn(2000);
 
@@ -665,7 +699,7 @@ $(document).ready(function () {
         $("#forest2sarah1").animate({ opacity: 0 }, 800)
 
         setTimeout(function () {
-            $("#forest2story3continue").hide();
+            $("#forest2story3continue").remove();
             document.getElementById('forest-2-story').innerHTML = FOREST_2["story3"];
             $("#forest2sarah4").animate({ opacity: 1 }, 800)
             $("#forest-2-story").fadeIn(2000);
@@ -679,6 +713,9 @@ $(document).ready(function () {
     // ================================ FOREST 3 ====================================
     $('#forest2continue').click(function () {
         $("#forest-2").fadeOut(1000);
+        setTimeout(function () {
+            $("#forest-2").remove();
+        }, 1000)
         $("#forest-3").fadeIn(1000);
 
         setTimeout(function () {
@@ -688,10 +725,10 @@ $(document).ready(function () {
     })
 
     $('#forest3story1continue').click(function () {
-        $("#forest3story1continue").hide()
+        $("#forest3story1continue").remove()
 
         setTimeout(function () {
-            $("#forest-3-story").hide();
+            $("#forest-3-story").remove();
             document.getElementById('forest-3-story').innerHTML = FOREST_3["story2"];
             $("#forest-3-story").fadeIn(2000);
             $("#forest3continue").fadeIn(6000);
@@ -706,6 +743,9 @@ $(document).ready(function () {
     // ================================ FOREST BRIDGE ====================================
     $("#forest3continue").click(function () {
         $("#forest-3").fadeOut(1000);
+        setTimeout(function () {
+            $("#forest-3").remove();
+        }, 1000)
         $("#forestBridge").fadeIn(1000);
 
         setTimeout(function () {
@@ -739,6 +779,9 @@ $(document).ready(function () {
     // ================================ DEMONIC CIRCLE ====================================
     $("#forestBridgeContinue").click(function () {
         $("#forestBridge").fadeOut(1000);
+        setTimeout(function () {
+            $("#forestBridge").remove();
+        }, 1000)
         $("#demonicCircle").fadeIn(1000);
 
         setTimeout(function () {
@@ -768,4 +811,52 @@ $(document).ready(function () {
         $("#demonicCircleSarah2").animate({ opacity: 1, bottom: 0 }, 1000)
         updown("demonicCircleSarah2")
     });
+
+
+
+
+    // ================================ BEDROOM NIGHT ====================================
+    $("#demonicCircleContinue").click(function () {
+        $("#demonicCircle").fadeOut(1000);
+        setTimeout(function () {
+            $("#demonicCircle").remove();
+        }, 1000)
+        $("#bedroomNight").fadeIn(1000);
+
+        setTimeout(function () {
+            $("#bedroomNightTexts").css("opacity", 1);
+            $("#bedroomNightSarah1").animate({ opacity: 1 }, 1000)
+            $("#bedroomNightCat1").animate({ opacity: 1 }, 1000)
+            setTimeout(function () {
+                $("#bedroomNightCat1").animate({ bottom: '-50px' }, 1000)
+            }, 500)
+            $("#bedroomNightStory1Continue").fadeIn(5000);
+        }, 2000)
+    })
+
+    $("#bedroomNightStory1Continue").click(function () {
+        $("#bedroomNightSarah1").hide()
+        $("#bedroomNightCat1").hide()
+        transitionStory("bedroomNightStory1Continue", "bedroomNightStory", BEDROOM_NIGHT["story2"], "bedroomNightStory2Continue")
+        $("#bedroomNightSarah2").animate({ opacity: 1, bottom: 0 }, 1000)
+        $("#bedroomNightCat").animate({ opacity: 1 }, 1000)
+    })
+    $("#bedroomNightStory2Continue").click(function () {
+        transitionStory("bedroomNightStory2Continue", "bedroomNightStory", BEDROOM_NIGHT["story3"], "bedroomNightStory3Continue")
+        $("#bedroomNightCatDark").css({
+            "animation": "glitching 3s",
+            "animation-delay": "1s",
+            "animation-iteration-count": "infinite"
+        });
+    })
+    $("#bedroomNightStory3Continue").click(function () {
+        $("#bedroomNightCatDark").css({ "animation": "none" });
+        $("#bedroomNightTexts").fadeOut(500)
+        $("#bedroomNightCatDark").animate({ opacity: 1 }, 1000);
+        $("#endingTexts").fadeIn(1000);
+        setTimeout(function () {
+            $("#endingTexts").show();
+            $("#endingTexts").css({ opacity: 1 });
+        }, 2000)
+    })
 });

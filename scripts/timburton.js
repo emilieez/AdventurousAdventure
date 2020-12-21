@@ -178,3 +178,53 @@ demonicCircle.appendChild(demonicCircleCat)
 demonicCircle.appendChild(demonicCircleSarah1)
 demonicCircle.appendChild(demonicCircleSarah2)
 demonicCircle.appendChild(demonicCircleTexts)
+
+
+
+//  ========================  BEDROOM NIGHT  =================================
+var bedroomNight = createScene("bedroomNight", "url('images/bedroom_night.png')", 1)
+var bedroomNightTexts = createTextBlock("bedroomNightTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
+
+var bedroomNightStory = createStory("bedroomNightStory", BEDROOM_NIGHT["story1"])
+
+var bedroomNightSarah1 = createOverlay("bedroomNightSarah1", "url('images/bedroom_night_sarah-1.png')")
+bedroomNightSarah1.style.opacity = 0
+
+var bedroomNightSarah2 = createOverlay("bedroomNightSarah2", "url('images/bedroom_night_sarah-2.png')")
+bedroomNightSarah2.style.bottom = "50px"
+bedroomNightSarah2.style.opacity = 0
+
+var bedroomNightCat1 = createOverlay("bedroomNightCat1", "url('images/bedroom_night_cat-1.png')")
+bedroomNightCat1.style.opacity = 0
+bedroomNightCat1.style.bottom = 0
+
+var bedroomNightCat = createOverlay("bedroomNightCat", "url('images/bedroom_night_cat.png')")
+bedroomNightCat.style.opacity = 0
+
+var bedroomNightCatDark = createOverlay("bedroomNightCatDark", "url('images/dark_cat_ending.png')")
+bedroomNightCatDark.style.opacity = 0
+
+var bedroomNightStory1Continue = createContinueBtn("bedroomNightStory1Continue", "news-gothic-std")
+var bedroomNightStory2Continue = createContinueBtn("bedroomNightStory2Continue", "news-gothic-std")
+var bedroomNightStory3Continue = createContinueBtn("bedroomNightStory3Continue", "news-gothic-std")
+var bedroomNightContinue = createContinueBtn("bedroomNightContinue", "news-gothic-std")
+
+var endingTexts = createTextBlock("endingTexts", "top-left", FOREST_FONT_SIZE.replace('px', '') * 1.3 + "px", "NorthwoodHigh")
+endingTexts.style.display = "none"
+endingTexts.style.backgroundColor = "rgba(0,0,0,0)"
+endingTexts.style.color = "red"
+var endingStory = createStory("endingStory", BEDROOM_NIGHT["ending"])
+endingTexts.appendChild(endingStory)
+
+bedroomNightTexts.appendChild(bedroomNightStory)
+bedroomNightTexts.appendChild(bedroomNightStory1Continue)
+bedroomNightTexts.appendChild(bedroomNightStory2Continue)
+bedroomNightTexts.appendChild(bedroomNightStory3Continue)
+bedroomNightTexts.appendChild(bedroomNightContinue)
+bedroomNight.appendChild(bedroomNightSarah1)
+bedroomNight.appendChild(bedroomNightCat1)
+bedroomNight.appendChild(bedroomNightSarah2)
+bedroomNight.appendChild(bedroomNightCat)
+bedroomNight.appendChild(bedroomNightCatDark)
+bedroomNight.appendChild(bedroomNightTexts)
+bedroomNight.appendChild(endingTexts)
