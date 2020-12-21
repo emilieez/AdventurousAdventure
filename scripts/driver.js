@@ -334,6 +334,10 @@ $(document).ready(function () {
 
     // =============================== HAKU SCENE =================================
     $("#alleyScene2Continue").click(function () {
+        $("#alley-scene-2").fadeOut(900)
+        setTimeout(function () {
+            $("#alley-scene-2").remove();
+        }, 900)
         $("#haku").fadeIn(1000);
         $("#hakuSarah1").animate({
             right: "0",
