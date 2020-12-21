@@ -120,12 +120,11 @@ outsideCatbusSarah.style.display = "none";
 outsideCatbusSarah.style.opacity = 0;
 
 outsideSceneTexts.appendChild(outsideSceneStory)
-outsideScene.appendChild(outsideSceneTexts)
-outsideScene.appendChild(outsideSceneOptions)
 outsideScene.appendChild(outsideHowlSarah)
 outsideScene.appendChild(outsideNofaceSarah)
 outsideScene.appendChild(outsideCatbusSarah)
-
+outsideScene.appendChild(outsideSceneTexts)
+outsideScene.appendChild(outsideSceneOptions)
 
 
 // ========================  ALLEY =================================
