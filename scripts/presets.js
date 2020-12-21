@@ -136,5 +136,5 @@ BEDROOM_NIGHT = {
     "story1": "Finally back home in her room, Sarah places Cat on its bed before snuggling into her own.",
     "story2": "After whispering good night to the lovely Catto, Sarah drifts off to sleep with a content smile on her face.",
     "story3": "But when the lights have been snuffed out, <b>two stark yellow eyes</b> pierce through the darkness.",
-    "ending": "Happy <del> Birth </del> Death Day, Sarah"
+    "ending": "Happy <del> Birth </del> Death Day, Sara He"
 }
