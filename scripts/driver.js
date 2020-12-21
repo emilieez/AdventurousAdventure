@@ -111,6 +111,7 @@ $(document).ready(function () {
                 }, 1000)
                 document.getElementById("modal-cancel-button").style.display = "none"
                 $("#bedroom-morning").remove();
+                $("#modal-cancel-button").off("click")
                 $("#modal-cancel-button").hide()
                 $('#optionsModal-button').off('click');
                 document.getElementById("optionsModal-body").innerHTML = ""
