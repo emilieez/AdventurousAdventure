@@ -138,6 +138,14 @@ DEMONIC_CIRCLE = {
     "story5": "Yay! There you are!” Having found her lost pet at last, Sarah can finally return home with Cat. "
 }
 
+
+REFLECTION = {
+    "story1": "Sarah recounts her adventures along the way home to Cat, who carefreely hops between the rain puddles.",
+    "story2": "She can\'t wait for everything to return to normal tomorrow with Cat back by her side, doing things all cats love to do &#8212; like playing with yarn balls, chasing birds, and pushing stuff off the table.",
+    "story3": "Though <em>something</em> seems a bit off ... what could it be?"
+}
+
+
 BEDROOM_NIGHT = {
     "story1": "Finally back home in her room, Sarah places Cat on its bed before snuggling into her own.",
     "story2": "After whispering good night to the lovely Catto, Sarah drifts off to sleep with a content smile on her face.",

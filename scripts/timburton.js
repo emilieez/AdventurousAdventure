@@ -181,6 +181,33 @@ demonicCircle.appendChild(demonicCircleTexts)
 
 
 
+
+// ============= REFLECTION SCENE ================
+var reflection = createScene("reflection", "url('images/reflection_1.png')", 3)
+var reflectionTexts = createTextBlock("reflectionTexts", "top-centered", FOREST_FONT_SIZE, "NorthwoodHigh")
+
+var reflectionStory = createStory("reflectionStory", REFLECTION["story1"])
+var reflectionStory1Continue = createContinueBtn("reflectionStory1Continue", "NorthwoodHigh")
+var reflectionStory2Continue = createContinueBtn("reflectionStory2Continue", "NorthwoodHigh")
+var reflectionContinue = createContinueBtn("reflectionContinue", "NorthwoodHigh")
+
+var reflection2 = createOverlay("reflection2", "url('images/reflection_2.png')")
+reflection2.style.opacity = 0;
+
+var reflection3 = createOverlay("reflection3", "url('images/reflection_3.png')")
+reflection3.style.opacity = 0;
+
+reflectionTexts.appendChild(reflectionStory)
+reflectionTexts.appendChild(reflectionStory1Continue)
+reflectionTexts.appendChild(reflectionStory2Continue)
+reflectionTexts.appendChild(reflectionContinue)
+
+reflection.appendChild(reflection2)
+reflection.appendChild(reflection3)
+reflection.appendChild(reflectionTexts)
+
+
+
 //  ========================  BEDROOM NIGHT  =================================
 var bedroomNight = createScene("bedroomNight", "url('images/bedroom_night.png')", 1)
 var bedroomNightTexts = createTextBlock("bedroomNightTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")

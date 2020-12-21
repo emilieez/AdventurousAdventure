@@ -19,8 +19,8 @@ canvas.appendChild(forest2)
 canvas.appendChild(forest3)
 canvas.appendChild(forestBridge)
 canvas.appendChild(demonicCircle)
+canvas.appendChild(reflection)
 canvas.appendChild(bedroomNight)
-
 
 $(".scene").css({ width: GLOBAL_WIDTH + 'px' })
 $(".scene").css({ height: GLOBAL_HEIGHT + 'px' })
@@ -866,13 +866,44 @@ $(document).ready(function () {
 
 
 
-
-    // ================================ BEDROOM NIGHT ====================================
     $("#demonicCircleContinue").click(function () {
         $("#demonicCircle").fadeOut(1000);
         setTimeout(function () {
             $("#demonicCircle").remove();
         }, 1000)
+
+        // ================================ REFLECTION ====================================
+        $("#reflection").fadeIn(1000);
+
+        setTimeout(function () {
+            $("#reflectionTexts").css("opacity", 1);
+            $("#reflectionStory1Continue").fadeIn(5000);
+        }, 2000)
+    })
+
+    $("#reflectionStory1Continue").click(function () {
+        transitionStory("reflectionStory1Continue", "reflectionStory", REFLECTION["story2"], "reflectionStory2Continue")
+        $("#reflection2").animate({ opacity: 1 }, 1000)
+    })
+
+    $("#reflectionStory2Continue").click(function () {
+        transitionStory("reflectionStory2Continue", "reflectionStory", REFLECTION["story3"], "reflectionContinue")
+        $("#reflection3").animate({ opacity: 1 }, 500)
+        $("#reflection3").css({
+            "animation": "glowing 1s",
+            "animation-delay": "1s",
+            "animation-iteration-count": "infinite"
+        });
+    })
+
+    $("#reflectionContinue").click(function () {
+        $("#reflection").fadeOut(1000);
+        setTimeout(function () {
+            $("#reflection").remove();
+        }, 1000)
+
+
+        // ================================ BEDROOM NIGHT ====================================
         $("#bedroomNight").fadeIn(1000);
 
         setTimeout(function () {
