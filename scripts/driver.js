@@ -111,6 +111,8 @@ $(document).ready(function () {
                 }, 1000)
                 document.getElementById("modal-cancel-button").style.display = "none"
                 $("#bedroom-morning").remove();
+                $("#modal-cancel-button").hide()
+                $('#optionsModal-button').off('click');
 
 
                 // ============= BEDROOM MORNING 3 ================
