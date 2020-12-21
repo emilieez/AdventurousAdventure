@@ -146,7 +146,7 @@ DEMONIC_CIRCLE = {
 
 REFLECTION = {
     "story1": "Sarah recounts her adventures along the way home to Cat, who carefreely hops between the rain puddles.",
-    "story2": "She can\'t wait for everything to return to normal tomorrow with Cat back by her side, doing things all cats love to do &#8212; like playing with yarn balls, chasing birds, and pushing stuff off the table.",
+    "story2": "She can\'t wait for everything to return to normal tomorrow with Cat back by her side, doing things all cats love to do ...like playing with yarn balls, chasing birds, and pushing stuff off the table.",
     "story3": "Though <em>something</em> seems a bit off ... what could it be?"
 }
 
