@@ -236,6 +236,9 @@ var bedroomNightStory2Continue = createContinueBtn("bedroomNightStory2Continue",
 var bedroomNightStory3Continue = createContinueBtn("bedroomNightStory3Continue", "news-gothic-std")
 var bedroomNightContinue = createContinueBtn("bedroomNightContinue", "news-gothic-std")
 
+var endingScene = createOverlay("endingScene", "url('images/dark_cat_ending_new.png')")
+endingScene.style.opacity = 0
+
 var endingTexts = createTextBlock("endingTexts", "top-left", FOREST_FONT_SIZE.replace('px', '') * 1.3 + "px", "NorthwoodHigh")
 endingTexts.style.display = "none"
 endingTexts.style.backgroundColor = "rgba(0,0,0,0)"
@@ -253,5 +256,6 @@ bedroomNight.appendChild(bedroomNightCat1)
 bedroomNight.appendChild(bedroomNightSarah2)
 bedroomNight.appendChild(bedroomNightCat)
 bedroomNight.appendChild(bedroomNightCatDark)
+bedroomNight.appendChild(endingScene)
 bedroomNight.appendChild(bedroomNightTexts)
 bedroomNight.appendChild(endingTexts)

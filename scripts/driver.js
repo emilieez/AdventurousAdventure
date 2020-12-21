@@ -958,11 +958,11 @@ $(document).ready(function () {
     $("#bedroomNightStory3Continue").click(function () {
         $("#bedroomNightCatDark").css({ "animation": "none" });
         $("#bedroomNightTexts").fadeOut(500)
-        $("#bedroomNightCatDark").animate({ opacity: 1 }, 1000);
-        $("#endingTexts").fadeIn(1000);
+        $("#endingScene").animate({ opacity: 1 }, 1000);
+        $("#endingTexts").css({ animation: "none" });
         setTimeout(function () {
             $("#endingTexts").show();
             $("#endingTexts").css({ opacity: 1 });
-        }, 2000)
+        }, 1000)
     })
 });
