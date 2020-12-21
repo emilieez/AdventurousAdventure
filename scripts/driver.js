@@ -461,10 +461,14 @@ $(document).ready(function () {
 
     // ============= SKY SCENE CAT MOUNTAIN LANDING =============
     $("#catMountainLandingContinue").click(function () {
-        $("#catMountainLandingContinue").fadeOut(900)
+        $("#catMountainLanding").fadeOut(900)
+        setTimeout(function () {
+            $("#catMountainLanding").remove();
+        }, 1000)
 
         // ============= SKY SCENE CAVE WATER =============
         $("#skyCaveWater").fadeIn(900)
+
         $("#skyCaveWaterShadow").css({
             "animation": "floating 5s",
             "animation-iteration-count": "infinite"
@@ -548,6 +552,12 @@ $(document).ready(function () {
 
     // ============= SKY CAVE SCENE =============
     $('#skyCaveWaterContinue').click(function () {
+        $("#skyCaveWater").fadeOut(900)
+        setTimeout(function () {
+            $("#skyCaveWater").remove();
+        }, 900)
+
+
         $("#forest-1").fadeIn(900);
         setTimeout(function () {
             $("#forest1texts").css("opacity", 1);
@@ -732,7 +742,7 @@ $(document).ready(function () {
         $("#forest3story1continue").remove()
 
         setTimeout(function () {
-            $("#forest-3-story").remove();
+            $("#forest-3-story").hide();
             document.getElementById('forest-3-story').innerHTML = FOREST_3["story2"];
             $("#forest-3-story").fadeIn(2000);
             $("#forest3continue").fadeIn(6000);
