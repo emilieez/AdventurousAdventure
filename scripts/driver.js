@@ -93,7 +93,9 @@ $(document).ready(function () {
 
             // ============= BEDROOM MORNING 2 ================
             $("#modal-cancel-button").click(function () {
-                document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultFail"]
+                setTimeout(function () {
+                    document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultFail"]
+                }, 500)
                 document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
                 document.getElementById("optionsModal-button").setAttribute("data-dismiss", "modal")
                 document.getElementById("optionsModal-button").innerHTML = "K Cool"
