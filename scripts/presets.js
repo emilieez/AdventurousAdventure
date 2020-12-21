@@ -129,7 +129,7 @@ DEMONIC_CIRCLE = {
     "story2": "An exhausted Sarah carefully approaches the shrine and sighs. She's travelled alone across the entire world searching for her beloved Cat. If only Cat would just magically appear ...",
     "story3": "Out of nowhere, the circle begins radiating a brilliant shade of gold ...",
     "story4": "And in the center, a Cat begins to take form!",
-    "story5": "Yay! Now Sarah and Cat can finally go home."
+    "story5": "Yay! There you are!” Having found her lost pet at last, Sarah can finally go home with Cat."
 }
 
 BEDROOM_NIGHT = {
