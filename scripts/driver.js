@@ -258,7 +258,7 @@ $(document).ready(function () {
 
             $("#modal-cancel-button").click(function () {
                 setTimeout(function () {
-                    document.getElementById("optionsModal-body").innerHTML = ""
+                    document.getElementById("optionsModal-body").innerHTML = "You decide to venture into the alleyway."
                     document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
                     document.getElementById("optionsModal-button").setAttribute("data-dismiss", "modal")
                     document.getElementById("optionsModal-button").innerHTML = "K Cool"
