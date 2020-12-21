@@ -113,6 +113,7 @@ $(document).ready(function () {
                 $("#bedroom-morning").remove();
                 $("#modal-cancel-button").hide()
                 $('#optionsModal-button').off('click');
+                document.getElementById("optionsModal-body").innerHTML = ""
 
 
                 // ============= BEDROOM MORNING 3 ================
