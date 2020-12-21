@@ -112,6 +112,7 @@ $(document).ready(function () {
                 document.getElementById("modal-cancel-button").style.display = "none"
                 $("#bedroom-morning").remove();
                 $("#modal-cancel-button").off("click")
+                document.getElementById("modal-cancel-button").innerHTML = ""
                 $("#modal-cancel-button").hide()
                 $('#optionsModal-button').off('click');
                 document.getElementById("optionsModal-body").innerHTML = ""
