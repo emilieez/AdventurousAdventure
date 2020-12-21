@@ -136,8 +136,12 @@ skyCaveSurfaceSarah.style.bottom = '100px'
 var skyCaveSurfaceDark = createOverlay("skyCaveSurfaceDark", "url('images/cave_surface_dark.png')")
 skyCaveSurfaceDark.style.opacity = 0
 
-var skyCaveSurfaceEnd = createOverlay("skyCaveSurfaceEnd", "url('images/cave_surface.jpg')")
+var skyCaveSurfaceEnd = createOverlay("skyCaveSurfaceEnd", "url('images/cave_surface_end.png')")
 skyCaveSurfaceEnd.style.opacity = 0
+
+var skyCaveSurfaceSarah2 = createOverlay("skyCaveSurfaceSarah2", "url('images/cave_surface_sarah-2.png')")
+skyCaveSurfaceSarah2.style.top = '100px'
+skyCaveSurfaceSarah2.style.opacity = 0
 
 var skyCaveSurfaceStory = createStory("skyCaveSurfaceStory", CAVE_SURFACE["story1"])
 
@@ -151,7 +155,8 @@ skyCaveSurfaceTexts.appendChild(skyCaveSurfaceStory2Continue)
 skyCaveSurfaceTexts.appendChild(skyCaveSurfaceContinue)
 skyCaveSurface.appendChild(skyCaveSurfaceSarahOnCat)
 skyCaveSurface.appendChild(skyCaveSurfaceCat)
-skyCaveSurface.appendChild(skyCaveSurfaceSarah)
 skyCaveSurface.appendChild(skyCaveSurfaceEnd)
 skyCaveSurface.appendChild(skyCaveSurfaceDark)
+skyCaveSurface.appendChild(skyCaveSurfaceSarah)
+skyCaveSurface.appendChild(skyCaveSurfaceSarah2)
 skyCaveSurface.appendChild(skyCaveSurfaceTexts)

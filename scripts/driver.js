@@ -580,23 +580,21 @@ $(document).ready(function () {
             "animation": "none", "display": "none"
         })
         $("#skyCaveSurfaceCat").show();
+        $("#skyCaveSurfaceEnd").css({ opacity: 1 });
         $("#skyCaveSurfaceSarahOnCat").animate({ opacity: 0 }, 500)
         $("#skyCaveSurfaceSarah").animate({ opacity: 1, bottom: 0 }, 1000);
-        $("#skyCaveSurfaceDark").css({
-            "animation": "glitching 2s",
-            "animation-delay": "2.5s",
-            "animation-iteration-count": "infinite"
-        });
-
     })
 
     $('#skyCaveSurfaceStory2Continue').click(function () {
         transitionStory("skyCaveSurfaceStory2Continue", "skyCaveSurfaceStory", CAVE_SURFACE["story3"], "skyCaveSurfaceContinue")
 
         $("#skyCaveSurfaceDark").css({
-            "animation": "none", "display": "none"
-        })
-        $("#skyCaveSurfaceEnd").animate({ opacity: 1 }, 1000);
+            "animation": "glitching 2s",
+            "animation-delay": "2.5s",
+            "animation-iteration-count": "infinite"
+        });
+        $("#skyCaveSurfaceSarah").hide();
+        $("#skyCaveSurfaceSarah2").animate({ opacity: 1, top: 0 }, 1000);
     })
 
     $('#skyCaveSurfaceContinue').click(function () {
