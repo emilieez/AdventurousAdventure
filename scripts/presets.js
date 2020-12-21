@@ -18,6 +18,10 @@ if (fontSize < 14) {
     STANDARD_FONT_SIZE = fontSize + 'px'
 }
 
+document.getElementById("optionsModal-button").style.fontSize = STANDARD_FONT_SIZE
+document.getElementById("modal-cancel-button").style.fontSize = STANDARD_FONT_SIZE
+document.getElementById("optionsModal-body").style.fontSize = STANDARD_FONT_SIZE
+document.getElementById("optionsModal").style.fontSize = STANDARD_FONT_SIZE
 
 BEDROOM_MORNING_2 = {
     "story": "Energized by the bean, she contemplates her outfit of the day. What should she wear today?",
