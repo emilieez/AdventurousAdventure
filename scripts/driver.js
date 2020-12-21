@@ -104,19 +104,19 @@ $(document).ready(function () {
                 }, 800)
             });
             $("#optionsModal-button").click(function () {
+
+                document.getElementById("modal-cancel-button").style.display = "none"
+                $("#bedroom-morning").remove();
+                $("#modal-cancel-button").off("click")
+                document.getElementById("modal-cancel-button").innerHTML = ""
+                $('#optionsModal-button').off('click');
+                document.getElementById("optionsModal-body").innerHTML = ""
+
                 $('#bedroom-morning-2-options-3-modal').modal('hide');
                 $("#bedroom-morning-2").fadeOut(1000)
                 setTimeout(function () {
                     $("#bedroom-morning-2").remove();
                 }, 1000)
-                document.getElementById("modal-cancel-button").style.display = "none"
-                $("#bedroom-morning").remove();
-                $("#modal-cancel-button").off("click")
-                document.getElementById("modal-cancel-button").innerHTML = ""
-                $("#modal-cancel-button").hide()
-                $('#optionsModal-button').off('click');
-                document.getElementById("optionsModal-body").innerHTML = ""
-
 
                 // ============= BEDROOM MORNING 3 ================
                 $("#bedroom-morning-3").fadeIn(900);
@@ -162,14 +162,21 @@ $(document).ready(function () {
         }, 1000)
     })
 
-
-
     // ========================================= OUTSIDE =============================================
     $("#bedroomMorning3Continue").click(function () {
         $("#bedroom-morning-3").fadeOut(1000)
         setTimeout(function () {
             $("#bedroom-morning-3").remove();
         }, 1000)
+
+
+        document.getElementById("modal-cancel-button").style.display = "none"
+        $("#bedroom-morning").remove();
+        $("#modal-cancel-button").off("click")
+        document.getElementById("modal-cancel-button").innerHTML = ""
+        $('#optionsModal-button').off('click');
+        document.getElementById("optionsModal-body").innerHTML = ""
+
         $("#outside-scene").fadeIn(900);
         $("#bedroomMorningSarah-3").css({
             "animation": "none"
@@ -248,6 +255,18 @@ $(document).ready(function () {
             document.getElementById("modal-cancel-button").innerHTML = "i don wanna"
             document.getElementById("optionsModal-body").innerHTML = OUTSIDE_SCENE["option4-result"]
             document.getElementById("optionsModal-button").innerHTML = "Lets YEET"
+
+            $("#modal-cancel-button").click(function () {
+                setTimeout(function () {
+                    document.getElementById("optionsModal-body").innerHTML = BEDROOM_MORNING_2["resultFail"]
+                    document.getElementById("optionsModal-body").style.fontFamily = "news-goth-std"
+                    document.getElementById("optionsModal-button").setAttribute("data-dismiss", "modal")
+                    document.getElementById("optionsModal-button").innerHTML = "K Cool"
+                    document.getElementById("optionsModal-button").style.fontFamily = "news-goth-std"
+                    $("#modal-cancel-button").hide()
+                    $('#optionsModal-button').off('click');
+                }, 800)
+            });
 
             $("#optionsModal-button").click(function () {
                 $("#bedroom-morning-3").remove()
