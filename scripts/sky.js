@@ -120,3 +120,32 @@ skyCaveWater.appendChild(skyCaveWaterSarahUp)
 skyCaveWater.appendChild(skyCaveWaterShadow)
 skyCaveWater.appendChild(skyCaveWaterTexts)
 skyCaveWater.appendChild(skyCaveWaterOptions)
+
+
+// ============= SKY SCENE CAVE SURFACE  ================
+var skyCaveSurface = createScene("skyCaveSurface", "url('images/cave_surface.png')", 2)
+var skyCaveSurfaceTexts = createTextBlock("skyCaveSurfaceTexts", "bottom-centered", STANDARD_FONT_SIZE, "news-gothic-std")
+
+var skyCaveSurfaceSarahOnCat = createOverlay("skyCaveSurfaceSarahOnCat", "url('images/cave_surface_cat_sarah.png')")
+var skyCaveSurfaceCat = createOverlay("skyCaveSurfaceCat", "url('images/cave_surface_cat.png')")
+skyCaveSurfaceCat.style.display = "none"
+var skyCaveSurfaceSarah = createOverlay("skyCaveSurfaceSarah", "url('images/cave_surface_sarah.png')")
+skyCaveSurfaceSarah.style.opacity = 0
+skyCaveSurfaceSarah.style.bottom = '100px'
+
+var skyCaveSurfaceDark = createOverlay("skyCaveSurfaceDark", "url('images/cave_surface_dark.png')")
+skyCaveSurfaceDark.style.opacity = 0
+
+var skyCaveSurfaceStory = createStory("skyCaveSurfaceStory", CAVE_SURFACE["story1"])
+
+var skyCaveSurfaceStory1Continue = createContinueBtn("skyCaveSurfaceStory1Continue", "news-gothic-std")
+var skyCaveSurfaceContinue = createContinueBtn("skyCaveSurfaceContinue", "news-gothic-std")
+
+skyCaveSurfaceTexts.appendChild(skyCaveSurfaceStory);
+skyCaveSurfaceTexts.appendChild(skyCaveSurfaceStory1Continue)
+skyCaveSurfaceTexts.appendChild(skyCaveSurfaceContinue)
+skyCaveSurface.appendChild(skyCaveSurfaceSarahOnCat)
+skyCaveSurface.appendChild(skyCaveSurfaceCat)
+skyCaveSurface.appendChild(skyCaveSurfaceSarah)
+skyCaveSurface.appendChild(skyCaveSurfaceDark)
+skyCaveSurface.appendChild(skyCaveSurfaceTexts)

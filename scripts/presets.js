@@ -92,6 +92,12 @@ CAVE_WATER = {
     "swimUp-result": "The fuzzy shadow looks a bit like Catto. You swim up to the surface and walk further into the dark cave."
 }
 
+CAVE_SURFACE = {
+    "story1": "After inspecting the mass, Sarah realizes it\’s just a giant plush cat.",
+    "story2": "Disappointed, she pulls herself out of the water and walks deeper into the dark and empty cave."
+}
+
+
 FOREST_1 = {
     "story1": "Sarah finds herself in the midst of a foreign land shrouded in silver fog. An eerie violet glow looms behind the grove of trees full of spikes and needles.",
     "story2": "She steps towards the oddly shaped archway, only to be welcomed with a series of unearthly whispers and a spine-chilling breeze.",

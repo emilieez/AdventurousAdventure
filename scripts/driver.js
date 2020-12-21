@@ -13,6 +13,7 @@ canvas.appendChild(liftoff)
 canvas.appendChild(catMountain)
 canvas.appendChild(catMountainLanding)
 canvas.appendChild(skyCaveWater)
+canvas.appendChild(skyCaveSurface)
 canvas.appendChild(forest1)
 canvas.appendChild(forest2)
 canvas.appendChild(forest3)
@@ -557,6 +558,43 @@ $(document).ready(function () {
             $("#skyCaveWater").remove();
         }, 900)
 
+
+
+        // ============= SKY CAVE SURFACE SCENE =============
+        $("#skyCaveSurface").fadeIn(1000);
+        setTimeout(function () {
+            $("#skyCaveSurfaceTexts").css("opacity", 1);
+            $("#skyCaveSurfaceStory1Continue").fadeIn(6000);
+
+            $("#skyCaveSurfaceSarahOnCat").css({
+                "animation": "floating 5s",
+                "animation-iteration-count": "infinite"
+            })
+        }, 2000);
+    })
+
+    $('#skyCaveSurfaceStory1Continue').click(function () {
+        transitionStory("skyCaveSurfaceStory1Continue", "skyCaveSurfaceStory", CAVE_SURFACE["story2"], "skyCaveSurfaceContinue")
+
+        $("#skyCaveSurfaceSarahOnCat").css({
+            "animation": "none", "display": "none"
+        })
+        $("#skyCaveSurfaceCat").show();
+        $("#skyCaveSurfaceSarahOnCat").animate({ opacity: 0 }, 500)
+        $("#skyCaveSurfaceSarah").animate({ opacity: 1, bottom: 0 }, 1000);
+        $("#skyCaveSurfaceDark").css({
+            "animation": "glitching 2s",
+            "animation-delay": "2.5s",
+            "animation-iteration-count": "infinite"
+        });
+
+    })
+
+    $('#skyCaveSurfaceContinue').click(function () {
+        $("#skyCaveSurface").fadeOut(900)
+        setTimeout(function () {
+            $("#skyCaveSurface").remove();
+        }, 900)
 
         $("#forest-1").fadeIn(900);
         setTimeout(function () {
